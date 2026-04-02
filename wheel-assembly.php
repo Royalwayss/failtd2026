@@ -1,0 +1,97 @@
+<?php include ('include/header.php') ?>
+<!--Start breadcrumb area-->     
+<section class="breadcrumb-area" style="background-image: url(assets/images/breadcrumb/breadcrumb-4.jpg);">
+   <div class="container">
+      <div class="row">
+         <div class="col-xl-12">
+            <div class="inner-content clearfix">
+               <div class="title wow slideInDown animated" data-wow-delay="0.3s" data-wow-duration="1500ms">
+                  <h2>5th Wheel Coupling Assembly</h2>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="service-style3-area service-page3 products-parts">
+   <div class="container-fluid">
+      <div class="row" id="category-content">
+         <div class="sec-title">
+            <div class="sub-title">
+               <span class="border-box"></span>
+               <h5>Heavy Vehicle Coupling Components</h5>
+            </div>
+            <h2>5th Wheel Assembly</h2>
+         </div>
+         
+      </div>
+      <div class="row">
+         <!-- Start Single Service Style3--->
+         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-5">
+            <div class="single-service-style3">
+               <div class="img-holder">
+                  <div class="inner">
+                     <img src="assets/images/products/wheel-assembly/1.jpg" alt="">
+                  </div>
+               </div>
+               <div class="text-holder text-center">
+                  <h2>Wearing Ring</h2>
+               </div>
+            </div>
+         </div>
+         <!--End Single Service Style3--->
+         <!-- Start Single Service Style3--->
+         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-5">
+            <div class="single-service-style3">
+               <div class="img-holder">
+                  <div class="inner">
+                     <img src="assets/images/products/wheel-assembly/2.jpg" alt="">
+                  </div>
+               </div>
+               <div class="text-holder text-center">
+                  <h2>Lock Jaw</h2>
+               </div>
+            </div>
+         </div>
+         <!--End Single Service Style3--->
+         <!-- Start Single Service Style3--->
+         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-5">
+            <div class="single-service-style3">
+               <div class="img-holder">
+                  <div class="inner">
+                     <img src="assets/images/products/wheel-assembly/3.jpg" alt="">
+                  </div>
+               </div>
+               <div class="text-holder text-center">
+                  <h2>Locking Bar</h2>
+               </div>
+            </div>
+         </div>
+         <!--End Single Service Style3--->
+         <!-- Start Single Service Style3--->
+         <!-- <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-5">                       
+            <div class="single-service-style3">
+                <div class="img-holder">
+                    <div class="inner">
+                        <img src="assets/images/products/wheel-assembly/3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text-holder text-center">
+                    <h2>Locking Bar</h2>
+                </div>
+            </div>
+            </div> -->
+         <!--End Single Service Style3--->
+      </div>
+   
+      <div class="row" id="category-content">
+        
+         <div class="sustan-main-heading">
+            <p>We manufacture critical components for 5th wheel coupling assemblies used in heavy commercial vehicles and trailer systems. These parts are forged for high fatigue life, torsional strength and dimensional stability.</p>
+            <p>Using advanced simulation, CNC machining and controlled heat treatment, we deliver components capable of withstanding extreme load transfer and continuous articulation. </p>
+            <p>Our manufacturing ecosystem supports high-volume production with consistent quality, making us a trusted partner for OEMs requiring dependable coupling system components.</p>
+         </div>
+      </div>
+   </div>
+</section>
+<?php include ('include/footer.php') ?>

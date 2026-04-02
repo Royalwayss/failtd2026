@@ -1,0 +1,19 @@
+RewriteCond %{HTTPS} off
+# First rewrite to HTTPS:
+# Don't put www. here. If it is already there it will be included, if not
+# the subsequent rule will catch it.
+RewriteEngine On
+
+ErrorDocument 404 default
+ErrorDocument 404 /404.php
+
+
+
+
+RewriteRule ^blog/?$ blog.php [NC,L]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^([a-zA-Z0-9-]+)$ blog_details.php?slug=$1 [L,QSA]
