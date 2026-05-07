@@ -5456,7 +5456,7 @@ padding-top: 80px;
 @media(max-width:991px){
 
     .forge-slider-content h2{
-        font-size:48px;
+        font-size:40px;
         padding:0 55px;
     }
 
@@ -5478,7 +5478,7 @@ padding-top: 80px;
     .forge-new-slider .carousel-item,
     .forge-slider-content{
         /* height:80vh; */
-        min-height:550px;
+        height:450px;
     }
 
    .forge-slider-content{
@@ -5491,8 +5491,8 @@ padding-top: 80px;
     }
 
     .forge-slider-content h2{
-        font-size:32px;
-        padding:0 35px;
+        font-size:22px;
+        padding:0 20px;
         margin-bottom:30px;
     }
 
