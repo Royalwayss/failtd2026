@@ -2,15 +2,35 @@
 
 <audio id="loading-audio" src="assets/images/hammer.mp3" preload="auto"></audio>
 <!-- Start Main Slider -->
-<section class="main-slider style4">
+<!-- <section class="main-slider style4">
     <div class="slider-box">
-        <!-- Banner Carousel -->
+    
         <div class="banner-carousel owl-theme owl-carousel">
-            <!-- Slide -->
+          
+                <div class="slide">
+                <div class="image-layer">
+                    <img src="assets/images/slides/mach-auto.jpg" alt="Best Forging Company in India" title="Best Forging Company in India">
+                </div>
+                <div class="top_shadow"></div>
+                <div class="auto-container">
+                    <div class="content text-center " style="opacity:0; ">
+                        <h3>High precision in part dimensions</h3>
+                        <div class="big-title">
+                            <h2>Carbon & Alloy Steel Ranging</h2>
+                        </div>
+                        <div class="btns-box">
+                            <div class="left">
+                                <a class="btn-one" href="infrastructure.php"><span class="txt">learn More</span></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
             <div class="slide pt-0">
                 <div class="" style="position:absolute; width:100%;">
                     <div class="video-banner" style="">
-                        <video width="100%" height="600px" muted playsinline loop autoplay style="object-fit:cover;">
+                        <video class="home-banner-video" muted playsinline loop autoplay >
                             <source src="assets/images/slides/banner-video-1.mp4">
                             </source>
                         </video>
@@ -36,7 +56,8 @@
             </div>
           
             <div class="slide">
-                <div class="image-layer" style="background-image:url(assets/images/slides/slide-v1-2.1.jpg)">
+                <div class="image-layer">
+                    <img src="assets/images/slides/slide-v1-2.1.jpg" alt="Best Forging Company in India" title="Best Forging Company in India">
                 </div>
                 <div class="top_shadow"></div>
                 <div class="auto-container">
@@ -56,7 +77,8 @@
             </div>
          
             <div class="slide">
-                <div class="image-layer" style="background-image:url(assets/images/slides/slide-v1-3.jpg)">
+                <div class="image-layer">
+                    <img src="assets/images/slides/slide-v1-3.jpg" alt="Best Forging Company in India" title="Best Forging Company in India">
                 </div>
                 <div class="top_shadow"></div>
                 <div class="auto-container">
@@ -76,9 +98,151 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- End Main Slider -->
+<!-- =========================
+     Forge New Slider
+========================= -->
 
+<section class="forge-new-slider">
+
+    <div id="forgeSlider" class="carousel slide" data-ride="carousel" data-interval="4000">
+
+        <!-- Indicators -->
+        <!-- <ol class="carousel-indicators">
+            <li data-target="#forgeSlider" data-slide-to="0" class="active"></li>
+            <li data-target="#forgeSlider" data-slide-to="1"></li>
+            <li data-target="#forgeSlider" data-slide-to="2"></li>
+            <li data-target="#forgeSlider" data-slide-to="3"></li>
+        </ol> -->
+
+        <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+
+                <div class="forge-slide-bg">
+                    <img src="assets/images/slides/mach-auto.jpg" alt="">
+                </div>
+
+                <div class="forge-overlay"></div>
+
+                <div class="container">
+                    <div class="forge-slider-content text-center" style="opacity:0;">
+
+                        <h3>High precision in part dimensions</h3>
+
+                        <h2>Carbon & Alloy Steel Ranging</h2>
+
+                        <a href="infrastructure.php" class="forge-btn">
+                            Learn More
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Slide 2 Video -->
+            <div class="carousel-item">
+
+                <div class="forge-slide-bg">
+                    <video autoplay muted loop playsinline>
+                        <source src="assets/images/slides/banner-video-1.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="forge-overlay"></div>
+
+                <div class="container">
+                    <div class="forge-slider-content text-center">
+
+                        <h3>Where Innovation Meets Strength</h3>
+
+                        <h2>Expert Hot Forging Specialists</h2>
+
+                        <a href="about.php" class="forge-btn">
+                            Read More
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+
+                <div class="forge-slide-bg">
+                    <img src="assets/images/slides/slide-v1-2.1.jpg" alt="">
+                </div>
+
+                <div class="forge-overlay"></div>
+
+                <div class="container">
+                    <div class="forge-slider-content text-center">
+
+                        <h3>High precision in part dimensions</h3>
+
+                        <h2>Carbon & Alloy Steel Ranging</h2>
+
+                        <a href="infrastructure.php" class="forge-btn">
+                            Learn More
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-item">
+
+                <div class="forge-slide-bg">
+                    <img src="assets/images/slides/slide-v1-3.jpg" alt="">
+                </div>
+
+                <div class="forge-overlay"></div>
+
+                <div class="container">
+                    <div class="forge-slider-content text-center">
+
+                        <h3>Forging Excellence</h3>
+
+                        <h2>Shaping Futures, Delivering Quality</h2>
+
+                        <a href="exhibitions.php" class="forge-btn">
+                            Learn More
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Prev Arrow -->
+        <a class="carousel-control-prev" href="#forgeSlider" role="button" data-slide="prev">
+
+            <span class="carousel-control-prev-icon"></span>
+
+            <span class="sr-only">Previous</span>
+
+        </a>
+
+        <!-- Next Arrow -->
+        <a class="carousel-control-next" href="#forgeSlider" role="button" data-slide="next">
+
+            <span class="carousel-control-next-icon"></span>
+
+            <span class="sr-only">Next</span>
+
+        </a>
+
+    </div>
+
+</section>
 
 <!-- Start About Style4 Area-->
 <section class="about-style4-area about-sec">

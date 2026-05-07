@@ -575,6 +575,7 @@
                                         </li>
                                     </ul>
                                     </li> -->
+                                    <li><a href="mach-auto.php">Mach Auto</a></li>
                                  <li class="dropdown">
                                     <a href="javascript:;">About us</a>
                                     <ul>

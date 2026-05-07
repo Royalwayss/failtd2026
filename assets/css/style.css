@@ -4749,7 +4749,7 @@ padding-top: 80px;
 .mach-sec-three{
     padding-top: 120px;
     padding-bottom: 120px;
-    background-image: url('../images/mach-auto/bg-sec-2.1.jpg') !important;
+    background-image: url('../images/mach-auto/bg-sec-2.jpg') !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -5068,11 +5068,22 @@ padding-top: 80px;
 .toc-list li img {
     width: 25px;
 }
+
+.video-banner .home-banner-video{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
 @media only screen and (max-width:1200px) {
     .main-timeline4 .year {
         top: 50%;
         transform: translateY(-50%)
     }
+    .video-banner .home-banner-video{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 }
 
 @media only screen and (max-width:990px) {
@@ -5221,5 +5232,300 @@ padding-top: 80px;
     .main-timeline4 .inner-content {
         padding: 10px
     }
+}
+
+/* ==new slider css============================ */
+
+
+
+.forge-new-slider{
+    position:relative;
+    overflow:hidden;
+}
+
+/* Slide */
+.forge-new-slider .carousel-item{
+    /* height:100vh; */
+    height:600px;
+    position:relative;
+}
+
+/* Background */
+.forge-slide-bg{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.forge-slide-bg img,
+.forge-slide-bg video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* Overlay */
+.forge-overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.45);
+    z-index:1;
+}
+/* =========================
+   Forge Slider Content Style
+========================= */
+
+.forge-slider-content{
+    position:relative;
+    z-index:2;
+
+    /* height:100vh; */
+    height:600px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+/* Top Small Text */
+.forge-slider-content h3{
+    color:#ffffff;
+    font-size:16px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    margin-bottom:18px;
+}
+
+/* Main Heading */
+.forge-slider-content h2{
+    position:relative;
+
+    color:#ffffff;
+    font-size:50px;
+    line-height:1.15;
+    font-weight:300;
+
+    margin-bottom:45px;
+
+    display:inline-block;
+    padding:0 80px;
+}
+
+/* Orange Side Lines */
+.forge-slider-content h2:before,
+.forge-slider-content h2:after{
+    content:"";
+    position:absolute;
+    top:50%;
+    width:6px;
+    height:42px;
+    background:#f28c18;
+    transform:translateY(-50%);
+}
+
+.forge-slider-content h2:before{
+    left:0;
+}
+
+.forge-slider-content h2:after{
+    right:0;
+}
+
+/* Button */
+.forge-btn{
+    display:inline-block;
+    background:#f28c18;
+    color:#ffffff;
+
+    padding:18px 42px;
+
+    font-size:15px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+
+    text-decoration:none;
+
+    transition:all 0.3s ease;
+}
+
+.forge-btn:hover{
+    background:#ffffff;
+    color:#111111;
+    text-decoration:none;
+}
+
+
+
+/* Indicators */
+.forge-new-slider .carousel-indicators{
+    bottom:35px;
+    z-index:5;
+}
+
+.forge-new-slider .carousel-indicators li{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    margin:0 6px;
+    opacity:1;
+}
+
+/* Arrows */
+/* =========================
+   Forge Slider Arrow Design
+========================= */
+
+.forge-new-slider .carousel-control-prev,
+.forge-new-slider .carousel-control-next{
+    width:auto;
+    opacity:1;
+    z-index:10;
+}
+
+/* Left Arrow Position */
+.forge-new-slider .carousel-control-prev{
+    left:40px;
+}
+
+/* Right Arrow Position */
+.forge-new-slider .carousel-control-next{
+    right:40px;
+}
+
+/* Circle Design */
+.forge-new-slider .carousel-control-prev-icon,
+.forge-new-slider .carousel-control-next-icon{
+
+    width:60px;
+    height:60px;
+
+    border:2px solid #ffffff;
+    border-radius:50%;
+
+    background-image:none;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    position:relative;
+
+    transition:all 0.3s ease;
+}
+
+/* Left Arrow */
+.forge-new-slider .carousel-control-prev-icon:before{
+    content:"←";
+    color:#ffffff;
+    font-size:22px;
+    font-weight:300;
+}
+
+/* Right Arrow */
+.forge-new-slider .carousel-control-next-icon:before{
+    content:"→";
+    color:#ffffff;
+    font-size:22px;
+    font-weight:300;
+}
+
+/* Hover */
+.forge-new-slider .carousel-control-prev:hover .carousel-control-prev-icon,
+.forge-new-slider .carousel-control-next:hover .carousel-control-next-icon{
+    background:#ffffff;
+}
+
+.forge-new-slider .carousel-control-prev:hover .carousel-control-prev-icon:before,
+.forge-new-slider .carousel-control-next:hover .carousel-control-next-icon:before{
+    color:#111111;
+}
+
+
+/* Responsive */
+
+@media(max-width:991px){
+
+    .forge-slider-content h2{
+        font-size:48px;
+        padding:0 55px;
+    }
+
+    .forge-slider-content h2:before,
+    .forge-slider-content h2:after{
+        height:34px;
+    } .forge-slider-content h2{
+        font-size:50px;
+    }
+
+    .forge-slider-content h3{
+        font-size:18px;
+    }
+
+}
+
+@media(max-width:767px){
+
+    .forge-new-slider .carousel-item,
+    .forge-slider-content{
+        /* height:80vh; */
+        min-height:550px;
+    }
+
+   .forge-slider-content{
+        padding:0 15px;
+    }
+
+    .forge-slider-content h3{
+        font-size:12px;
+        letter-spacing:2px;
+    }
+
+    .forge-slider-content h2{
+        font-size:32px;
+        padding:0 35px;
+        margin-bottom:30px;
+    }
+
+    .forge-slider-content h2:before,
+    .forge-slider-content h2:after{
+        width:4px;
+        height:24px;
+    }
+
+    .forge-btn{
+        padding:14px 28px;
+        font-size:13px;
+    }
+
+
+      .forge-new-slider .carousel-control-prev{
+        left:15px;
+    }
+
+    .forge-new-slider .carousel-control-next{
+        right:15px;
+    }
+
+    .forge-new-slider .carousel-control-prev-icon,
+    .forge-new-slider .carousel-control-next-icon{
+        width:35px;
+        height:35px;
+    }
+
+    .forge-new-slider .carousel-control-prev-icon:before,
+    .forge-new-slider .carousel-control-next-icon:before{
+        font-size:24px;
+    }
+
 }
 

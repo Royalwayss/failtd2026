@@ -498,7 +498,12 @@ function get_state_city(action){
 
 
 </script>
-
+<script>
+$('#forgeSlider').carousel({
+    interval: 4000,
+    pause: false
+});
+</script>
 
 </body>
 
