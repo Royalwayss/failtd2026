@@ -5128,7 +5128,11 @@ padding-top: 80px;
 }
 
 @media only screen and (max-width:767px) {
-
+.mach-sec-one{
+    background-color: #f5f5f5;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
     .forge-new-blogs-detail-banner{
  
     background-image: url('../images/new-blogs/blog-inner-main-mobile.jpg');
@@ -5449,11 +5453,172 @@ padding-top: 80px;
 .forge-new-slider .carousel-control-next:hover .carousel-control-next-icon:before{
     color:#111111;
 }
+/* =========================
+   Banner Responsive Images
+========================= */
 
+.forge-slide-bg{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+.forge-slide-bg img,
+.forge-slide-bg video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* Desktop Banner */
+.forge-desktop-banner{
+    display:block;
+}
+
+/* Mobile Banner */
+.forge-mobile-banner{
+    display:none;
+}
 
 /* Responsive */
+@media all and (min-width:1200px ) and (max-width:1800px){
+    .forge-new-slider .carousel-item {
+    /* height: 100vh; */
+    height: 500px;
+    position: relative;
+}
+  .forge-slide-bg img {
+     
+    object-fit: cover;
+}
+.forge-slide-bg video{
+    object-fit: cover;
+}
+ .forge-slider-content h2{
+        font-size:32px;
+        padding:0 30px;
+        line-height:1.3;
+    }
+
+    .forge-slider-content h2:before,
+    .forge-slider-content h2:after{
+        height:28px;
+        width:4px;
+    }
+
+    .forge-slider-content h3{
+        font-size:14px;
+        letter-spacing:2px;
+    }
+
+    .forge-btn{
+        padding:14px 28px;
+        font-size:13px;
+    }
+    /* .forge-slider-content {
+        height: 100%;
+        padding: 0 15px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 4rem;
+    } */
+}
+
+@media all and (min-width:992px ) and (max-width:1199px){
+    .forge-new-slider .carousel-item {
+    /* height: 100vh; */
+    height: 400px;
+    position: relative;
+}
+  .forge-slide-bg img {
+     
+    object-fit: contain;
+}
+.forge-slide-bg video{
+    object-fit: cover;
+}
+ .forge-slider-content h2{
+        font-size:32px;
+        padding:0 30px;
+        line-height:1.3;
+    }
+
+    .forge-slider-content h2:before,
+    .forge-slider-content h2:after{
+        height:28px;
+        width:4px;
+    }
+
+    .forge-slider-content h3{
+        font-size:14px;
+        letter-spacing:2px;
+    }
+
+    .forge-btn{
+        padding:14px 28px;
+        font-size:13px;
+    }
+    .forge-slider-content {
+        height: 100%;
+        padding: 0 15px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: rem;
+    }
+}
 
 @media(max-width:991px){
+     .forge-new-slider .carousel-item{
+        height: 285px;
+     }
+     .forge-slide-bg{
+        /* height: 230px; */
+     }
+     .forge-slide-bg img {
+     
+    object-fit: contain;
+}
+.forge-slide-bg video{
+    object-fit: cover;
+}
+    .forge-slider-content{
+        height:550px;
+        padding:0 15px;
+    }
+
+    .forge-slider-content h2{
+        font-size:32px;
+        padding:0 30px;
+        line-height:1.3;
+    }
+
+    .forge-slider-content h2:before,
+    .forge-slider-content h2:after{
+        height:28px;
+        width:4px;
+    }
+
+    .forge-slider-content h3{
+        font-size:12px;
+        letter-spacing:2px;
+    }
+
+    .forge-btn{
+        padding:14px 28px;
+        font-size:13px;
+    }
+
+    /* Hide arrows on mobile */
+    .forge-new-slider .carousel-control-prev,
+    .forge-new-slider .carousel-control-next{
+        display:none;
+    }
+
 
     .forge-slider-content h2{
         font-size:40px;
@@ -5470,15 +5635,48 @@ padding-top: 80px;
     .forge-slider-content h3{
         font-size:18px;
     }
+      .forge-slider-content{
+        padding:0 15px;
+    }
 
+    .forge-slider-content h3{
+        font-size:12px;
+        letter-spacing:2px;
+    }
+
+    .forge-slider-content h2{
+        font-size:22px;
+        padding:0 20px;
+        margin-bottom:30px;
+    }
+
+    .forge-slider-content h2:before,
+    .forge-slider-content h2:after{
+        width:4px;
+        height:24px;
+    }
+
+    .forge-btn{
+        padding:14px 28px;
+        font-size:13px;
+    }
+.forge-slider-content {
+        height: 100%;
+        padding: 0 15px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 3rem;
+    }
 }
 
 @media(max-width:767px){
 
+    
     .forge-new-slider .carousel-item,
     .forge-slider-content{
         /* height:80vh; */
-        height:450px;
+        /* height:490px; */
     }
 
    .forge-slider-content{
@@ -5526,6 +5724,49 @@ padding-top: 80px;
     .forge-new-slider .carousel-control-next-icon:before{
         font-size:24px;
     }
+     .forge-slide-bg img {
+     
+    object-fit: cover;
+}
+.forge-slide-bg video{
+    object-fit: cover;
+}
+.forge-slider-content {
+        height: 100%;
+        padding: 0 15px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 3rem;
+    }
+}
+@media (max-width:575px){
+     .forge-new-slider .carousel-item{
+        height: 500px;
+     }
+      .forge-desktop-banner{
+        display:none;
+    }
+
+    .forge-mobile-banner{
+        display:block;
+    }
+         .forge-slide-bg img {
+     
+    object-fit: cover;
+}
+.forge-slide-bg video{
+    object-fit: cover;
+}
+.forge-slider-content {
+        height: 100%;
+        padding: 0 15px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 8rem;
+    }
+
 
 }
 

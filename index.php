@@ -122,12 +122,13 @@
             <div class="carousel-item active">
 
                 <div class="forge-slide-bg">
-                    <img src="assets/images/slides/mach-auto.jpg" alt="">
+                    <img src="assets/images/slides/mach-auto.jpg" alt="" class="forge-desktop-banner">
+                    <img src="assets/images/slides/mach-auto-mobile.png" class="forge-mobile-banner" alt="">
                 </div>
 
-                <div class="forge-overlay"></div>
+                <!-- <div class="forge-overlay"></div> -->
 
-                <div class="container">
+                <div class="">
                     <div class="forge-slider-content text-center" style="opacity:0;">
 
                         <h3>High precision in part dimensions</h3>
@@ -143,7 +144,7 @@
 
             </div>
 
-            <!-- Slide 2 Video -->
+
             <div class="carousel-item">
 
                 <div class="forge-slide-bg">
@@ -152,9 +153,9 @@
                     </video>
                 </div>
 
-                <div class="forge-overlay"></div>
+                <!-- <div class="forge-overlay"></div> -->
 
-                <div class="container">
+                <div class="">
                     <div class="forge-slider-content text-center">
 
                         <h3>Where Innovation Meets Strength</h3>
@@ -170,16 +171,17 @@
 
             </div>
 
-            <!-- Slide 3 -->
+
             <div class="carousel-item">
 
                 <div class="forge-slide-bg">
-                    <img src="assets/images/slides/slide-v1-2.1.jpg" alt="">
+                    <img src="assets/images/slides/slide-v1-2.1.jpg" alt="" class="forge-desktop-banner">
+                    <img src="assets/images/slides/slide-v1-2.1-mobile.png" class="forge-mobile-banner" alt="">
                 </div>
 
-                <div class="forge-overlay"></div>
+                <!-- <div class="forge-overlay"></div> -->
 
-                <div class="container">
+                <div class="">
                     <div class="forge-slider-content text-center">
 
                         <h3>High precision in part dimensions</h3>
@@ -195,14 +197,15 @@
 
             </div>
 
-            <!-- Slide 4 -->
-            <div class="carousel-item">
+
+            <div class="carousel-item ">
 
                 <div class="forge-slide-bg">
-                    <img src="assets/images/slides/slide-v1-3.jpg" alt="">
+                    <img src="assets/images/slides/slide-v1-3.jpg" alt="" class="forge-desktop-banner">
+                    <img src="assets/images/slides/slide-v1-3-mobile.png" class="forge-mobile-banner" alt="">
                 </div>
 
-                <div class="forge-overlay"></div>
+                <!-- <div class="forge-overlay"></div> -->
 
                 <div class="container">
                     <div class="forge-slider-content text-center">
@@ -259,7 +262,7 @@
                     </div>
                     <div class="inner-content">
                         <div class="text">
-                            <p>Formerly known as 
+                            <p>Formerly known as
                                 International our small unit has developed into well-equipped and
                                 professionally managed company. Today we are reputed manufacturer for customized
                                 closed die Hot Forging in Carbon and Alloy Steel ranging from 1kg to 20 kg...
@@ -281,12 +284,14 @@
                     <ul>
                         <li>
                             <div class="image_box left">
-                                <img src="assets/images/about/about-style4_image-1.jpg" alt="Best Forging Company in India" title="Best Forging Company in India">
+                                <img src="assets/images/about/about-style4_image-1.jpg"
+                                    alt="Best Forging Company in India" title="Best Forging Company in India">
                             </div>
                         </li>
                         <li>
                             <div class="image_box right">
-                                <img src="assets/images/about/about-style4_image-2.1.jpg" alt="Top Automotive Industry in India" title="Top Automotive Industry in India">
+                                <img src="assets/images/about/about-style4_image-2.1.jpg"
+                                    alt="Top Automotive Industry in India" title="Top Automotive Industry in India">
                             </div>
                         </li>
                     </ul>
@@ -311,27 +316,32 @@
         <div class="row">
             <div class="col-6 col-sm-4 col-md-4 col-lg-2 m-auto pb-4">
                 <div class="certi-border">
-                    <a href="quality-policy.php#certi-id"><img src="assets/images/resources/1-logo.jpg" alt="img" title="img"></a>
+                    <a href="quality-policy.php#certi-id"><img src="assets/images/resources/1-logo.jpg" alt="img"
+                            title="img"></a>
                 </div>
             </div>
             <div class="col-6 col-sm-4 col-md-4 col-lg-2 m-auto pb-4">
                 <div class=" certi-border">
-                    <a href="quality-policy.php#certi-id"><img src="assets/images/resources/2-logo.jpg" alt="img" title="img"></a>
+                    <a href="quality-policy.php#certi-id"><img src="assets/images/resources/2-logo.jpg" alt="img"
+                            title="img"></a>
                 </div>
             </div>
             <div class="col-6 col-sm-4 col-md-4 col-lg-2 m-auto pb-4">
                 <div class=" certi-border">
-                    <a href="quality-policy.php#certi-id"><img src="assets/images/resources/3-logo.jpg" alt="img" title="img"></a>
+                    <a href="quality-policy.php#certi-id"><img src="assets/images/resources/3-logo.jpg" alt="img"
+                            title="img"></a>
                 </div>
             </div>
             <div class="col-6 col-sm-4 col-md-4 col-lg-2 m-auto pb-4">
                 <div class=" certi-border">
-                    <a href="quality-policy.php#certi-id"><img src="assets/images/resources/4-logo.jpg" alt="img" title="img"></a>
+                    <a href="quality-policy.php#certi-id"><img src="assets/images/resources/4-logo.jpg" alt="img"
+                            title="img"></a>
                 </div>
             </div>
             <div class="col-6 col-sm-4 col-md-4 col-lg-2 m-auto pb-4">
                 <div class=" certi-border">
-                    <a href="quality-policy.php#certi-id"><img src="assets/images/resources/5-logo.jpg" alt="img" title="img"></a>
+                    <a href="quality-policy.php#certi-id"><img src="assets/images/resources/5-logo.jpg" alt="img"
+                            title="img"></a>
                 </div>
             </div>
         </div>
@@ -368,7 +378,7 @@
                         <li data-filter=".chain"><span class="filter-text">Chain Links</span></li>
                         <li data-filter=".wheel"><span class="filter-text">5th Wheel Assembly</span></li>
                         <li data-filter=".tie"><span class="filter-text">Tie Rods</span></li>
-                         <li data-filter=".oil"><span class="filter-text">Oil & Gas</span></li>
+                        <li data-filter=".oil"><span class="filter-text">Oil & Gas</span></li>
                     </ul>
                 </div>
             </div>

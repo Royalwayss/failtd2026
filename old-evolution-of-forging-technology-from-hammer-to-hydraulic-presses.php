@@ -19,7 +19,7 @@
     <div class="new-blogs-width">
         <div class="row">
             <div class="col-12 col-lg-9 ">
-                <!-- <img src="assets/images/new-blogs/what-is-forging-process.jpg"> -->
+                <img src="assets/images/new-blogs/evolition-blog-inner.jpg">
                 <div class="blog-body mt-5" data-aos="fade-in">
                     <p>Long before factories, before engines and automation, forging was already shaping civilisation.
                         What started as a manual craft has evolved into one of the most critical manufacturing processes
