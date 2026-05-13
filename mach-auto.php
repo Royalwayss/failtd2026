@@ -16,10 +16,10 @@
     </div>
 </section>
 <!--End breadcrumb area-->
-<section class="about-style1-area about-page1 mach-sec-one">
+<section class=" mach-sec-one">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-12 m-auto text-center pb-5 pt-5">
+            <div class="col-12 col-lg-12 m-auto text-center">
                 <div class="sec-title pb-3">
                     <!-- <div class="sub-title">
                             <span class="border-box"></span>
@@ -286,7 +286,7 @@
 <section class=" mach-sec-one">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-12 m-auto text-center pb-5 pt-5">
+            <div class="col-12 col-lg-12 m-auto text-center">
                 <div class="sec-title pb-3">
                     <!-- <div class="sub-title">
                             <span class="border-box"></span>

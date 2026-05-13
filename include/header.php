@@ -389,7 +389,7 @@
       <link rel="stylesheet" href="assets/css/color.css">
       <link href="assets/css/color/theme-color.css" id="jssDefault" rel="stylesheet">
       <link rel="stylesheet" href="assets/css/rtl.css">
-      <link rel="stylesheet" href="assets/css/style.css?v=2.2">
+      <link rel="stylesheet" href="assets/css/style.css?v=2.3">
       <link rel="stylesheet" href="assets/css/responsive.css">
       <!-- Favicon -->
       <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon/favicon-40x40.png"/>
