@@ -58,16 +58,38 @@
                             <td>Form 3CB-3CD_Filed Form (A.Y.2022-23)</td>
                             <td><a href="assets/images/taxAudit/fy22-23.pdf" target="_blank"><i class="fa fa-file" aria-hidden="true"></i></a></td>
                         </tr> -->
-                        <tr>
+                         <tr>
                             <td class="text-center">1</td>
+                            <td>Consolidated Results Sep 2025 </td>
+                            <td><a href="assets/images/new-pdf/consolidated30.09.2025.pdf" target="_blank"><i class="fa fa-file" aria-hidden="true"></i></a></td>
+                        </tr>
+                         <tr>
+                            <td class="text-center">2</td>
+                            <td>Standalone Results Sep 2025 </td>
+                            <td><a href="assets/images/new-pdf/standalone30.09.2025.pdf" target="_blank"><i class="fa fa-file" aria-hidden="true"></i></a></td>
+                        </tr>
+
+                         <tr>
+                            <td class="text-center">3</td>
+                            <td>Consolidated Results March 2026</td>
+                            <td><a href="assets/images/new-pdf/consolidated31.03.2026.pdf" target="_blank"><i class="fa fa-file" aria-hidden="true"></i></a></td>
+                        </tr>
+                         <tr>
+                            <td class="text-center">4</td>
+                            <td>Standalone Results March 2026</td>
+                            <td><a href="assets/images/new-pdf/standalone31.03.2026.pdf" target="_blank"><i class="fa fa-file" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">5</td>
                             <td>2023-24</td>
                             <td><a href="assets/images/taxAudit/fy-23-24.pdf" target="_blank"><i class="fa fa-file" aria-hidden="true"></i></a></td>
                         </tr>
                         <tr>
-                            <td class="text-center">2</td>
+                            <td class="text-center">6</td>
                             <td>2024-25</td>
                             <td><a href="assets/images/taxAudit/fy-24-25.pdf" target="_blank"><i class="fa fa-file" aria-hidden="true"></i></a></td>
                         </tr>
+                      
                         <!-- <tr>
                             <td class="text-center">6</td>
                             <td>Form 3CB-3CD_Filed Form (A.Y.2023-24)</td>

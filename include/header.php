@@ -725,7 +725,7 @@
                                              <li><a href="">Annual Returns</a></li>
                                              <li><a href="">Investors Presentation</a>
                                              </li>
-                                             <li><a href="">Group Company</a></li>
+                                             <li><a href="group-company.php">Group Company</a></li>
                                           </ul>
                                        </li>
                                        <li><a href="javascript:;">Shareholding Pattern</a>
