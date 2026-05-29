@@ -59,7 +59,7 @@
 	                    </tr>
 	                    <tr>
 	                        <td>5</td>
-	                        <td>Bhupinder Preet Kaur</td>
+	                        <td>Parabhjot Kaur</td>
 	                        <td>Independent Director</td>
 	                        <td>09074080</td>
 	                    </tr>
@@ -109,7 +109,7 @@
                         </tr>
                         <tr>
                             <td>5</td>
-                            <td>Bhupinder Preet Kaur</td>
+                            <td>Parabhjot Kaur</td>
                             <td>Member</td>
                             <td>Independent Director</td>
                         </tr>
@@ -185,7 +185,7 @@
                         </tr>
                         <tr>
                             <td>3</td>
-                            <td>Bhupinder Preet Kaur</td>
+                            <td>Parabhjot Kaur</td>
                             <td>Chairman</td>
                             <td>Independent Director</td>
                         </tr>
