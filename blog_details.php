@@ -3,7 +3,7 @@ require_once('admin/include/config.php');
 
 $sql = "SELECT *  FROM blogs where status = '1' and blog_url='".@$_REQUEST['slug'].".php'"; 
 $result =mysqli_query($conn, $sql);
-$row = mysqli_fetch_assoc($result); 
+$row = mysqli_fetch_assoc($result);  
 if(empty($row)){ 
 	http_response_code(404);
 	include '404.php';
@@ -48,7 +48,7 @@ include('include/header.php');
     </div>
   </div>
 </section>
-<!--<section class="about-style1-area about-page1">
+<section class="about-style1-area about-page1">
     <div class="container">
         <div class="row">
                 <div class="about-style1-content-box about-page1_content_box text-right-rtl">
@@ -59,8 +59,9 @@ include('include/header.php');
 				</div>
             </div>
     </div>
-</section> -->
+</section> 
 <?php echo $blog['blog_content']; ?>
+<?php //include('blog_content.php'); ?>
 
 <?php include('include/footer.php'); ?>
 
