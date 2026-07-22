@@ -159,7 +159,7 @@
     }
 
     .landing-new-forge-ticks li::before {
-        content: "b";
+        content: "✓";
         position: absolute;
         left: 0;
         top: 0;
@@ -1153,7 +1153,7 @@
                             <p>Forged tractor components built for high load, long field life and OEM fitment.</p>
                             <!-- <a href="#landing-new-forge-enquiry" class="landing-new-forge-cat-link">Enquire Now</a> -->
                              <a href="#" class="landing-new-forge-cat-link"
-                                onclick="window.open('tractor-parts.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
+                                onclick="window.open('tractor-parts-new.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
                                 Enquire Now
                             </a>
                         </div>
@@ -2071,12 +2071,8 @@
     <!-- thm custom script -->
     <script src="assets/js/custom.js"></script>
 
-    <script>
-    /* b b  Dynamic category content b b 
-   Use one landing page for all 8 ad groups.
-   Final URL per ad group:  landing-page.html?cat=tractor-parts
-   Valid cat values: auto-parts, tractor-parts, railway-parts, hydraulic-parts,
-   agriculture-parts, striking-tools, chain-links, tie-rods            */
+    <!-- <script>
+   
     (function() {
         var CATS = {
             "auto-parts": {
@@ -2210,7 +2206,7 @@
             });
         });
     })();
-    </script>
+    </script> -->
 
 </body>
 
