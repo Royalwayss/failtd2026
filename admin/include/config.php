@@ -1,11 +1,11 @@
 <?php 
-// @session_start();
-// date_default_timezone_set("Asia/Calcutta");
-// require_once('db_config.php');
-// $conn = new mysqli($_host, $_username, $_password,$_database);
-// if ($conn->connect_error) {
-//   die("Connection failed: " . $conn->connect_error);
-// }	
+@session_start();
+date_default_timezone_set("Asia/Calcutta");
+require_once('db_config.php');
+$conn = new mysqli($_host, $_username, $_password,$_database);
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}	
 
 define('BASEURL',$base_url);  
 define('LOGO',$base_url.'assets/images/resources/logo-1.png');  
