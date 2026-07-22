@@ -41,134 +41,480 @@
         <script src="assets/js/html5shiv.js"></script>
     <![endif]-->
     <style>
-        .landingpage-about .icon {
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            top: 70px;
-            left: -70px;
-            width: 140px;
-            height: 115px;
-            z-index: 1;
-            overflow: hidden;
+    .header-top-style4_left::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -1000000px;
+        bottom: 0;
+        right: -50px;
+        background: unset !important;
+        z-index: -1;
+    }
+
+    .header-contact-info3 ul li {
+        font-size: 15px;
+    }
+
+    .header-social-link-1 .social-link ul li a {
+        position: relative;
+        display: block;
+        height: 30px;
+        width: 30px;
+        background: #fbfbfd;
+        border-radius: 50%;
+        color: #222222;
+        font-size: 14px;
+        line-height: 30px;
+        text-align: center;
+        transition: all 200ms linear;
+        transition-delay: 0.1s;
+        z-index: 1;
+    }
+
+    .header-top-style4_left {
+        position: relative;
+        display: block;
+        padding: 10px 0;
+        z-index: 1;
+    }
+
+    .header-top-style4 {
+        background-color: #000;
+    }
+
+    /* new css banner start */
+    /* b b  Hero b b  */
+    .landing-new-forge-hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: #fff;
+        position: relative;
+        overflow: hidden;
+        padding-top: 64px;
+        padding-bottom: 72px;
+    }
+
+    .landing-new-forge-hero::after {
+        content: "";
+        position: absolute;
+        right: -120px;
+        top: -80px;
+        width: 520px;
+        height: 520px;
+        background: radial-gradient(circle, rgba(232, 132, 44, .15), rgba(183, 34, 42, .05) 55%, transparent 70%);
+        pointer-events: none;
+    }
+
+    .landing-new-forge-hero .landing-new-forge-hero-content {
+        position: relative;
+        z-index: 1;
+    }
+
+    .landing-new-forge-eyebrow {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: .14em;
+        text-transform: uppercase;
+        color: #E8842C;
+        border: 1px solid rgba(232, 132, 44, .45);
+        padding: 5px 12px;
+        border-radius: 3px;
+        margin-bottom: 20px;
+    }
+
+    .landing-new-forge-hero h1 {
+        font-size: clamp(32px, 4.4vw, 52px);
+        font-weight: 800;
+        margin-bottom: 18px;
+        color: #fff !important;
+    }
+
+    .landing-new-forge-hero h1 em {
+        font-style: normal;
+        color: #E8842C;
+    }
+
+    .landing-new-forge-lead {
+        font-size: 18px;
+        color: #c8cdd4;
+        margin-bottom: 26px;
+    }
+
+    .landing-new-forge-ticks {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .landing-new-forge-ticks li {
+        padding-left: 30px;
+        position: relative;
+        color: #e6e9ec;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .landing-new-forge-ticks li::before {
+        content: "b";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        background: #ec7f47;
+        color: #fff;
+        border-radius: 3px;
+        display: grid;
+        place-items: center;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .landing-new-forge-cert-strip {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .landing-new-forge-cert-strip span {
+        font-size: 12px;
+        font-weight: 600;
+        color: #fff;
+        background: rgba(255, 255, 255, .08);
+        border: 1px solid rgba(255, 255, 255, .18);
+        padding: 6px 12px;
+        border-radius: 3px;
+        letter-spacing: .04em;
+    }
+
+    /* b b  Form card b b  */
+    .landing-new-forge-form-card {
+        background: #FFFFFF;
+        color: #181B20;
+        border-radius: 8px;
+        padding: 30px 28px;
+        box-shadow: 0 18px 50px rgba(0, 0, 0, .35);
+    }
+
+    .landing-new-forge-form-card h2 {
+        font-size: 22px;
+        font-weight: 800;
+        margin-bottom: 4px;
+    }
+
+    .landing-new-forge-form-card .landing-new-forge-sub {
+        font-size: 14px;
+        color: #6E7681;
+        margin-bottom: 20px
+    }
+
+    .landing-new-forge-form-card label {
+        display: block;
+        font-size: 13px;
+        font-weight: 600;
+        margin: 14px 0 5px
+    }
+
+    .landing-new-forge-form-card input,
+    .landing-new-forge-form-card select,
+    .landing-new-forge-form-card textarea {
+        width: 100%;
+        padding: 11px 12px;
+        border: 1px solid #E2E0DB;
+        border-radius: 4px;
+        font: inherit;
+        font-size: 15px;
+        background: #fbfaf8
+    }
+
+    .landing-new-forge-form-card input:focus,
+    .landing-new-forge-form-card select:focus,
+    .landing-new-forge-form-card textarea:focus {
+        outline: 2px solid #ec7f47;
+        border-color: #ec7f47
+    }
+
+    .landing-new-forge-form-card .landing-new-forge-btn {
+        width: 100%;
+        margin-top: 20px;
+        padding: 15px
+    }
+
+    .landing-new-forge-form-card .landing-new-forge-privacy {
+        font-size: 12px;
+        color: #6E7681;
+        margin-top: 12px;
+        text-align: center
+    }
+
+    .landing-new-forge-form-card .landing-new-forge-resp {
+        text-align: center;
+        font-size: 13px;
+        font-weight: 600;
+        color: #ec7f47;
+        margin-top: 10px
+    }
+
+    .landing-new-forge-btn {
+        display: inline-block;
+        background: #ec7f47;
+        color: #fff;
+        font-family: 'Archivo';
+        font-weight: 700;
+        font-size: 15px;
+        letter-spacing: .02em;
+        padding: 13px 26px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: background .2s
+    }
+
+    .landing-new-forge-btn:hover {
+        background: #8E161D
+    }
+
+    /* b b  Sections b b  */
+    .landing-new-forge-pad {
+        padding: 72px 0;
+        background-color: #f5f5f5;
+    }
+
+    .landing-new-forge-sec-head {
+        max-width: 640px;
+        margin: 0 auto 44px;
+        text-align: center
+    }
+
+    .landing-new-forge-sec-head h2 {
+        font-size: clamp(26px, 3.2vw, 38px);
+        font-weight: 800;
+        margin-bottom: 12px
+    }
+
+    .landing-new-forge-sec-head p {
+        color: #6E7681
+    }
+
+    .landing-new-forge-rule {
+        width: 56px;
+        height: 4px;
+        background: #ec7f47;
+        margin: 0 auto 18px
+    }
+
+    /* Category grid */
+    .landing-new-forge-cat {
+        background: #FFFFFF;
+        border: 1px solid #E2E0DB;
+        border-radius: 6px;
+        padding: 24px 20px;
+        position: relative;
+        transition: transform .2s, box-shadow .2s;
+        cursor: pointer;
+        margin-bottom: 18px;
+        text-align: center;
+    }
+
+    .landing-new-forge-cat:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 28px rgba(24, 27, 32, .12)
+    }
+
+    .landing-new-forge-cat::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: linear-gradient(180deg, #E8842C, #ec7f47);
+        border-radius: 6px 0 0 6px
+    }
+
+    .landing-new-forge-cat h3 {
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 8px
+    }
+
+    .landing-new-forge-cat p {
+        font-size: 15px;
+        color: #6E7681
+    }
+
+    .landing-new-forge-cat a {
+        display: inline-block;
+        margin-top: 12px;
+        font-size: 13px;
+        font-weight: 700;
+        color: #ec7f47;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: .05em
+    }
+
+    /*  new css banner end  */
+    .landingpage-about .icon {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 70px;
+        left: -70px;
+        width: 140px;
+        height: 115px;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    .landingpage-about .icon span::before {
+        position: relative;
+        left: 15px;
+        color: #fff;
+        font-size: 100px !important;
+        line-height: 100px !important;
+    }
+
+    .single-service-style3 .text-holder {
+        position: relative;
+        display: block;
+        background: #ffffff;
+        padding: 20px 1px 20px;
+    }
+
+    .landing-page-margin {
+        margin: 10px auto;
+        padding: 0px !important;
+    }
+
+    .video-gallery_box_2 .inner {
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        width: 140px;
+        height: 140px;
+        overflow: hidden;
+        padding: 30px 0;
+        z-index: 2;
+    }
+
+    .video-gallery_box_2 .inner::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0px;
+        bottom: 0;
+        right: 0px;
+        background: #ec7d1b !important;
+        z-index: -1;
+        -moz-transform: unset !important;
+        -webkit-transform: unset !important;
+        -o-transform: unset !important;
+        -ms-transform: unset !important;
+        transform: unset !important;
+        border-radius: 50%;
+    }
+
+    .video-gallery_box_2 .inner h3 {
+        color: #222222;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin: 7px 0 0;
+    }
+
+    .sec-title.style3 .sub-title h5 {
+        color: #ec7d1b !important;
+    }
+
+    .counter-img img {
+        width: 80px;
+    }
+
+    .mission-vision-content-box ul li .icon span::before {
+        color: #ec7d1b;
+        font-size: 100px;
+        line-height: 0;
+    }
+
+    .mission-vision-content-box h2 {
+        color: #ec7d1b;
+        font-size: 40px;
+        line-height: 1.2em;
+        font-weight: 500;
+    }
+
+    .fact-counter-style2-area {
+        background-color: #f5f5f5;
+    }
+
+
+    @media(prefers-reduced-motion:reduce) {
+        * {
+            transition: none !important;
+            animation: none !important
         }
 
-        .landingpage-about .icon span::before {
-            position: relative;
-            left: 15px;
-            color: #fff;
-            font-size: 100px !important;
-            line-height: 100px !important;
+        html {
+            scroll-behavior: auto
+        }
+    }
+
+    @media(max-width:768px) {
+        .landing-new-forge-hero {
+            padding-top: 40px;
+            padding-bottom: 40px
         }
 
-        .single-service-style3 .text-holder {
-            position: relative;
-            display: block;
-            background: #ffffff;
-            padding: 20px 1px 20px;
+        .landing-new-forge-form-card {
+            margin-top: 30px
         }
-
-        .landing-page-margin {
-            margin: 10px auto;
-            padding: 0px !important;
-        }
-.video-gallery_box_2 .inner {
-    position: absolute;
-    bottom: 0px;
-    right: 0;
-    width: 140px;
-    height: 140px;
-    overflow: hidden;
-    padding: 30px 0;
-    z-index: 2;
-}
-      .video-gallery_box_2 .inner::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0px;
-    bottom: 0;
-    right: 0px;
-    background: #ec7d1b !important;
-    z-index: -1;
-    -moz-transform: unset !important;
-    -webkit-transform: unset !important;
-    -o-transform: unset !important;
-    -ms-transform: unset !important;
-    transform: unset !important;
-    border-radius:50%;
-}
-
-        .video-gallery_box_2 .inner h3 {
-            color: #222222;
-            font-size: 12px;
-            line-height: 20px;
-            font-weight: 600;
-            text-transform: capitalize;
-            margin: 7px 0 0;
-        }
-        .sec-title.style3 .sub-title h5 {
-    color: #ec7d1b !important;
-}
-        .counter-img img {
-            width: 80px;
-        }
-        /* .counter-img h2{
-            color: #ec7d1b;
-        }
-        .counter-img h5{
-            color: #ec7d1b;
-        } */
-            .mission-vision-content-box ul li .icon span::before {
-    color: #ec7d1b;
-    font-size: 100px;
-    line-height: 0;
-}
-
-.mission-vision-content-box h2 {
-    color: #ec7d1b;
-    font-size: 40px;
-    line-height: 1.2em;
-    font-weight: 500;
-}
+    }
     </style>
 </head>
 
 <body>
     <div class="boxed_wrapper ltr">
         <header class="main-header header-style-four">
-            <!--     <div class="header-top-style4">
-            <div class="container-fluid">
-                <div class="outer-box clearfix">
-            
-                    <div class="header-top-style4_left pull-left">
-                        <div class="header-contact-info3">
-                            <ul>
-                                <li><span class="flaticon-incoming-call"></span><a href="tel:123456789">+1 (934) 256
-                                        7850</a></li>
-                                <li><span class="flaticon-envelope-1"></span><a
-                                        href="mailto:logistic@email.com">info@example.com</a></li>
-                            </ul>
-                        </div>
-                    </div>
-            
-                    <div class="header-top-style4_right pull-right">
-                        <div class="header-social-link-1 header-social-link-4">
-                            <div class="social-link">
-                                <ul class="clearfix">
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+            <div class="header-top-style4">
+                <div class="container-fluid">
+                    <div class="outer-box clearfix">
+
+                        <div class="header-top-style4_left pull-left">
+                            <div class="header-contact-info3">
+                                <ul>
+                                    <li><span class="flaticon-incoming-call"></span><a href="tel:+91 8999999195">+91
+                                            89999-99195</a></li>
+                                    <li><span class="flaticon-envelope-1"></span><a
+                                            href="mailto:siddharthmittal@faipl.com">siddharthmittal@faipl.com</a></li>
                                 </ul>
                             </div>
                         </div>
+
+                        <div class="header-top-style4_right pull-right">
+                            <div class="header-social-link-1 header-social-link-4">
+                                <div class="social-link">
+                                    <ul class="clearfix">
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-            
                 </div>
             </div>
-            </div> -->
             <!--End Header Top-->
             <!--Start Header-->
             <div class="header-style4">
@@ -489,13 +835,108 @@
             </div>
             <!-- End Mobile Menu -->
         </header>
+        <!-- Hero + Form -->
+        <section class="landing-new-forge-hero" id="landing-new-forge-hero-section">
+            <div class="container-fluid">
+                <div class="row align-items-center px-5">
+                    <!-- Left Content -->
+                    <div class="col-lg-6 landing-new-forge-hero-content">
+                        <span class="landing-new-forge-eyebrow" id="landing-new-forge-dyn-eyebrow">Forged Components
+                            Manufacturer B7 India</span>
+                        <h1 id="landing-new-forge-dyn-h1">Precision <em>Hot Forged Components</em> for Auto, Tractor,
+                            Railway &amp; Industry</h1>
+                        <p class="landing-new-forge-lead" id="landing-new-forge-dyn-lead">Customised closed-die hot
+                            forgings in carbon &amp; alloy steel, from 500&nbsp;g to 20&nbsp;kg b trusted by Tata
+                            Motors, Mahindra, Sonalika and OEMs across the globe.</p>
+                        <ul class="landing-new-forge-ticks">
+                            <li>4.5&nbsp;million+ parts manufactured every year</li>
+                            <li>130,500&nbsp;sq&nbsp;ft plant with in-house die design, forging &amp; CNC machining</li>
+                            <li>Single-source supplier to leading Indian &amp; global OEMs</li>
+                            <li>IATF 16949 automotive quality b PPAP &amp; full traceability supported</li>
+                        </ul>
+                        <div class="landing-new-forge-cert-strip">
+                            <span>ISO 9001</span><span>IATF 16949</span><span>ISO 14001</span><span>ISO
+                                45001</span><span>ZED GOLD</span>
+                        </div>
+                    </div>
 
-        <!-- Start Main Slider -->
-        <section id="banner" class="main-slider style3">
+                    <!-- Right Form -->
+                    <div class="col-lg-6">
+                        <div class="landing-new-forge-form-card" id="landing-new-forge-enquiry">
+                            <h2>Request a Quote</h2>
+                            <p class="landing-new-forge-sub">Share your drawing or requirement b our engineering team
+                                replies within 24 hours.</p>
+                            <form class="row" action="submit-enquiry.php" method="post">
+                                <input type="hidden" name="lead_source" value="google-ads">
+                                <input type="hidden" name="ad_category" id="landing-new-forge-f-adcat" value="">
+                                <div class="col-12 col-md-6">
+                                    <label for="landing-new-forge-f-name">Full name *</label>
+                                    <input id="landing-new-forge-f-name" name="name" type="text" required
+                                        autocomplete="name">
+
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="landing-new-forge-f-company">Company</label>
+                                    <input id="landing-new-forge-f-company" name="company" type="text"
+                                        autocomplete="organization">
+
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="landing-new-forge-f-phone">Phone / WhatsApp *</label>
+                                    <input id="landing-new-forge-f-phone" name="phone" type="tel" required
+                                        autocomplete="tel">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="landing-new-forge-f-email">Email *</label>
+                                    <input id="landing-new-forge-f-email" name="email" type="email" required
+                                        autocomplete="email">
+
+                                </div>
+                                <div class="col-12 col-md-12">
+                                    <label for="landing-new-forge-f-cat">Product category *</label>
+                                    <select id="landing-new-forge-f-cat" name="category" required>
+                                        <option value="">Select a category</option>
+                                        <option>Auto Parts</option>
+                                        <option>Tractor Parts</option>
+                                        <option>Railway Parts</option>
+                                        <option>Hydraulic Parts</option>
+                                        <option>Agriculture Parts</option>
+                                        <option>Striking Tools</option>
+                                        <option>Chain Links</option>
+                                        <option>Tie Rods</option>
+                                        <option>Custom Forging / Other</option>
+                                    </select>
+
+                                </div>
+                                <div class="col-12 col-md-12">
+                                    <label for="landing-new-forge-f-msg">Requirement (part, quantity, material)</label>
+                                    <textarea id="landing-new-forge-f-msg" name="message" rows="3"
+                                        placeholder="e.g. Ball stud, EN8, 5,000 pcs/month"></textarea>
+                                </div>
+
+
+
+
+
+
+
+
+                                <button class="landing-new-forge-btn" type="submit">Send Enquiry</button>
+                                <p class="landing-new-forge-resp">b1 Response within 24 working hours</p>
+                                <p class="landing-new-forge-privacy">Your details are kept confidential and used only to
+                                    respond to this enquiry.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="banner" class="main-slider style3">
             <div class="slider-box">
-                <!-- Banner Carousel -->
+           
                 <div class="banner-carousel owl-theme owl-carousel">
-                    <!-- Slide -->
+                 
                     <div class="slide">
                         <div class="image-layer" style="background-image:url(assets-landing/images/banner-1.jpg)"></div>
                         <div class="top_shadow"></div>
@@ -508,21 +949,19 @@
                                 <div class="big-title">
                                     <h2>Carbon & Alloy Steel Ranging</h2>
                                 </div>
-                                <!-- <h3>Industry with solutions for everyone beyond horizon</h3> -->
+                              
                                 <div class="btns-box">
                                     <div class="left">
                                         <a class="btn-one " href="about.php"><span class="txt text-white"><i
                                                     class="left flaticon-login"></i>Read More</span></a>
                                     </div>
-                                    <!-- <div class="right">
-                                <a class="btn-one" href="#"><span class="txt"><i class="left flaticon-login"></i>our services</span></a>
-                            </div> -->
+                                
                                 </div>
 
                             </div>
                         </div>
                     </div>
-                    <!-- Slide -->
+             
                     <div class="slide">
                         <div class="image-layer" style="background-image:url(assets-landing/images/banner-2.jpg)"></div>
                         <div class="top_shadow"></div>
@@ -535,121 +974,106 @@
                                 <div class="big-title">
                                     <h2>Shaping Futures, Delivering Quality</h2>
                                 </div>
-                                <!-- <h3>Industry with solutions for everyone beyond horizon</h3> -->
+                             
                                 <div class="btns-box">
                                     <div class="left">
                                         <a class="btn-one " href="about.php"><span class="txt text-white"><i
                                                     class="left flaticon-login"></i>Read More</span></a>
                                     </div>
-                                    <!-- <div class="right">
-                                <a class="btn-one" href="#"><span class="txt"><i class="left flaticon-login"></i>our services</span></a>
-                            </div> -->
+                                   
                                 </div>
 
                             </div>
                         </div>
                     </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- End Main Slider -->
-
-        <!--Start Features Style2 Area-->
-        <!-- <section class="features-style2-area">
-            <div class="container-fluid">
-                <div class="row">
-                   
-                    <div class="col-xl-4">
-                        <div class="single-features-style2">
-                            <div class="single-features-style2-bg"
-                                style="background-image: url(assets/images/resources/single-features-style2-bg-1.jpg);">
-                            </div>
-                            <div class="inner">
-                                <div class="top">
-                                    <div class="icon size1">
-                                        <span class="icon-icon-11 clr3"></span>
-                                    </div>
-                                    <div class="title">
-                                        <h3>Delivering Work Safely</h3>
-                                        <div class="border-box"></div>
-                                    </div>
-                                </div>
-                                <div class="text">
-                                    <p>Incididunt ut laboret dolore magna aliqua enim ipsum veniam trud exercitation
-                                        dolor ullamco laboris nisit aliquip ex comaody duis aute irure dolor in
-                                        reprehenderit.</p>
-                                </div>
-                                <div class="readmore-button">
-                                    <a class="btn-one" href="blog.html"><span class="txt">Read More</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-           
-
-
-                    <div class="col-xl-4">
-                        <div class="single-features-style2 active">
-                            <div class="single-features-style2-bg"
-                                style="background-image: url(assets/images/resources/single-features-style2-bg-1.jpg);">
-                            </div>
-                            <div class="inner">
-                                <div class="top">
-                                    <div class="icon size1">
-                                        <span class="icon-icon-9 clr3"></span>
-                                    </div>
-                                    <div class="title">
-                                        <h3>Recognized Contractors</h3>
-                                        <div class="border-box"></div>
-                                    </div>
-                                </div>
-                                <div class="text">
-                                    <p>Incididunt ut laboret dolore magna aliqua enim ipsum veniam trud exercitation
-                                        dolor ullamco laboris nisit aliquip ex comaody duis aute irure dolor in
-                                        reprehenderit.</p>
-                                </div>
-                                <div class="readmore-button">
-                                    <a class="btn-one" href="blog.html"><span class="txt">Read More</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-          
-                    <div class="col-xl-4">
-                        <div class="single-features-style2">
-                            <div class="single-features-style2-bg"
-                                style="background-image: url(assets/images/resources/single-features-style2-bg-1.jpg);">
-                            </div>
-                            <div class="inner">
-                                <div class="top">
-                                    <div class="icon">
-                                        <span class="icon-icon-7 clr3"></span>
-                                    </div>
-                                    <div class="title">
-                                        <h3>Constructing Investment</h3>
-                                        <div class="border-box"></div>
-                                    </div>
-                                </div>
-                                <div class="text">
-                                    <p>Incididunt ut laboret dolore magna aliqua enim ipsum veniam trud exercitation
-                                        dolor ullamco laboris nisit aliquip ex comaody duis aute irure dolor in
-                                        reprehenderit.</p>
-                                </div>
-                                <div class="readmore-button">
-                                    <a class="btn-one" href="blog.html"><span class="txt">Read More</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-   
 
                 </div>
             </div>
         </section> -->
-        <!--End Features Style2 Area-->
+        <!--Start Fact Counter Style2 Area-->
+        <section class="fact-counter-style2-area pb-5">
+            <div class="container-box">
+                <div class="sec-title style3 with_text text-center">
+                    <div class="sub-title">
+                        <span class="border-box"></span>
+                        <h5>Key Points</h5>
+                    </div>
+                    <h2>From Local Roots to Global Heights <br>
+                        Our Journey in Numbers</h2>
 
-        <!--Start About Style3 Area-->
+                </div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <ul class="fact-counter-style2_box">
+                            <!--Start Single Fact Counter Style2-->
+                            <li class="single-fact-counter-style2 wow fadeInUp counter-img" data-wow-delay="100ms"
+                                data-wow-duration="1500ms">
+                                <div class="top">
+                                    <div class="icon ">
+                                        <img src="assets-landing/images/calendar-1.png" alt="Factory Icon">
+                                    </div>
+                                    <div class="count-box">
+                                        <h2>
+                                            <span class="timer" data-from="1" data-to="24" data-speed="5000"
+                                                data-refresh-interval="50">24</span>
+                                            <span class="fa fa-plus plus_icon"></span>
+                                        </h2>
+                                        <h5>Years Experience</h5>
+                                    </div>
+                                </div>
+                                <div class="text-box">
+
+                                </div>
+                            </li>
+                            <!--End Single Fact Counter Style2-->
+                            <!--Start Single Fact Counter Style2-->
+                            <li class="single-fact-counter-style2 wow fadeInUp counter-img" data-wow-delay="100ms"
+                                data-wow-duration="1500ms">
+                                <div class="top">
+                                    <div class="icon">
+                                        <img src="assets-landing/images/trophy-1.png" alt="Factory Icon">
+                                    </div>
+                                    <div class="count-box">
+                                        <h2>
+                                            <span class="timer" data-from="1" data-to="5" data-speed="5000"
+                                                data-refresh-interval="50">5</span>
+                                            <span class="fa fa-plus plus_icon"></span>
+                                        </h2>
+                                        <h5>Awards</h5>
+                                    </div>
+                                </div>
+                                <div class="text-box">
+
+                                </div>
+                            </li>
+                            <!--End Single Fact Counter Style2-->
+                            <!--Start Single Fact Counter Style2-->
+                            <li class="single-fact-counter-style2 wow fadeInUp counter-img" data-wow-delay="100ms"
+                                data-wow-duration="1500ms">
+                                <div class="top">
+                                    <div class="icon ">
+                                        <img src="assets-landing/images/piston-1.png" alt="Factory Icon">
+                                    </div>
+                                    <div class="count-box">
+                                        <h2>
+                                            <span class="timer" data-from="1" data-to="100" data-speed="5000"
+                                                data-refresh-interval="50">100</span>
+                                            <span class="fa fa-plus plus_icon"></span>
+                                        </h2>
+                                        <h5>Products</h5>
+                                    </div>
+                                </div>
+                                <div class="text-box">
+
+                                </div>
+                            </li>
+                            <!--End Single Fact Counter Style2-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Fact Counter Style2 Area-->
         <section id="about" class="about-style3-area">
             <div class="container">
                 <div class="row">
@@ -697,50 +1121,154 @@
         </section>
         <!--End About Style3 Area-->
         <!-- End About Style4 Area-->
-        <section class="team-style3-area pt-0 ">
-            <div class="container">
-                <div class="sec-title style2 with_text text-center">
-                    <div class="sub-title">
-                        <span class="border-box"></span>
-                        <h5>
-                            Certification</h5>
-                    </div>
-                    <h2>Certified. Endorsed. Ready To Lead</h2>
 
+        <!-- Categories -->
+        <section class="landing-new-forge-pad" id="landing-new-forge-categories-section">
+            <div class="container-fluid">
+                <div class="landing-new-forge-sec-head">
+
+                    <h2>Forged Products We Manufacture</h2>
+                    <div class="landing-new-forge-rule"></div>
+                    <p>Closed-die hot forgings in carbon and alloy steel, fully machined and supplied to OEM
+                        specification.</p>
                 </div>
                 <div class="row">
-                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 m-auto pb-4">
-                        <div class="certi-border">
-                            <a href="quality-policy.php#certi-id"><img src="assets/images/resources/1-logo.jpg"></a>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="landing-new-forge-cat" data-category="auto-parts">
+                            <img src="assets-landing/images/p1.jpg" alt="Awesome Image">
+                            <h3>Auto Parts</h3>
+                            <p>Ball studs, gear blanks, stub axles, flange yokes and safety-critical components for 2W,
+                                3W &amp; 4W vehicles.</p>
+                            <!-- <a href="#landing-new-forge-enquiry" class="landing-new-forge-cat-link">Enquire Now</a> -->
+                            <a href="#" class="landing-new-forge-cat-link"
+                                onclick="window.open('auto-parts.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
+                                Enquire Now
+                            </a>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 m-auto pb-4">
-                        <div class=" certi-border">
-                            <a href="quality-policy.php#certi-id"><img src="assets/images/resources/2-logo.jpg"></a>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="landing-new-forge-cat" data-category="tractor-parts">
+                            <img src="assets-landing/images/p2.jpg" alt="Awesome Image">
+                            <h3>Tractor Parts</h3>
+                            <p>Forged tractor components built for high load, long field life and OEM fitment.</p>
+                            <!-- <a href="#landing-new-forge-enquiry" class="landing-new-forge-cat-link">Enquire Now</a> -->
+                             <a href="#" class="landing-new-forge-cat-link"
+                                onclick="window.open('tractor-parts.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
+                                Enquire Now
+                            </a>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 m-auto pb-4">
-                        <div class=" certi-border">
-                            <a href="quality-policy.php#certi-id"><img src="assets/images/resources/3-logo.jpg"></a>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="landing-new-forge-cat" data-category="striking-tools">
+                            <img src="assets-landing/images/p3.jpg" alt="Awesome Image">
+                            <h3>Striking Tools</h3>
+                            <p>Drop-forged hammers and striking tools with consistent hardness and finish.</p>
+                            <!-- <a href="#landing-new-forge-enquiry" class="landing-new-forge-cat-link">Enquire Now</a> -->
+                              <a href="#" class="landing-new-forge-cat-link"
+                                onclick="window.open('striking-tools.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
+                                Enquire Now
+                            </a>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 m-auto pb-4">
-                        <div class=" certi-border">
-                            <a href="quality-policy.php#certi-id"><img src="assets/images/resources/4-logo.jpg"></a>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="landing-new-forge-cat" data-category="hydraulic-parts">
+                            <img src="assets-landing/images/p4.jpg" alt="Awesome Image">
+                            <h3>Hydraulic Parts</h3>
+                            <p>Forged hydraulic components for steering, braking, suspension and power systems.</p>
+                            <!-- <a href="#landing-new-forge-enquiry" class="landing-new-forge-cat-link">Enquire Now</a> -->
+                             <a href="#" class="landing-new-forge-cat-link"
+                                onclick="window.open('hydraulic-parts.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
+                                Enquire Now
+                            </a>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 m-auto pb-4">
-                        <div class=" certi-border">
-                            <a href="quality-policy.php#certi-id"><img src="assets/images/resources/5-logo.jpg"></a>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="landing-new-forge-cat" data-category="agriculture-parts">
+                            <img src="assets-landing/images/p5.jpg" alt="Awesome Image">
+                            <h3>Agriculture Parts</h3>
+                            <p>Harvester fingers, combine parts and forged agri components that survive tough
+                                conditions.</p>
+                            <!-- <a href="#landing-new-forge-enquiry" class="landing-new-forge-cat-link">Enquire Now</a> -->
+                             <a href="#" class="landing-new-forge-cat-link"
+                                onclick="window.open('agriculture-parts.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
+                                Enquire Now
+                            </a>
                         </div>
                     </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="landing-new-forge-cat" data-category="railway-parts">
+                            <img src="assets-landing/images/p6.jpg" alt="Awesome Image">
+                            <h3>Railway Parts</h3>
+                            <p>Precision forged railway components meeting Indian and global reliability standards.</p>
+                            <!-- <a href="#landing-new-forge-enquiry" class="landing-new-forge-cat-link">Enquire Now</a> -->
+                             <a href="#" class="landing-new-forge-cat-link"
+                                onclick="window.open('railway-parts.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
+                                Enquire Now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="landing-new-forge-cat" data-category="chain-links">
+                            <img src="assets-landing/images/p7.jpg" alt="Awesome Image">
+                            <h3>Chain Links</h3>
+                            <p>Heavy-duty forged chain links manufactured to strict dimensional tolerance.</p>
+                            <!-- <a href="#landing-new-forge-enquiry" class="landing-new-forge-cat-link">Enquire Now</a> -->
+                             <a href="#" class="landing-new-forge-cat-link"
+                                onclick="window.open('chain-links.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
+                                Enquire Now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="landing-new-forge-cat" data-category="wheel-links">
+                            <img src="assets-landing/images/p8.jpg" alt="Awesome Image">
+                            <h3>5th Wheel Assembly</h3>
+                            <p>Heavy-duty forged chain links manufactured to strict dimensional tolerance.</p>
+                            <!-- <a href="#landing-new-forge-enquiry" class="landing-new-forge-cat-link">Enquire Now</a> -->
+                             <a href="#" class="landing-new-forge-cat-link"
+                                onclick="window.open('wheel-assembly.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
+                                Enquire Now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="landing-new-forge-cat" data-category="tie-rods">
+                            <img src="assets-landing/images/p9.jpg" alt="Awesome Image">
+                            <h3>Tie Rods &amp; Wheel Assembly</h3>
+                            <p>Forged tie rods and wheel assembly components for automotive and tractor applications.
+                            </p>
+                            <!-- <a href="#landing-new-forge-enquiry" class="landing-new-forge-cat-link">Enquire Now</a> -->
+                             <a href="#" class="landing-new-forge-cat-link"
+                                onclick="window.open('tie-rods.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
+                                Enquire Now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="landing-new-forge-cat" data-category="oil-links">
+                            <img src="assets-landing/images/p10.jpg" alt="Awesome Image">
+                            <h3>
+                                Oil & Gas</h3>
+                            <p>Forged tie rods and wheel assembly components for automotive and tractor applications.
+                            </p>
+                            <!-- <a href="#landing-new-forge-enquiry" class="landing-new-forge-cat-link">Enquire Now</a> -->
+                             <a href="#" class="landing-new-forge-cat-link"
+                                onclick="window.open('oil-gas-industry.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
+                                Enquire Now
+                            </a>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>
 
 
+
+
+
         <!--Start Project Style4 Area-->
-        <section class="project-style4-area pb-5 Product-range">
+        <!-- <section class="project-style4-area pb-5 Product-range">
             <div class="layer-outer" style="background-image: url(assets/images/shape/product-bg.jpg);"></div>
             <div class="container-fluid">
                 <div class="container">
@@ -777,7 +1305,7 @@
                 </div>
 
                 <div class="project-style4_items filter-layout masonary-layout">
-                    <!-- Start Single Project Style4-->
+                 
                     <div class="single-project-style4 filter-item manufac auto">
                         <div class="img-holder">
                             <div class="inner">
@@ -794,8 +1322,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End Single Project Style4-->
-                    <!-- Start Single Project Style4-->
+                
                     <div class="single-project-style4 filter-item renewable tractor">
                         <div class="img-holder">
                             <div class="inner">
@@ -812,8 +1339,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End Single Project Style4-->
-                    <!-- Start Single Project Style4-->
+                  
                     <div class="single-project-style4 filter-item renewable striking">
                         <div class="img-holder">
                             <div class="inner">
@@ -830,9 +1356,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End Single Project Style4-->
-
-                    <!-- Start Single Project Style4-->
+                   
                     <div class="single-project-style4 filter-item renewable hydraulic">
                         <div class="img-holder">
                             <div class="inner">
@@ -849,8 +1373,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End Single Project Style4-->
-                    <!-- Start Single Project Style4-->
+                  
                     <div class="single-project-style4 filter-item renewable agriculture">
                         <div class="img-holder">
                             <div class="inner">
@@ -867,8 +1390,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End Single Project Style4-->
-                    <!-- Start Single Project Style4-->
+                  
                     <div class="single-project-style4 filter-item renewable rialway">
                         <div class="img-holder">
                             <div class="inner">
@@ -885,8 +1407,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End Single Project Style4-->
-                    <!-- Start Single Project Style4-->
+                  
                     <div class="single-project-style4 filter-item renewable chain">
                         <div class="img-holder">
                             <div class="inner">
@@ -903,8 +1424,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End Single Project Style4-->
-                    <!-- Start Single Project Style4-->
+                  
                     <div class="single-project-style4 filter-item renewable wheel">
                         <div class="img-holder">
                             <div class="inner">
@@ -921,8 +1441,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End Single Project Style4-->
-                    <!-- Start Single Project Style4-->
+                  
                     <div class="single-project-style4 filter-item renewable tie">
                         <div class="img-holder">
                             <div class="inner">
@@ -939,8 +1458,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End Single Project Style4-->
-                    <!-- Start Single Project Style4-->
+                 
                     <div class="single-project-style4 filter-item renewable oil">
                         <div class="img-holder">
                             <div class="inner">
@@ -957,24 +1475,24 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End Single Project Style4-->
+                
 
                 </div>
             </div>
         </section>
-        <!--End Project Style4 Area-->
-<div class="container graph">
-     <div class="sec-title text-center">
-        <div class="sub-title">
-            <span class="border-box"></span>
-            <h5>Since 2001</h5>
+        -->
+        <div class="container graph">
+            <div class="sec-title text-center pb-0">
+                <div class="sub-title">
+                    <span class="border-box"></span>
+                    <h5>Since 2001</h5>
+                </div>
+                <h2>Our Target</h2>
+            </div>
+            <div class="row">
+                <img src="assets/images/resources/graph-2.jpg" class="img-fluid">
+            </div>
         </div>
-        <h2>Our Target</h2>
-    </div>
-    <div class="row">
-        <img src="assets/images/resources/graph-2.jpg" class="img-fluid">
-    </div>
-</div>
         <!-- Start Service Style3 Area -->
         <section id="services" class="service-style3-area">
             <div class="service-style3-area_bg" style="background-color: #f5f5f5;"></div>
@@ -1105,92 +1623,6 @@
             </div>
         </section>
         <!-- End Service Style3 Area -->
-        <!--Start Fact Counter Style2 Area-->
-        <section class="fact-counter-style2-area">
-            <div class="container-box">
-                 <div class="sec-title style3 with_text text-center">
-                    <div class="sub-title">
-                        <span class="border-box"></span>
-                        <h5>Key Points</h5>
-                    </div>
-                    <h2>From Local Roots to Global Heights <br>
-Our Journey in Numbers</h2>
-
-                </div>
-                <div class="row">
-                    <div class="col-xl-12">
-                        <ul class="fact-counter-style2_box">
-                            <!--Start Single Fact Counter Style2-->
-                            <li class="single-fact-counter-style2 wow fadeInUp counter-img" data-wow-delay="100ms"
-                                data-wow-duration="1500ms">
-                                <div class="top">
-                                    <div class="icon ">
-                                       <img src="assets-landing/images/calendar-1.png" alt="Factory Icon">
-                                    </div>
-                                    <div class="count-box">
-                                        <h2>
-                                            <span class="timer" data-from="1" data-to="24" data-speed="5000"
-                                                data-refresh-interval="50">24</span>
-                                            <span class="fa fa-plus plus_icon"></span>
-                                        </h2>
-                                        <h5>Years Experience</h5>
-                                    </div>
-                                </div>
-                                <div class="text-box">
-                                   
-                                </div>
-                            </li>
-                            <!--End Single Fact Counter Style2-->
-                            <!--Start Single Fact Counter Style2-->
-                            <li class="single-fact-counter-style2 wow fadeInUp counter-img" data-wow-delay="100ms"
-                                data-wow-duration="1500ms">
-                                <div class="top">
-                                    <div class="icon">
-                                       <img src="assets-landing/images/trophy-1.png" alt="Factory Icon">
-                                    </div>
-                                    <div class="count-box">
-                                        <h2>
-                                            <span class="timer" data-from="1" data-to="5" data-speed="5000"
-                                                data-refresh-interval="50">5</span>
-                                            <span class="fa fa-plus plus_icon"></span>
-                                        </h2>
-                                        <h5>Awards</h5>
-                                    </div>
-                                </div>
-                                <div class="text-box">
-                                   
-                                </div>
-                            </li>
-                            <!--End Single Fact Counter Style2-->
-                            <!--Start Single Fact Counter Style2-->
-                            <li class="single-fact-counter-style2 wow fadeInUp counter-img" data-wow-delay="100ms"
-                                data-wow-duration="1500ms">
-                               <div class="top">
-                                    <div class="icon ">
-                                       <img src="assets-landing/images/piston-1.png" alt="Factory Icon">
-                                    </div>
-                                    <div class="count-box">
-                                        <h2>
-                                            <span class="timer" data-from="1" data-to="100" data-speed="5000"
-                                                data-refresh-interval="50">100</span>
-                                            <span class="fa fa-plus plus_icon"></span>
-                                        </h2>
-                                        <h5>Products</h5>
-                                    </div>
-                                </div>
-                                <div class="text-box">
-                                   
-                                </div>
-                            </li>
-                            <!--End Single Fact Counter Style2-->
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--End Fact Counter Style2 Area-->
-
-
         <!--Start Mission Vision Area-->
         <section class="mission-vision-area">
             <div class="mission-vision-area-bg" style="background-image: url(assets-landing/images/mission-bg.jpg);">
@@ -1232,18 +1664,18 @@ Our Journey in Numbers</h2>
                                 </li>
                             </ul>
 
-                           <div class="video-gallery_box_2 clearfix text-center landing-forge">
-  <!-- <div class="icon-Outer"></div> -->
-  <div class="inner">
-    <div class="icon">
-      <a class="video-popup thm-bgclr" title="Erdunt Video Gallery"
-        href="https://www.youtube.com/watch?v=wacNbVCZwD4">
-        <span class="flaticon-play-button"></span>
-      </a>
-    </div>
-    <h3>Watch Corporate Video</h3>
-  </div>
-</div>
+                            <div class="video-gallery_box_2 clearfix text-center landing-forge">
+                                <!-- <div class="icon-Outer"></div> -->
+                                <div class="inner">
+                                    <div class="icon">
+                                        <a class="video-popup thm-bgclr" title="Erdunt Video Gallery"
+                                            href="https://www.youtube.com/watch?v=15qbEPQGg0g">
+                                            <span class="flaticon-play-button"></span>
+                                        </a>
+                                    </div>
+                                    <h3>Watch Corporate Video</h3>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
@@ -1251,11 +1683,6 @@ Our Journey in Numbers</h2>
             </div>
         </section>
         <!--End Mission Vision Area-->
-
-
-
-
-
         <!--Start Slogan Area-->
         <!-- <section class="slogan-area">
             <div class="layer-outer" style="background-image: url(assets/images/resources/slogan-area-bg.jpg);"></div>
@@ -1277,10 +1704,6 @@ Our Journey in Numbers</h2>
             </div>
         </section> -->
         <!--End Slogan Area-->
-
-
-
-
         <!--Start Contact Style1 Area-->
         <section id="contact" class="contact-style1-area contact-page  one-page-scrool-layout">
             <div class="container">
@@ -1396,7 +1819,46 @@ Our Journey in Numbers</h2>
                 width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
+        <section class="team-style3-area pt-5 ">
+            <div class="container">
+                <div class="sec-title style2 with_text text-center">
+                    <div class="sub-title">
+                        <span class="border-box"></span>
+                        <h5>
+                            Certification</h5>
+                    </div>
+                    <h2>Certified. Endorsed. Ready To Lead</h2>
 
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 m-auto pb-4">
+                        <div class="certi-border">
+                            <a href="quality-policy.php#certi-id"><img src="assets/images/resources/1-logo.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 m-auto pb-4">
+                        <div class=" certi-border">
+                            <a href="quality-policy.php#certi-id"><img src="assets/images/resources/2-logo.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 m-auto pb-4">
+                        <div class=" certi-border">
+                            <a href="quality-policy.php#certi-id"><img src="assets/images/resources/3-logo.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 m-auto pb-4">
+                        <div class=" certi-border">
+                            <a href="quality-policy.php#certi-id"><img src="assets/images/resources/4-logo.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 m-auto pb-4">
+                        <div class=" certi-border">
+                            <a href="quality-policy.php#certi-id"><img src="assets/images/resources/5-logo.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!--Start footer area -->
         <footer class="footer-style4-area">
             <div class="footer-style4">
@@ -1509,8 +1971,7 @@ Our Journey in Numbers</h2>
                                 </div>
                                 <ul>
                                     <li> <a class="text-white" href="tel:+91 89999-99195">+91 89999-99195</a></li>
-                                    <li><a class="text-white" href="mailto:
-siddharthmittal@faipl.com">
+                                    <li><a class="text-white" href="mailto:siddharthmittal@faipl.com">
                                             siddharthmittal@faipl.com</a></li>
                                     <li class="text-white">Near Indian Oil Jasbir Petrol Pump, Village Mangarh, Kohara –
                                         Machhiwara Road,
@@ -1567,21 +2028,11 @@ siddharthmittal@faipl.com">
 
         </footer>
         <!--End footer area-->
-
-
-
-
         <button class="scroll-top scroll-to-target bgclr3" data-target="html">
             <span class="fa fa-angle-up"></span>
         </button>
 
     </div>
-
-
-
-
-
-
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/appear.js"></script>
@@ -1614,13 +2065,152 @@ siddharthmittal@faipl.com">
     <script src="assets/js/map-script.js"></script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATY4Rxc8jNvDpsK8ZetC7JyN4PFVYGCGM&callback=initMap">
-        </script>
+    </script>
 
 
     <!-- thm custom script -->
     <script src="assets/js/custom.js"></script>
 
+    <script>
+    /* b b  Dynamic category content b b 
+   Use one landing page for all 8 ad groups.
+   Final URL per ad group:  landing-page.html?cat=tractor-parts
+   Valid cat values: auto-parts, tractor-parts, railway-parts, hydraulic-parts,
+   agriculture-parts, striking-tools, chain-links, tie-rods            */
+    (function() {
+        var CATS = {
+            "auto-parts": {
+                eyebrow: "Forged Auto Parts Manufacturer B7 India",
+                h1: 'Forged <em>Auto Parts</em> Manufacturer b  Ball Studs, Gear Blanks &amp; Stub Axles',
+                lead: "IATF 16949 certified closed-die hot forgings for 2W, 3W & 4W vehicles b  safety-critical components trusted by Tata Motors, Mahindra and global OEMs.",
+                select: "Auto Parts"
+            },
+            "tractor-parts": {
+                eyebrow: "Forged Tractor Parts Manufacturer B7 India",
+                h1: 'Forged <em>Tractor Parts</em> Manufacturer for OEMs &amp; Exporters',
+                lead: "High-load closed-die forged tractor components in carbon & alloy steel b  supplied to Sonalika, TAFE, Mahindra and OEMs worldwide.",
+                select: "Tractor Parts"
+            },
+            "railway-parts": {
+                eyebrow: "Railway Forging Manufacturer B7 India",
+                h1: 'Forged <em>Railway Parts</em> Manufacturer b  Precision &amp; Reliability',
+                lead: "Precision hot forgings meeting the reliability demands of Indian and global railway systems, with full material traceability.",
+                select: "Railway Parts"
+            },
+            "hydraulic-parts": {
+                eyebrow: "Hydraulic Forgings Manufacturer B7 India",
+                h1: 'Forged <em>Hydraulic Parts</em> for Steering, Braking &amp; Suspension',
+                lead: "Closed-die forged hydraulic components machined in-house to tight tolerance b  500 g to 20 kg in carbon & alloy steel.",
+                select: "Hydraulic Parts"
+            },
+            "agriculture-parts": {
+                eyebrow: "Forged Agriculture Parts Manufacturer B7 India",
+                h1: 'Forged <em>Agriculture Parts</em> b  Harvester Fingers &amp; Combine Components',
+                lead: "Field-proven forged agri components built to survive tough conditions b  trusted by leading farm-equipment OEMs.",
+                select: "Agriculture Parts"
+            },
+            "striking-tools": {
+                eyebrow: "Drop Forged Striking Tools B7 India",
+                h1: 'Drop Forged <em>Striking Tools</em> Manufacturer &amp; Exporter',
+                lead: "Drop-forged hammers and striking tools with consistent hardness, finish and OEM-grade quality control.",
+                select: "Striking Tools"
+            },
+            "chain-links": {
+                eyebrow: "Forged Chain Links Manufacturer B7 India",
+                h1: 'Heavy-Duty Forged <em>Chain Links</em> Manufacturer',
+                lead: "Heavy-duty forged chain links manufactured to strict dimensional tolerance in carbon & alloy steel.",
+                select: "Chain Links"
+            },
+            "wheel-links": {
+                eyebrow: "wheel",
+                h1: 'Heavy-Duty Forged <em>wheel</em> Manufacturer',
+                lead: "Heavy-duty forged chain links manufactured to strict dimensional tolerance in carbon & alloy steel.",
+                select: "Chain Links"
+            },
+            "oil-links": {
+                eyebrow: "OIL",
+                h1: 'Heavy-Duty Forged <em>OIL</em> Manufacturer',
+                lead: "Heavy-duty forged chain links manufactured to strict dimensional tolerance in carbon & alloy steel.",
+                select: "Chain Links"
+            },
+            "tie-rods": {
+                eyebrow: "Tie Rod Manufacturer B7 India",
+                h1: 'Forged <em>Tie Rods</em> &amp; Wheel Assembly Components',
+                lead: "OEM-approved forged tie rods and wheel assembly components for automotive and tractor applications.",
+                select: "Tie Rods"
+            }
+        };
 
+        // Function to update banner content
+        function updateBannerContent(catKey) {
+            var c = CATS[catKey];
+            if (!c) return false;
+
+            document.getElementById("landing-new-forge-dyn-eyebrow").textContent = c.eyebrow;
+            document.getElementById("landing-new-forge-dyn-h1").innerHTML = c.h1;
+            document.getElementById("landing-new-forge-dyn-lead").textContent = c.lead;
+            document.title = c.eyebrow.replace(" B7 India", " in India") +
+                " | Get a Quote b  Forge Auto International Ltd.";
+
+            var sel = document.getElementById("landing-new-forge-f-cat");
+            for (var i = 0; i < sel.options.length; i++) {
+                if (sel.options[i].text === c.select) {
+                    sel.selectedIndex = i;
+                    break;
+                }
+            }
+            document.getElementById("landing-new-forge-f-adcat").value = c.select;
+            return true;
+        }
+
+        // Check URL parameter on page load
+        var cat = new URLSearchParams(location.search).get("cat");
+        if (cat) {
+            updateBannerContent(cat);
+        }
+
+        // Add click handlers to category cards
+        var categoryCards = document.querySelectorAll('.landing-new-forge-cat');
+        categoryCards.forEach(function(card) {
+            card.addEventListener('click', function(e) {
+                // Prevent default link behavior if clicking on the card itself
+                if (e.target.tagName !== 'A') {
+                    e.preventDefault();
+                }
+                var catKey = this.getAttribute('data-category');
+                if (updateBannerContent(catKey)) {
+                    // Update URL without page reload
+                    window.history.pushState({
+                        category: catKey
+                    }, '', '?cat=' + catKey);
+                    // Scroll to hero section
+                    document.getElementById('landing-new-forge-hero-section').scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add click handlers to category links
+        var categoryLinks = document.querySelectorAll('.landing-new-forge-cat-link');
+        categoryLinks.forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                var catKey = this.closest('.landing-new-forge-cat').getAttribute('data-category');
+                if (updateBannerContent(catKey)) {
+                    // Update URL without page reload
+                    window.history.pushState({
+                        category: catKey
+                    }, '', '?cat=' + catKey);
+                    // Scroll to hero section
+                    document.getElementById('landing-new-forge-hero-section').scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    })();
+    </script>
 
 </body>
 

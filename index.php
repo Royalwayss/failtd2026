@@ -402,6 +402,22 @@
                     </div>
                 </div>
             </div>
+             <div class="single-project-style4  auto">
+                <div class="img-holder">
+                    <div class="inner">
+                        <img src="assets/images/project/project-v1-1.jpg" alt="Awesome Image">
+                    </div>
+                    <div class="zoom-button">
+                        <a href="auto-parts.php">
+                            <i class="flaticon-plus"></i>
+                        </a>
+                    </div>
+                    <div class="overlay-content-box">
+                        <p>Product</p>
+                        <h3><a href="auto-parts.php">Auto Parts</a></h3>
+                    </div>
+                </div>
+            </div>
             <!-- End Single Project Style4-->
             <!-- Start Single Project Style4-->
             <div class="single-project-style4 filter-item renewable tractor">
