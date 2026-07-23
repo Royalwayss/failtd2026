@@ -198,9 +198,9 @@
         <div class="row align-items-center px-5">
             <!-- Left Content -->
             <div class="col-lg-6 landing-new-forge-hero-content">
-                <span class="landing-new-forge-eyebrow" id="landing-new-forge-dyn-eyebrow">Tractor Parts</span>
-                <h1 id="landing-new-forge-dyn-h1">Heavy-Duty <em>Tractor Parts</em>  Engineered for Tough Field Performance Daily</h1>
-                <p class="landing-new-forge-lead" id="landing-new-forge-dyn-lead">Engineered for tough fields and heavy workloads, our tractor parts support durability, uptime and dependable performance across agricultural operations.</p>
+                <span class="landing-new-forge-eyebrow" id="landing-new-forge-dyn-eyebrow">Auto Parts</span>
+                <h1 id="landing-new-forge-dyn-h1">Precision Forged  <em>Auto Parts </em> Built for Strength and Road Reliability</h1>
+                <p class="landing-new-forge-lead" id="landing-new-forge-dyn-lead">Built for demanding road performance, our forged auto parts deliver strength, dimensional accuracy and reliability for OEM and commercial vehicle applications.</p>
                 <ul class="landing-new-forge-ticks">
                     <li>4.5 million+ parts manufactured every year</li>
                     <li>Forging, machining and heat treatment under one ecosystem</li>
@@ -241,8 +241,8 @@
                             <label for="landing-new-forge-f-cat">Product category *</label>
                             <select id="landing-new-forge-f-cat" name="category" required>
                                 <option value="">Select a category</option>
-                                <option>Auto Parts</option>
-                                <option selected>Tractor Parts</option>
+                                <option selected>Auto Parts</option>
+                                <option >Tractor Parts</option>
                                 <option>Railway Parts</option>
                                 <option>Hydraulic Parts</option>
                                 <option>Agriculture Parts</option>
@@ -251,8 +251,8 @@
                                 <option>Tie Rods</option>
                                 <option>5th Wheel Assembly</option>
                                 <option>Oil & Gas</option>
-                                <option>Ring Rolling</option>
-                                <option>Custom Forging / Other</option>
+                                <!-- <option>Ring Rolling</option>
+                                <option>Custom Forging / Other</option> -->
                             </select>
                         </div>
                         <div class="col-12 col-md-12">
@@ -270,15 +270,16 @@
 </section>
 
 
+
 <section class="service-style3-area service-page3 products-parts">
     <div class="container-fluid">
         <div class="row" id="category-content">
          <div class="sec-title">
             <div class="sub-title">
                <span class="border-box"></span>
-               <h5>Heavy-Duty Tractor Solutions</h5>
+               <h5>Precision-Engineered Automotive Components</h5>
             </div>
-            <h2>Tractor Parts</h2>
+            <h2>Auto Parts</h2>
          </div>
          
       </div>
@@ -288,11 +289,11 @@
                 <div class="single-service-style3">
                     <div class="img-holder">
                         <div class="inner">
-                            <img src="assets/images/products/tractor-parts/1.jpg" alt="">
+                            <img src="assets/images/products/auto-parts/1.jpg" alt="">
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h2>Locking Block</h2>
+                        <h2>Rear Hub Flange</h2>
                     </div>
                 </div>
             </div>
@@ -302,11 +303,11 @@
                 <div class="single-service-style3">
                     <div class="img-holder">
                         <div class="inner">
-                            <img src="assets/images/products/tractor-parts/2.jpg" alt="">
+                            <img src="assets/images/products/auto-parts/2.jpg" alt="">
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h2>Double Arm</h2>
+                        <h2>Ball Joint</h2>
                     </div>
                 </div>
             </div>
@@ -316,53 +317,25 @@
                 <div class="single-service-style3">
                     <div class="img-holder">
                         <div class="inner">
-                            <img src="assets/images/products/tractor-parts/3.jpg" alt="">
+                            <img src="assets/images/products/auto-parts/3.jpg" alt="">
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h2>Ring</h2>
+                        <h2>Short Fork</h2>
                     </div>
                 </div>
             </div>
-            <!--End Single Service Style3--->
-            <!-- Start Single Service Style3--->
-        <!--     <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-5">                       
-                <div class="single-service-style3">
-                    <div class="img-holder">
-                        <div class="inner">
-                            <img src="assets/images/products/tractor-parts/4.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="text-holder text-center">
-                        <h2>AI 4</h2>
-                    </div>
-                </div>
-            </div> -->
-            <!--End Single Service Style3--->
-            <!-- Start Single Service Style3--->
-            <!-- <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-5">                       
-                <div class="single-service-style3">
-                    <div class="img-holder">
-                        <div class="inner">
-                            <img src="assets/images/products/tractor-parts/5.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="text-holder text-center">
-                        <h2>Gear</h2>
-                    </div>
-                </div>
-            </div> -->
             <!--End Single Service Style3--->
             <!-- Start Single Service Style3--->
             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-5">                       
                 <div class="single-service-style3">
                     <div class="img-holder">
                         <div class="inner">
-                            <img src="assets/images/products/tractor-parts/6.jpg" alt="">
+                            <img src="assets/images/products/auto-parts/4.jpg" alt="">
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h2>Blank Gear</h2>
+                        <h2>Tie Rod</h2>
                     </div>
                 </div>
             </div>
@@ -372,11 +345,11 @@
                 <div class="single-service-style3">
                     <div class="img-holder">
                         <div class="inner">
-                            <img src="assets/images/products/tractor-parts/7.jpg" alt="">
+                            <img src="assets/images/products/auto-parts/5.jpg" alt="">
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h2>Blank Gear</h2>
+                        <h2>Flange Yoke</h2>
                     </div>
                 </div>
             </div> -->
@@ -386,11 +359,11 @@
                 <div class="single-service-style3">
                     <div class="img-holder">
                         <div class="inner">
-                            <img src="assets/images/products/tractor-parts/8.jpg" alt="">
+                            <img src="assets/images/products/auto-parts/6.jpg" alt="">
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h2>Stub Axle Assembly</h2>
+                        <h2>Ball Stud</h2>
                     </div>
                 </div>
             </div>
@@ -400,56 +373,11 @@
                 <div class="single-service-style3">
                     <div class="img-holder">
                         <div class="inner">
-                            <img src="assets/images/products/tractor-parts/9.jpg" alt="">
+                            <img src="assets/images/products/auto-parts/7.jpg" alt="">
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h2>Sleeve</h2>
-                    </div>
-                </div>
-            </div>
-            <!--End Single Service Style3--->
-            <!-- Start Single Service Style3--->
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-5">                       
-                <div class="single-service-style3">
-                    <div class="img-holder">
-                        <div class="inner">
-                            <img src="assets/images/products/tractor-parts/10.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="text-holder text-center">
-                        <h2>Lift Arm</h2>
-                    </div>
-                </div>
-            </div>
-            <!--End Single Service Style3--->
-            <!-- Start Single Service Style3--->
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-5">                       
-                <div class="single-service-style3">
-                    <div class="img-holder">
-                        <div class="inner">
-                            <img src="assets/images/products/tractor-parts/11.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="text-holder text-center">
-                        <h2>Lift Arm
-
-                        </h2>
-                    </div>
-                </div>
-            </div>
-            <!--End Single Service Style3--->
-            <!-- Start Single Service Style3--->
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-5">                       
-                <div class="single-service-style3">
-                    <div class="img-holder">
-                        <div class="inner">
-                            <img src="assets/images/products/tractor-parts/12.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="text-holder text-center">
-                        <!-- <h2>AI 12 </h2> -->
-                        <h2>Stub Axle</h2>
+                        <h2>End Balance Rod</h2>
                     </div>
                 </div>
             </div>
@@ -459,12 +387,11 @@
                 <div class="single-service-style3">
                     <div class="img-holder">
                         <div class="inner">
-                            <img src="assets/images/products/tractor-parts/13.jpg" alt="">
+                            <img src="assets/images/products/auto-parts/8.jpg" alt="">
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                       
-                        <h2>Crank</h2>
+                        <h2>AI 8</h2>
                     </div>
                 </div>
             </div> -->
@@ -474,11 +401,25 @@
                 <div class="single-service-style3">
                     <div class="img-holder">
                         <div class="inner">
-                            <img src="assets/images/products/tractor-parts/14.jpg" alt="">
+                            <img src="assets/images/products/auto-parts/9.jpg" alt="">
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h2>Arm</h2>
+                        <h2>Flange Yoke</h2>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Service Style3--->
+            <!-- Start Single Service Style3--->
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-5">                       
+                <div class="single-service-style3">
+                    <div class="img-holder">
+                        <div class="inner">
+                            <img src="assets/images/products/auto-parts/10.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h2>Steering Knuckle Lower Half</h2>
                     </div>
                 </div>
             </div>
@@ -488,11 +429,11 @@
                 <div class="single-service-style3">
                     <div class="img-holder">
                         <div class="inner">
-                            <img src="assets/images/products/tractor-parts/15.jpg" alt="">
+                            <img src="assets/images/products/auto-parts/11.jpg" alt="">
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h2>AI 15</h2>
+                        <h2>Short Fork</h2>
                     </div>
                 </div>
             </div> -->
@@ -502,11 +443,11 @@
                 <div class="single-service-style3">
                     <div class="img-holder">
                         <div class="inner">
-                            <img src="assets/images/products/tractor-parts/16.jpg" alt="">
+                            <img src="assets/images/products/auto-parts/12.jpg" alt="">
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h2>Crank</h2>
+                        <h2>Long Fork</h2>
                     </div>
                 </div>
             </div>
@@ -516,11 +457,25 @@
                 <div class="single-service-style3">
                     <div class="img-holder">
                         <div class="inner">
-                            <img src="assets/images/products/tractor-parts/17.jpg" alt="">
+                            <img src="assets/images/products/auto-parts/13.jpg" alt="">
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h2>Rear Hub</h2>
+                        <h2>Speaker</h2>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Service Style3--->
+            <!-- Start Single Service Style3--->
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-5">                       
+                <div class="single-service-style3">
+                    <div class="img-holder">
+                        <div class="inner">
+                            <img src="assets/images/products/auto-parts/14.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h2>Flange</h2>
                     </div>
                 </div>
             </div>
@@ -530,11 +485,39 @@
                 <div class="single-service-style3">
                     <div class="img-holder">
                         <div class="inner">
-                            <img src="assets/images/products/tractor-parts/18.jpg" alt="">
+                            <img src="assets/images/products/auto-parts/15.jpg" alt="">
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h2>AI 18</h2>
+                        <h2>Flange</h2>
+                    </div>
+                </div>
+            </div> -->
+            <!--End Single Service Style3--->
+            <!-- Start Single Service Style3--->
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-5">                       
+                <div class="single-service-style3">
+                    <div class="img-holder">
+                        <div class="inner">
+                            <img src="assets/images/products/auto-parts/16.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h2>Steering Knuckle</h2>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Service Style3--->
+            <!-- Start Single Service Style3--->
+            <!-- <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-5">                       
+                <div class="single-service-style3">
+                    <div class="img-holder">
+                        <div class="inner">
+                            <img src="assets/images/products/auto-parts/17.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h2>Flange Yoke</h2>
                     </div>
                 </div>
             </div> -->
@@ -544,148 +527,179 @@
                 <div class="single-service-style3">
                     <div class="img-holder">
                         <div class="inner">
-                            <img src="assets/images/products/tractor-parts/19.jpg" alt="">
+                            <img src="assets/images/products/auto-parts/18.jpg" alt="">
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h2>AI 19</h2>
+                        <h2>Long Fork</h2>
                     </div>
                 </div>
             </div> -->
-            <!--End Single Service Style3---> <!-- Start Single Service Style3--->
+            <!--End Single Service Style3--->
+            <!-- Start Single Service Style3--->
             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-5">                       
                 <div class="single-service-style3">
                     <div class="img-holder">
                         <div class="inner">
-                            <img src="assets/images/products/tractor-parts/20.jpg" alt="">
+                            <img src="assets/images/products/auto-parts/19.jpg" alt="">
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h2>Connecting Rod</h2>
+                        <h2>Steering Knuckle - EV Model</h2>
                     </div>
                 </div>
             </div>
-            <!--End Single Service Style3---> <!-- Start Single Service Style3--->
+            <!--End Single Service Style3--->
+            <!-- Start Single Service Style3--->
+            <!-- <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-5">                       
+                <div class="single-service-style3">
+                    <div class="img-holder">
+                        <div class="inner">
+                            <img src="assets/images/products/auto-parts/22.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h2>Short Fork</h2>
+                    </div>
+                </div>
+            </div> -->
+            <!--End Single Service Style3--->
+            <!-- Start Single Service Style3--->
+            <!-- <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-5">                       
+                <div class="single-service-style3">
+                    <div class="img-holder">
+                        <div class="inner">
+                            <img src="assets/images/products/auto-parts/23.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h2>Short Fork</h2>
+                    </div>
+                </div>
+            </div> -->
+            <!--End Single Service Style3--->
+            <!-- Start Single Service Style3--->
             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-5">                       
                 <div class="single-service-style3">
                     <div class="img-holder">
                         <div class="inner">
-                            <img src="assets/images/products/tractor-parts/21.jpg" alt="">
+                            <img src="assets/images/products/auto-parts/24.jpg" alt="">
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h2>Steering Arm</h2>
+                        <h2>Bracket</h2>
                     </div>
                 </div>
             </div>
+            <!--End Single Service Style3--->
+            <!-- Start Single Service Style3--->
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-5">                       
+                <div class="single-service-style3">
+                    <div class="img-holder">
+                        <div class="inner">
+                            <img src="assets/images/products/auto-parts/25.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h2>Bottom Link - 3 Wheeler</h2>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Service Style3--->
+            <!-- Start Single Service Style3--->
+            <!-- <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-5">                       
+                <div class="single-service-style3">
+                    <div class="img-holder">
+                        <div class="inner">
+                            <img src="assets/images/products/auto-parts/26.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h2>Ball Stud</h2>
+                    </div>
+                </div>
+            </div> -->
+            <!--End Single Service Style3--->
+            <!-- Start Single Service Style3--->
+            <!-- <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-5">                       
+                <div class="single-service-style3">
+                    <div class="img-holder">
+                        <div class="inner">
+                            <img src="assets/images/products/auto-parts/27.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h2>Ball Stud</h2>
+                    </div>
+                </div>
+            </div> -->
+            <!--End Single Service Style3--->
+            <!-- Start Single Service Style3--->
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-5">                       
+                <div class="single-service-style3">
+                    <div class="img-holder">
+                        <div class="inner">
+                            <img src="assets/images/products/auto-parts/29.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h2>Tow Ball</h2>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Service Style3--->
+            <!-- Start Single Service Style3--->
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-5">                       
+                <div class="single-service-style3">
+                    <div class="img-holder">
+                        <div class="inner">
+                            <img src="assets/images/products/auto-parts/30.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h2>Axle Shaft</h2>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Service Style3--->
+            <!-- Start Single Service Style3--->
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-5">                       
+                <div class="single-service-style3">
+                    <div class="img-holder">
+                        <div class="inner">
+                            <img src="assets/images/products/auto-parts/31.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h2>Tube Flange</h2>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Service Style3--->
+            <!-- Start Single Service Style3--->
+           
             <!--End Single Service Style3--->
         </div>
-		 <div class="row" id="category-content">
-        
+		
+		
+		<div class="row" id="category-content">
          <div class="sustan-main-heading">
-             <p>We manufacture heavy-duty tractor components designed to operate under extreme loads, harsh terrains and variable climates. </p>
-			 <p>Our forged tractor parts include lift arms, stub axles, steering arms, gears, shafts and drivetrain elements built for strength, wear resistance and long-term durability. </p>
-			 <p>Using alloy and carbon steels, controlled heat treatment and precision machining, we ensure high fatigue life and dimensional consistency. </p>
-			 <p>Our solutions support agricultural OEMs seeking dependable, high-performance components that deliver consistent field performance season after season.</p>
+            <p>Our automotive parts portfolio is engineered for high-performance, safety-critical applications across passenger vehicles, commercial fleets and off-highway platforms. </p>
+			<p>From powertrain components and steering systems to suspension and driveline parts, every product is manufactured using precision closed-die forging, controlled heat treatment and CNC machining.</p> 
+			<p>Designed for fatigue resistance, dimensional accuracy and long service life, our auto components meet global OEM specifications. </p>
+			<p>With advanced simulation, metallurgical validation and end-to-end traceability, we deliver reliability at scale for modern mobility platforms.</p>
          </div>
       </div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
     </div>
 </section>
 
 <?php include ('include/footer.php') ?>
-<!-- <script>
-(function() {
-    var CATS = {
-        "auto-parts": {
-            eyebrow: "Forged Auto Parts Manufacturer B7 India",
-            h1: 'Forged <em>Auto Parts</em> Manufacturer b  Ball Studs, Gear Blanks &amp; Stub Axles',
-            lead: "IATF 16949 certified closed-die hot forgings for 2W, 3W & 4W vehicles b  safety-critical components trusted by Tata Motors, Mahindra and global OEMs.",
-            select: "Auto Parts"
-        },
-        "tractor-parts": {
-            eyebrow: "Forged Tractor Parts Manufacturer B7 India",
-            h1: 'Forged <em>Tractor Parts</em> Manufacturer for OEMs &amp; Exporters',
-            lead: "High-load closed-die forged tractor components in carbon & alloy steel b  supplied to Sonalika, TAFE, Mahindra and OEMs worldwide.",
-            select: "Tractor Parts"
-        },
-        "railway-parts": {
-            eyebrow: "Railway Forging Manufacturer B7 India",
-            h1: 'Forged <em>Railway Parts</em> Manufacturer b  Precision &amp; Reliability',
-            lead: "Precision hot forgings meeting the reliability demands of Indian and global railway systems, with full material traceability.",
-            select: "Railway Parts"
-        },
-        "hydraulic-parts": {
-            eyebrow: "Hydraulic Forgings Manufacturer B7 India",
-            h1: 'Forged <em>Hydraulic Parts</em> for Steering, Braking &amp; Suspension',
-            lead: "Closed-die forged hydraulic components machined in-house to tight tolerance b  500 g to 20 kg in carbon & alloy steel.",
-            select: "Hydraulic Parts"
-        },
-        "agriculture-parts": {
-            eyebrow: "Forged Agriculture Parts Manufacturer B7 India",
-            h1: 'Forged <em>Agriculture Parts</em> b  Harvester Fingers &amp; Combine Components',
-            lead: "Field-proven forged agri components built to survive tough conditions b  trusted by leading farm-equipment OEMs.",
-            select: "Agriculture Parts"
-        },
-        "striking-tools": {
-            eyebrow: "Drop Forged Striking Tools B7 India",
-            h1: 'Drop Forged <em>Striking Tools</em> Manufacturer &amp; Exporter',
-            lead: "Drop-forged hammers and striking tools with consistent hardness, finish and OEM-grade quality control.",
-            select: "Striking Tools"
-        },
-        "chain-links": {
-            eyebrow: "Forged Chain Links Manufacturer B7 India",
-            h1: 'Heavy-Duty Forged <em>Chain Links</em> Manufacturer',
-            lead: "Heavy-duty forged chain links manufactured to strict dimensional tolerance in carbon & alloy steel.",
-            select: "Chain Links"
-        },
-        "wheel-links": {
-            eyebrow: "Forged 5th Wheel Assembly B7 India",
-            h1: 'Forged <em>5th Wheel Assembly</em> Components',
-            lead: "Precision forged and machined 5th wheel assembly components for heavy-duty commercial vehicles.",
-            select: "5th Wheel Assembly"
-        },
-        "oil-links": {
-            eyebrow: "Oil & Gas Forgings B7 India",
-            h1: 'Forged <em>Oil & Gas</em> Components',
-            lead: "High-integrity forged parts for the oil and gas industry, designed for extreme pressure and durability.",
-            select: "Oil & Gas"
-        },
-        "ring-rolling": {
-            eyebrow: "Ring Rolling Manufacturer B7 India",
-            h1: 'Forged <em>Ring Rolling</em> Components',
-            lead: "Seamless rolled rings and forged rings for gears, bearings, and heavy industrial machinery.",
-            select: "Ring Rolling"
-        },
-        "tie-rods": {
-            eyebrow: "Tie Rod Manufacturer B7 India",
-            h1: 'Forged <em>Tie Rods</em> &amp; Wheel Assembly Components',
-            lead: "OEM-approved forged tie rods and wheel assembly components for automotive and tractor applications.",
-            select: "Tie Rods"
-        }
-    };
-
-    function updateBannerContent(catKey) {
-        var c = CATS[catKey];
-        if (!c) return false;
-
-        document.getElementById("landing-new-forge-dyn-eyebrow").textContent = c.eyebrow;
-        document.getElementById("landing-new-forge-dyn-h1").innerHTML = c.h1;
-        document.getElementById("landing-new-forge-dyn-lead").textContent = c.lead;
-        
-        var sel = document.getElementById("landing-new-forge-f-cat");
-        for (var i = 0; i < sel.options.length; i++) {
-            if (sel.options[i].text === c.select) {
-                sel.selectedIndex = i;
-                break;
-            }
-        }
-        document.getElementById("landing-new-forge-f-adcat").value = c.select;
-        return true;
-    }
-
-    var cat = new URLSearchParams(location.search).get("cat");
-    if (cat) {
-        updateBannerContent(cat);
-    }
-})();
-</script> -->

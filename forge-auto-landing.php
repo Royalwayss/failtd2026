@@ -904,7 +904,7 @@
                                         <option>Striking Tools</option>
                                         <option>Chain Links</option>
                                         <option>Tie Rods</option>
-                                        <option>Custom Forging / Other</option>
+                                        <!-- <option>Custom Forging / Other</option> -->
                                     </select>
 
                                 </div>
@@ -1137,11 +1137,10 @@
                         <div class="landing-new-forge-cat" data-category="auto-parts">
                             <img src="assets-landing/images/p1.jpg" alt="Awesome Image">
                             <h3>Auto Parts</h3>
-                            <p>Ball studs, gear blanks, stub axles, flange yokes and safety-critical components for 2W,
-                                3W &amp; 4W vehicles.</p>
+                            <p>Built for demanding road performance, our forged auto parts deliver strength, dimensional accuracy and reliability for OEM and commercial vehicle applications.</p>
                             <!-- <a href="#landing-new-forge-enquiry" class="landing-new-forge-cat-link">Enquire Now</a> -->
                             <a href="#" class="landing-new-forge-cat-link"
-                                onclick="window.open('auto-parts.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
+                                onclick="window.open('auto-parts-new.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
                                 Enquire Now
                             </a>
                         </div>
@@ -1150,7 +1149,7 @@
                         <div class="landing-new-forge-cat" data-category="tractor-parts">
                             <img src="assets-landing/images/p2.jpg" alt="Awesome Image">
                             <h3>Tractor Parts</h3>
-                            <p>Forged tractor components built for high load, long field life and OEM fitment.</p>
+                            <p>Engineered for tough fields and heavy workloads, our tractor parts support durability, uptime and dependable performance across agricultural operations.</p>
                             <!-- <a href="#landing-new-forge-enquiry" class="landing-new-forge-cat-link">Enquire Now</a> -->
                              <a href="#" class="landing-new-forge-cat-link"
                                 onclick="window.open('tractor-parts-new.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
@@ -1162,10 +1161,10 @@
                         <div class="landing-new-forge-cat" data-category="striking-tools">
                             <img src="assets-landing/images/p3.jpg" alt="Awesome Image">
                             <h3>Striking Tools</h3>
-                            <p>Drop-forged hammers and striking tools with consistent hardness and finish.</p>
+                            <p>Designed for repeated impact, our forged striking tools offer superior toughness, grip confidence and long-lasting performance in demanding work environments.</p>
                             <!-- <a href="#landing-new-forge-enquiry" class="landing-new-forge-cat-link">Enquire Now</a> -->
                               <a href="#" class="landing-new-forge-cat-link"
-                                onclick="window.open('striking-tools.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
+                                onclick="window.open('striking-tools-new.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
                                 Enquire Now
                             </a>
                         </div>
@@ -1174,10 +1173,10 @@
                         <div class="landing-new-forge-cat" data-category="hydraulic-parts">
                             <img src="assets-landing/images/p4.jpg" alt="Awesome Image">
                             <h3>Hydraulic Parts</h3>
-                            <p>Forged hydraulic components for steering, braking, suspension and power systems.</p>
+                            <p>Manufactured for pressure-critical systems, our hydraulic components combine forged strength, precision machining and reliable performance for industrial applications.</p>
                             <!-- <a href="#landing-new-forge-enquiry" class="landing-new-forge-cat-link">Enquire Now</a> -->
                              <a href="#" class="landing-new-forge-cat-link"
-                                onclick="window.open('hydraulic-parts.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
+                                onclick="window.open('hydraulic-parts-new.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
                                 Enquire Now
                             </a>
                         </div>
@@ -1186,11 +1185,10 @@
                         <div class="landing-new-forge-cat" data-category="agriculture-parts">
                             <img src="assets-landing/images/p5.jpg" alt="Awesome Image">
                             <h3>Agriculture Parts</h3>
-                            <p>Harvester fingers, combine parts and forged agri components that survive tough
-                                conditions.</p>
+                            <p>Made for dust, load, moisture and impact, our agriculture parts keep farm machinery working smoothly through peak seasonal demands.</p>
                             <!-- <a href="#landing-new-forge-enquiry" class="landing-new-forge-cat-link">Enquire Now</a> -->
                              <a href="#" class="landing-new-forge-cat-link"
-                                onclick="window.open('agriculture-parts.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
+                                onclick="window.open('agriculture-parts-new.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
                                 Enquire Now
                             </a>
                         </div>
@@ -1199,10 +1197,10 @@
                         <div class="landing-new-forge-cat" data-category="railway-parts">
                             <img src="assets-landing/images/p6.jpg" alt="Awesome Image">
                             <h3>Railway Parts</h3>
-                            <p>Precision forged railway components meeting Indian and global reliability standards.</p>
+                            <p>Engineered for safety-critical motion, our railway parts deliver strength, vibration resistance and long service life for demanding rail applications.</p>
                             <!-- <a href="#landing-new-forge-enquiry" class="landing-new-forge-cat-link">Enquire Now</a> -->
                              <a href="#" class="landing-new-forge-cat-link"
-                                onclick="window.open('railway-parts.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
+                                onclick="window.open('railway-parts-new.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
                                 Enquire Now
                             </a>
                         </div>
@@ -1211,10 +1209,10 @@
                         <div class="landing-new-forge-cat" data-category="chain-links">
                             <img src="assets-landing/images/p7.jpg" alt="Awesome Image">
                             <h3>Chain Links</h3>
-                            <p>Heavy-duty forged chain links manufactured to strict dimensional tolerance.</p>
+                            <p>Forged for reliable load transfer, our chain links provide strength, durability and consistent performance across pulling, lifting and industrial uses.</p>
                             <!-- <a href="#landing-new-forge-enquiry" class="landing-new-forge-cat-link">Enquire Now</a> -->
                              <a href="#" class="landing-new-forge-cat-link"
-                                onclick="window.open('chain-links.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
+                                onclick="window.open('chain-links-new.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
                                 Enquire Now
                             </a>
                         </div>
@@ -1223,10 +1221,10 @@
                         <div class="landing-new-forge-cat" data-category="wheel-links">
                             <img src="assets-landing/images/p8.jpg" alt="Awesome Image">
                             <h3>5th Wheel Assembly</h3>
-                            <p>Heavy-duty forged chain links manufactured to strict dimensional tolerance.</p>
+                            <p>Built for heavy transport safety, our fifth wheel assembly components ensure dependable coupling performance, load stability and long-term road reliability.</p>
                             <!-- <a href="#landing-new-forge-enquiry" class="landing-new-forge-cat-link">Enquire Now</a> -->
                              <a href="#" class="landing-new-forge-cat-link"
-                                onclick="window.open('wheel-assembly.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
+                                onclick="window.open('wheel-assembly-new.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
                                 Enquire Now
                             </a>
                         </div>
@@ -1234,12 +1232,12 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="landing-new-forge-cat" data-category="tie-rods">
                             <img src="assets-landing/images/p9.jpg" alt="Awesome Image">
-                            <h3>Tie Rods &amp; Wheel Assembly</h3>
-                            <p>Forged tie rods and wheel assembly components for automotive and tractor applications.
+                            <h3>Tie Rods</h3>
+                            <p>Precision forged for steering confidence, our tie rods deliver strength, alignment stability and reliable performance across demanding vehicle applications.
                             </p>
                             <!-- <a href="#landing-new-forge-enquiry" class="landing-new-forge-cat-link">Enquire Now</a> -->
                              <a href="#" class="landing-new-forge-cat-link"
-                                onclick="window.open('tie-rods.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
+                                onclick="window.open('tie-rods-new.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
                                 Enquire Now
                             </a>
                         </div>
@@ -1249,11 +1247,11 @@
                             <img src="assets-landing/images/p10.jpg" alt="Awesome Image">
                             <h3>
                                 Oil & Gas</h3>
-                            <p>Forged tie rods and wheel assembly components for automotive and tractor applications.
+                            <p>Developed for critical-duty environments, our oil and gas components offer forged strength, machining accuracy and reliability under pressure.
                             </p>
                             <!-- <a href="#landing-new-forge-enquiry" class="landing-new-forge-cat-link">Enquire Now</a> -->
                              <a href="#" class="landing-new-forge-cat-link"
-                                onclick="window.open('oil-gas-industry.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
+                                onclick="window.open('oil-gas-industry-new.php','_blank'); window.location.href='#landing-new-forge-enquiry'; return false;">
                                 Enquire Now
                             </a>
                         </div>
@@ -1956,7 +1954,7 @@
                                     <li><a href="wheel-assembly.php">5th Wheel Assembly</a></li>
                                     <li><a href="tie-rods.php">Tie Rods</a></li>
                                     <li><a href=" oil-gas-industry.php">Oil & Gas Industry</a></li>
-                                    <li><a href=" ring-rolling.php">Ring Rolling</a></li>
+                                    <!-- <li><a href=" ring-rolling.php">Ring Rolling</a></li> -->
                                 </ul>
                             </div>
                         </div>

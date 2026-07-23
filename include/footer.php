@@ -31,15 +31,18 @@ $pageURL = basename($_SERVER['PHP_SELF']);
                                 <div class="footer-social-links">
                                     <ul class="social-links-style1 social-links-style2">
                                         <li>
-                                            <a  rel="nofollow" href="https://www.facebook.com/forgeautointernationallimited"
+                                            <a rel="nofollow"
+                                                href="https://www.facebook.com/forgeautointernationallimited"
                                                 target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                         </li>
                                         <li>
-                                            <a  rel="nofollow" href="https://www.instagram.com/forgeautointernational.ltd?igsh=aGFhMng4cjJ0a3J6"
+                                            <a rel="nofollow"
+                                                href="https://www.instagram.com/forgeautointernational.ltd?igsh=aGFhMng4cjJ0a3J6"
                                                 target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                         </li>
                                         <li>
-                                            <a  rel="nofollow" href="https://www.linkedin.com/company/forgeautointernational/"
+                                            <a rel="nofollow"
+                                                href="https://www.linkedin.com/company/forgeautointernational/"
                                                 target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                                         </li>
 
@@ -67,7 +70,7 @@ $pageURL = basename($_SERVER['PHP_SELF']);
                             <li><a href="awards.php">Awards</a></li>
                             <li><a href="get-enquiry.php">Enquiry</a></li>
                             <li><a href="clients.php">Clients</a></li>
-                             <li><a href="blog">Blog</a></li>
+                            <li><a href="blog">Blog</a></li>
                             <li><a href="contact.php">Contact</a></li>
                         </ul>
                     </div>
@@ -106,8 +109,7 @@ $pageURL = basename($_SERVER['PHP_SELF']);
                         </div>
                         <ul>
                             <li> <a class="text-white" href="tel:+91 89999-99195">+91 89999-99195</a></li>
-                            <li><a class="text-white" href="mailto:
-siddharthmittal@faipl.com">
+                            <li><a class="text-white" href="mailto:siddharthmittal@faipl.com">
                                     siddharthmittal@faipl.com</a></li>
                             <li class="text-white">Near Indian Oil Jasbir Petrol Pump, Village Mangarh, Kohara –
                                 Machhiwara Road,
@@ -127,7 +129,8 @@ siddharthmittal@faipl.com">
             <div class="outer_box">
                 <div class="footer-bottom_left_box">
                     <div class="copyright-text copyright-text-style4">
-                        <p>Copyright © <?php echo date('Y')-1; ?> - <?php echo date('Y'); ?> <a href="javascript:;">Forge Auto.</a> All rights reserved.</p>
+                        <p>Copyright © <?php echo date('Y')-1; ?> - <?php echo date('Y'); ?> <a
+                                href="javascript:;">Forge Auto.</a> All rights reserved.</p>
                     </div>
                     <!--  <div class="footer-menu-style1 footer-menu-style4">
                                 <ul>
@@ -219,6 +222,7 @@ siddharthmittal@faipl.com">
 <script src="assets/js/TweenMax.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="assets/js/map-script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 <?php if($pageURL == 'contact.php') { ?>
 <script async defer
@@ -228,26 +232,25 @@ siddharthmittal@faipl.com">
 
 
 <script>
-
 if ($(".counter-value").length > 0) {
-document.addEventListener("DOMContentLoaded", function() {
-    const counters = document.querySelectorAll(".counter-value");
-    counters.forEach(counter => {
-        const update = () => {
-            const target = +counter.getAttribute("data-count");
-            let count = +counter.innerText.replace(/,/g, '');
-            const increment = target / 100;
+    document.addEventListener("DOMContentLoaded", function() {
+        const counters = document.querySelectorAll(".counter-value");
+        counters.forEach(counter => {
+            const update = () => {
+                const target = +counter.getAttribute("data-count");
+                let count = +counter.innerText.replace(/,/g, '');
+                const increment = target / 100;
 
-            if (count < target) {
-                counter.innerText = Math.ceil(count + increment).toLocaleString();
-                setTimeout(update, 20);
-            } else {
-                counter.innerText = target.toLocaleString();
-            }
-        };
-        update();
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment).toLocaleString();
+                    setTimeout(update, 20);
+                } else {
+                    counter.innerText = target.toLocaleString();
+                }
+            };
+            update();
+        });
     });
-});
 }
 </script>
 <!-- <script>
@@ -282,69 +285,69 @@ document.addEventListener("DOMContentLoaded", function() {
 <script src="assets/js/select2.min.js"></script>
 <script>
 if ($(".loading-audio").length > 0) {
-	const audio = document.getElementById("loading-audio");
+    const audio = document.getElementById("loading-audio");
 
-	// Try to play the audio immediately (may be blocked if no interaction)
-	document.addEventListener("DOMContentLoaded", function() {
-		audio.loop = false; // Optional: repeat during loading
-		audio.volume = 1; // Optional: adjust volume
-		audio.play().catch(() => {
-			console.log("Autoplay may be blocked; will try again on user interaction.");
-		});
-	});
+    // Try to play the audio immediately (may be blocked if no interaction)
+    document.addEventListener("DOMContentLoaded", function() {
+        audio.loop = false; // Optional: repeat during loading
+        audio.volume = 1; // Optional: adjust volume
+        audio.play().catch(() => {
+            console.log("Autoplay may be blocked; will try again on user interaction.");
+        });
+    });
 
-	// Pause audio after page is fully loaded
-	window.addEventListener("load", function() {
-		setTimeout(() => {
-			if (!audio.paused) {
-				audio.pause();
-				audio.currentTime = 0; // Optional: reset to start
-			}
-		}, 5000); // Small delay after load if needed
-	});
+    // Pause audio after page is fully loaded
+    window.addEventListener("load", function() {
+        setTimeout(() => {
+            if (!audio.paused) {
+                audio.pause();
+                audio.currentTime = 0; // Optional: reset to start
+            }
+        }, 5000); // Small delay after load if needed
+    });
 
-	// Optional fallback: play on user interaction
-	document.addEventListener("click", function() {
-		if (audio.paused) {
-			audio.play();
-		}
-	}, {
-		once: true
-	});
+    // Optional fallback: play on user interaction
+    document.addEventListener("click", function() {
+        if (audio.paused) {
+            audio.play();
+        }
+    }, {
+        once: true
+    });
 
 }
 </script>
 <!-- Swiper Initialization -->
 <script>
 if ($(".mySwiper").length > 0) {
-	var swiper = new Swiper(".mySwiper", {
-		loop: true,
-		spaceBetween: 30,
-		slidesPerView: 1,
-		autoplay: {
-			delay: 3000, // Change slide every 3 seconds
-			disableOnInteraction: false, // Keeps autoplay running even after user interaction
-		},
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev"
-		},
-		pagination: {
-			el: ".swiper-pagination",
-			clickable: true
-		},
-		breakpoints: {
-			576: {
-				slidesPerView: 2
-			},
-			768: {
-				slidesPerView: 3
-			},
-			992: {
-				slidesPerView: 4
-			}
-		}
-	});
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 30,
+        slidesPerView: 1,
+        autoplay: {
+            delay: 3000, // Change slide every 3 seconds
+            disableOnInteraction: false, // Keeps autoplay running even after user interaction
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        },
+        breakpoints: {
+            576: {
+                slidesPerView: 2
+            },
+            768: {
+                slidesPerView: 3
+            },
+            992: {
+                slidesPerView: 4
+            }
+        }
+    });
 }
 </script>
 
@@ -450,53 +453,54 @@ $(document).ready(function() {
 
 
 
-function get_state_city(action){  
-	     $('.loadingDiv').show();
-		var country = $('#country').find(":selected").attr("data-id"); 
-		if(action == 2){
-		    var state = $('#state').find(":selected").attr("data-id"); 
-		}else{
-			var state = '';
-		} 
-	    $.ajax({
-				 url: "get-state-city.php",
-				 type:'POST',
-				 data: { country:country,state:state,action:action },
-			     success:function(resp){ 
-		    	 $('.loadingDiv').hide();
-				 
-					         if(action =='1'){ 
-								 $("#state").html(resp);
-								 $("#city").html('');
-							 }
+function get_state_city(action) {
+    $('.loadingDiv').show();
+    var country = $('#country').find(":selected").attr("data-id");
+    if (action == 2) {
+        var state = $('#state').find(":selected").attr("data-id");
+    } else {
+        var state = '';
+    }
+    $.ajax({
+        url: "get-state-city.php",
+        type: 'POST',
+        data: {
+            country: country,
+            state: state,
+            action: action
+        },
+        success: function(resp) {
+            $('.loadingDiv').hide();
 
-                             if(action =='2'){
-								 if($("#city").attr('data-page') == 'popup'){
-								     $('#city').select2({dropdownParent: $('#exampleModal')});
-								 }else{
-									 $('#city').select2(); 
-								 }
-								 
-								 $("#city").html(resp);
-							 }								 
-										
-				 
-				 
-		    },error:function(){
-		    	$('.loadingDiv').hide();
-				
-		    }	
-		});
-	
-	
-	
-}	
+            if (action == '1') {
+                $("#state").html(resp);
+                $("#city").html('');
+            }
+
+            if (action == '2') {
+                if ($("#city").attr('data-page') == 'popup') {
+                    $('#city').select2({
+                        dropdownParent: $('#exampleModal')
+                    });
+                } else {
+                    $('#city').select2();
+                }
+
+                $("#city").html(resp);
+            }
 
 
 
+        },
+        error: function() {
+            $('.loadingDiv').hide();
+
+        }
+    });
 
 
 
+}
 </script>
 <script>
 $('#forgeSlider').carousel({
@@ -504,7 +508,32 @@ $('#forgeSlider').carousel({
     pause: false
 });
 </script>
-
+<script>
+$(document).ready(function () {
+    $('.custom-slider').owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: true,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        responsive: {
+            0: {
+                items: 1
+            },
+            576: {
+                items: 2
+            },
+            992: {
+                items: 3
+            },
+            1200: {
+                items: 4
+            }
+        }
+    });
+});
+</script>
 </body>
 
 </html>
