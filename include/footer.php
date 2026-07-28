@@ -130,7 +130,9 @@ $pageURL = basename($_SERVER['PHP_SELF']);
                 <div class="footer-bottom_left_box">
                     <div class="copyright-text copyright-text-style4">
                         <p>Copyright © <?php echo date('Y')-1; ?> - <?php echo date('Y'); ?> <a
-                                href="javascript:;">Forge Auto.</a> All rights reserved.</p>
+                                href="javascript:;">Forge Auto.</a> All rights reserved.
+                             <a style=
+                             "text-transform: capitalize;" href="https://royalways.com/" target="_blank" rel="noopener noreferrer">Royalways</a></p>
                     </div>
                     <!--  <div class="footer-menu-style1 footer-menu-style4">
                                 <ul>
