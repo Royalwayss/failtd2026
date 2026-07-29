@@ -257,7 +257,7 @@
             <div class="col-6 col-sm-4 col-md-4 col-lg-2 m-auto pb-4">
                 <div class=" certi-border">
                     <a href="assets/images/mach-auto/forge-mach-iatf-16949.pdf" target="_blank"><img
-                            src="assets/images/resources/4-logo.jpg"></a>
+                            src="assets/images/resources/4-logo.png"></a>
                 </div>
             </div>
             <div class="col-6 col-sm-4 col-md-4 col-lg-2 m-auto pb-4">

@@ -334,7 +334,7 @@
             </div>
             <div class="col-6 col-sm-4 col-md-4 col-lg-2 m-auto pb-4">
                 <div class=" certi-border">
-                    <a href="quality-policy.php#certi-id"><img src="assets/images/resources/4-logo.jpg" alt="img"
+                    <a href="quality-policy.php#certi-id"><img src="assets/images/resources/4-logo.png" alt="img"
                             title="img"></a>
                 </div>
             </div>

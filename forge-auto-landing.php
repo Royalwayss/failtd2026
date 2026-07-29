@@ -503,10 +503,13 @@
                             <div class="header-social-link-1 header-social-link-4">
                                 <div class="social-link">
                                     <ul class="clearfix">
-                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.facebook.com/forgeautointernationallimited"
+                                                target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/company/forgeautointernational/"
+                                                target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.instagram.com/forgeautointernational.ltd?igsh=aGFhMng4cjJ0a3J6"
+                                                target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                     
                                     </ul>
                                 </div>
                             </div>
@@ -1846,7 +1849,7 @@
                     </div>
                     <div class="col-6 col-sm-4 col-md-4 col-lg-2 m-auto pb-4">
                         <div class=" certi-border">
-                            <a href="quality-policy.php#certi-id"><img src="assets/images/resources/4-logo.jpg"></a>
+                            <a href="quality-policy.php#certi-id"><img src="assets/images/resources/4-logo.png"></a>
                         </div>
                     </div>
                     <div class="col-6 col-sm-4 col-md-4 col-lg-2 m-auto pb-4">
