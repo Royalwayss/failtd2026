@@ -260,6 +260,12 @@
                             src="assets/images/resources/4-logo.png"></a>
                 </div>
             </div>
+               <div class="col-6 col-sm-4 col-md-4 col-lg-2 m-auto pb-4">
+                <div class=" certi-border">
+                    <a href="quality-policy.php#certi-id"><img src="assets/images/resources/3-logo.jpg" alt="img"
+                            title="img"></a>
+                </div>
+            </div>
             <div class="col-6 col-sm-4 col-md-4 col-lg-2 m-auto pb-4">
                 <div class=" certi-border">
                     <a href="assets/images/mach-auto/forge-mach-iso-14001.pdf" target="_blank"><img
@@ -277,6 +283,7 @@
                     <a href="assets/images/mach-auto/carbon.pdf" target="_blank"><img src="assets/images/mach-auto/carbon.png"></a>
                 </div>
             </div>
+          
 
 
         </div>
