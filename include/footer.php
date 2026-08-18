@@ -225,7 +225,7 @@ $pageURL = basename($_SERVER['PHP_SELF']);
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="assets/js/map-script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
+ <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <?php if($pageURL == 'contact.php') { ?>
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATY4Rxc8jNvDpsK8ZetC7JyN4PFVYGCGM&callback=initMap">
