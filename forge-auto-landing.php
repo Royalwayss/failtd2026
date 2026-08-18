@@ -1,5 +1,5 @@
 <?php
-$enqMsgSuccess = '';
+$enqMsgSuccess = ''; 
 $enqMsgFail = '';
 if (isset($_GET['enq'])) {
 	if ($_GET['enq'] == 'success') {
