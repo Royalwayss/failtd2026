@@ -1,5 +1,5 @@
 <?php
-$enqMsgSuccess = ''; 
+$enqMsgSuccess = '';
 $enqMsgFail = '';
 if (isset($_GET['enq'])) {
 	if ($_GET['enq'] == 'success') {
@@ -899,68 +899,7 @@ if (isset($_GET['contact'])) {
 
             <!-- Right Form -->
             <div class="col-lg-6">
-              <div class="landing-new-forge-form-card" id="landing-new-forge-enquiry">
-                <h2>Request a Quote</h2>
-                <p class="landing-new-forge-sub">Share your drawing or requirement b our engineering team
-                  replies within 24 hours.</p>
-                <?php if ($enqMsgSuccess != '') { ?>
-                <div class="alert alert-success" id="msgDiv"><?php echo $enqMsgSuccess; ?></div>
-                <?php } ?>
-                <?php if ($enqMsgFail != '') { ?>
-                <div class="alert alert-danger" id="msgDiv"><?php echo $enqMsgFail; ?></div>
-                <?php } ?>
-                <form class="row" id="landing-new-forge-enquiry-form" action="submit-enquiry.php" method="post">
-                  <input type="hidden" name="lead_source" value="google-ads">
-                  <input type="hidden" name="ad_category" id="landing-new-forge-f-adcat" value="">
-                  <div class="col-12 col-md-6">
-                    <label for="landing-new-forge-f-name">Full name *</label>
-                    <input id="landing-new-forge-f-name" name="name" type="text" required autocomplete="name">
-
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <label for="landing-new-forge-f-company">Company</label>
-                    <input id="landing-new-forge-f-company" name="company" type="text" autocomplete="organization">
-
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <label for="landing-new-forge-f-phone">Phone / WhatsApp *</label>
-                    <input id="landing-new-forge-f-phone" name="phone" type="tel" required autocomplete="tel">
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <label for="landing-new-forge-f-email">Email *</label>
-                    <input id="landing-new-forge-f-email" name="email" type="email" required autocomplete="email">
-
-                  </div>
-                  <div class="col-12 col-md-12">
-                    <label for="landing-new-forge-f-cat">Product category *</label>
-                    <select id="landing-new-forge-f-cat" name="category" required>
-                      <option value="">Select a category</option>
-                      <option>Auto Parts</option>
-                      <option>Tractor Parts</option>
-                      <option>Railway Parts</option>
-                      <option>Hydraulic Parts</option>
-                      <option>Agriculture Parts</option>
-                      <option>Striking Tools</option>
-                      <option>Chain Links</option>
-                      <option>Tie Rods</option>
-                      <!-- <option>Custom Forging / Other</option> -->
-                    </select>
-
-                  </div>
-                  <div class="col-12 col-md-12">
-                    <label for="landing-new-forge-f-msg">Requirement (part, quantity, material)</label>
-                    <textarea id="landing-new-forge-f-msg" name="message" rows="3" placeholder=" "></textarea>
-                  </div>
-
-                  <div class="col-12 col-md-12">
-                    <div class="g-recaptcha" data-sitekey="6LeME4orAAAAAAjubWCck5LqqjJ-YQ7IsX6Q6d-I" data-callback="recaptchaCallback" data-expired-callback="recaptchaExpired"></div>
-                    <input id="hidden-grecaptcha" name="hidden-grecaptcha" type="hidden" />
-                  </div>
-
-                  <button class="landing-new-forge-btn" type="submit">Send Enquiry</button>
-                  
-                </form>
-              </div>
+              <?php include('include/enquiry-form.php'); ?>
             </div>
           </div>
         </div>
@@ -1754,60 +1693,8 @@ if (isset($_GET['contact'])) {
                     <h5>For Any Query</h5>
                   </div>
                   <h2>Fill The Form Below</h2>
-                  <?php if ($contactMsgSuccess != '') { ?>
-                  <div class="alert alert-success" id="msgDiv"><?php echo $contactMsgSuccess; ?></div>
-                  <?php } ?>
-                  <?php if ($contactMsgFail != '') { ?>
-                  <div class="alert alert-danger" id="msgDiv"><?php echo $contactMsgFail; ?></div>
-                  <?php } ?>
-
                 </div>
-                <div class="contact-form">
-
-                  <form id="contactForm" name="contact_form" class="default-form2" action="submit-contact.php" method="post">
-                    <div class="row">
-                      <div class="col-xl-12">
-                        <div class="input-box">
-                          <input type="text" name="txtName" value="" placeholder="Your Name*">
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col-xl-12">
-                        <div class="input-box">
-                          <input type="email" name="username" value="" placeholder="Email*">
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col-xl-12">
-                        <div class="input-box">
-                          <input type="text" name="mobile" value="" placeholder="Phone*">
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col-xl-12">
-                        <div class="input-box">
-                          <textarea name="message" placeholder="Your Message"></textarea>
-                        </div>
-                        <div class="input-box">
-                          <div class="g-recaptcha" data-sitekey="6LeME4orAAAAAAjubWCck5LqqjJ-YQ7IsX6Q6d-I" data-callback="onContactCaptchaVerified" data-expired-callback="onContactCaptchaExpired"></div>
-                          <input id="contact_captcha_token" name="contact_captcha_token" type="hidden" />
-                        </div>
-                        <div class="button-box text-center">
-                          <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" value="">
-                          <button class="btn-one" type="submit" name="btnContactSubmits" data-loading-text="Please wait...">
-                            <span class="txt">Send Message</span>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
+                <?php include('include/contact-form.php'); ?>
               </div>
             </div>
 
@@ -2057,128 +1944,7 @@ if (isset($_GET['contact'])) {
     <!-- thm custom script -->
     <script src="assets/js/custom.js"></script>
 
-    <script>
-      $.validator.addMethod("custom_name", function(value, element) {
-        return this.optional(element) || value === "NA" ||
-          value.match(/^[a-zA-Z ]+$/);
-      }, "Please use a-z, A-Z only");
-      $.validator.addMethod("custom_desc", function(value, element) {
-        return this.optional(element) || value === "NA" ||
-          value.match(/^[a-zA-Z0-9\n ,\,&.:-]+$/);
-      }, "Please use a-z, A-Z, '&' , ':' , '.' , '-' , ',' only");
-      jQuery(function($) {
-        "use strict";
-        $("#landing-new-forge-enquiry-form").validate({
-          ignore: [],
-          rules: {
-            name: {
-              required: true,
-              custom_name: true,
-            },
-            email: {
-              required: true,
-              email: true,
-            },
-            phone: {
-              required: true,
-              minlength: 8,
-              maxlength: 15,
-            },
-            category: {
-              required: true,
-            },
-            "hidden-grecaptcha": {
-              required: true,
-            },
-          },
-          messages: {
-            name: {
-              required: "Please enter name",
-            },
-            email: {
-              required: "Please enter Email",
-              email: "Please enter a valid email address",
-            },
-            phone: {
-              required: "Enter your mobile no",
-              minlength: "Enter 8 digits mobile number",
-              maxlength: "Enter maximum 15 digits mobile number including country code",
-            },
-            category: {
-              required: "Please select a product category",
-            },
-            "hidden-grecaptcha": {
-              required: "Please enter captcha",
-            },
-          },
-        });
-
-        $("#contactForm").validate({
-          ignore: [],
-          rules: {
-            txtName: {
-              required: true,
-              custom_name: true,
-            },
-            username: {
-              required: true,
-              email: true,
-            },
-            mobile: {
-              required: true,
-              minlength: 8,
-              maxlength: 15,
-            },
-            message: {
-              required: true,
-              custom_desc: true,
-            },
-            "contact_captcha_token": {
-              required: true,
-            },
-          },
-          messages: {
-            txtName: {
-              required: "Please enter name",
-            },
-            username: {
-              required: "Please enter Email",
-              email: "Please enter a valid email address",
-            },
-            mobile: {
-              required: "Enter your mobile no",
-              minlength: "Enter 8 digits mobile number",
-              maxlength: "Enter maximum 15 digits mobile number including country code",
-            },
-            message: {
-              required: "Please enter message",
-            },
-            "contact_captcha_token": {
-              required: "Please enter captcha",
-            },
-          },
-        });
-      });
-
-      // Google passes the verified token directly into the callback,
-      // so we use that instead of grecaptcha.getResponse() (which,
-      // called with no widget id, always returns widget 0's response).
-      function recaptchaCallback(response) {
-        jQuery("#hidden-grecaptcha").val(response);
-      }
-
-      function recaptchaExpired() {
-        jQuery("#hidden-grecaptcha").val("");
-      }
-
-      function onContactCaptchaVerified(response) {
-        jQuery("#contact_captcha_token").val(response);
-      }
-
-      function onContactCaptchaExpired() {
-        jQuery("#contact_captcha_token").val("");
-      }
-    </script>
+    <?php include('include/form-scripts.php'); ?>
 
     <!-- <script>
    

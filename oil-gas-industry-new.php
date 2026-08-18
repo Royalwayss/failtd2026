@@ -218,54 +218,7 @@
 
             <!-- Right Form -->
             <div class="col-lg-6">
-                <div class="landing-new-forge-form-card" id="landing-new-forge-enquiry">
-                    <h2>Request a Quote</h2>
-                    <p class="landing-new-forge-sub">Share your drawing or requirement b our engineering team replies within 24 hours.</p>
-                    <form class="row" action="submit-enquiry.php" method="post">
-                        <input type="hidden" name="lead_source" value="google-ads">
-                        <input type="hidden" name="ad_category" id="landing-new-forge-f-adcat" value="Tractor Parts">
-                        <div class="col-12 col-md-6">
-                            <label for="landing-new-forge-f-name">Full name *</label>
-                            <input id="landing-new-forge-f-name" name="name" type="text" required>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <label for="landing-new-forge-f-company">Company</label>
-                            <input id="landing-new-forge-f-company" name="company" type="text">
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <label for="landing-new-forge-f-phone">Phone / WhatsApp *</label>
-                            <input id="landing-new-forge-f-phone" name="phone" type="tel" required>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <label for="landing-new-forge-f-email">Email *</label>
-                            <input id="landing-new-forge-f-email" name="email" type="email" required>
-                        </div>
-                        <div class="col-12 col-md-12">
-                            <label for="landing-new-forge-f-cat">Product category *</label>
-                            <select id="landing-new-forge-f-cat" name="category" required>
-                                <option value="">Select a category</option>
-                                <option>Auto Parts</option>
-                                <option >Tractor Parts</option>
-                                <option>Railway Parts</option>
-                                <option>Hydraulic Parts</option>
-                                <option >Agriculture Parts</option>
-                                <option>Striking Tools</option>
-                                <option>Chain Links</option>
-                                <option>Tie Rods</option>
-                                <option>5th Wheel Assembly</option>
-                                <option selected>Oil & Gas</option>
-                                <!-- <option>Ring Rolling</option>
-                                <option>Custom Forging / Other</option> -->
-                            </select>
-                        </div>
-                        <div class="col-12 col-md-12">
-                            <label for="landing-new-forge-f-msg">Requirement (part, quantity, material)</label>
-                            <textarea id="landing-new-forge-f-msg" name="message" rows="3" placeholder=" "></textarea>
-                        </div>
-                        <button class="landing-new-forge-btn" type="submit">Send Enquiry</button>
-                    
-                    </form>
-                </div>
+                <?php $ad_category_default = 'Oil & Gas'; include('include/enquiry-form.php'); ?>
             </div>
         </div>
     </div>
@@ -706,3 +659,4 @@
 	</div>
 </section>
 <?php include('include/footer.php') ?>
+<?php include('include/form-scripts.php'); ?>

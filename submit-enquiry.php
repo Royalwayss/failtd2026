@@ -46,6 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$message  = isset($_REQUEST['message']) ? trim($_REQUEST['message']) : '';
 		$lead_source = isset($_REQUEST['lead_source']) ? trim($_REQUEST['lead_source']) : '';
 		$ad_category = isset($_REQUEST['ad_category']) ? trim($_REQUEST['ad_category']) : '';
+		$page_url    = isset($_REQUEST['page_url']) ? trim($_REQUEST['page_url']) : '';
 
 		$Errmsg = '';
 		if (!preg_match("/^[a-zA-Z ]*$/", $name)) {
@@ -61,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		if ($Errmsg != "") {
 			$msgFail = "Please enter valid information";
 		} else {
-			if (is_numeric($phone)) {
+			
 
 				// email script start
 				$to = "siddharthmittal@faipl.com,manjit@rtpltech.com";
@@ -129,6 +130,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 										 <td><b>Requirement</b></td>
 										 <td>' . $message . '</td>
 										 </tr>
+										 <tr>
+										 <td><b>Page URL</b></td>
+										 <td>' . $page_url . '</td>
+										 </tr>
 										 </table>
 									</div>
 								</body>
@@ -142,10 +147,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 				$message_db      = mysqli_real_escape_string($conn, $message);
 				$lead_source_db  = mysqli_real_escape_string($conn, $lead_source);
 				$ad_category_db  = mysqli_real_escape_string($conn, $ad_category);
+				$page_url_db     = mysqli_real_escape_string($conn, $page_url);
 				$current_timestamp = date('Y-m-d H:i:s');
 
-				$query = "INSERT INTO landingpage_enquiries (name,company,phone,email,category,message,lead_source,ad_category,created_at)
-					VALUES ('" . $name_db . "', '" . $company_db . "', '" . $phone_db . "', '" . $email_db . "', '" . $category_db . "', '" . $message_db . "', '" . $lead_source_db . "', '" . $ad_category_db . "', '" . $current_timestamp . "')";
+				$query = "INSERT INTO landingpage_enquiries (name,company,phone,email,category,message,lead_source,ad_category,page_url,created_at)
+					VALUES ('" . $name_db . "', '" . $company_db . "', '" . $phone_db . "', '" . $email_db . "', '" . $category_db . "', '" . $message_db . "', '" . $lead_source_db . "', '" . $ad_category_db . "', '" . $page_url_db . "', '" . $current_timestamp . "')";
 				$conn->query($query);
 
 				$headers  = 'MIME-Version: 1.0' . "\r\n";
@@ -158,21 +164,35 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 					//$msgFail = "Please check your internet connection";
 				}
 				$msgSuccess = 'Your enquiry has been sent';
-			} else {
-				$msgFail = "Please enter valid Phone number";
-			}
+			 
 		}
 	}
 
-	// Redirect back to the landing page with the result
+	// Determine which page to redirect back to (dynamic, works across all landing pages)
+	$redirect_base = 'forge-auto-landing.php';
+	if (!empty($page_url)) {
+		// Use the page the form was submitted from, stripped of any existing query string/hash
+		$parsed = parse_url($page_url);
+		if (!empty($parsed['path'])) {
+			$redirect_base = basename($parsed['path']);
+		}
+	} elseif (!empty($_SERVER['HTTP_REFERER'])) {
+		$parsed = parse_url($_SERVER['HTTP_REFERER']);
+		if (!empty($parsed['path'])) {
+			$redirect_base = basename($parsed['path']);
+		}
+	}
+
+	// Redirect back to the originating page with the result
 	if ($msgSuccess != "") {
-		header("Location: forge-auto-landing.php?enq=success#landing-new-forge-enquiry");
+		header("Location: " . $redirect_base . "?enq=success#landing-new-forge-enquiry");
 	} else {
-		header("Location: forge-auto-landing.php?enq=fail&msg=" . urlencode($msgFail) . "#landing-new-forge-enquiry");
+		header("Location: " . $redirect_base . "?enq=fail&msg=" . urlencode($msgFail) . "#landing-new-forge-enquiry");
 	}
 	exit;
 }
 
-// Not a POST request, just send back to the form
-header("Location: forge-auto-landing.php");
+// Not a POST request, just send back to the referring page if known, else the default landing page
+$fallback = !empty($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : 'forge-auto-landing.php';
+header("Location: " . $fallback);
 exit;

@@ -43,6 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$email  = $_REQUEST['username'];
 		$phone  = $_REQUEST['mobile'];
 		$message = $_REQUEST['message'];
+		$page_url = isset($_REQUEST['page_url']) ? trim($_REQUEST['page_url']) : '';
 
 		$Errmsg = '';
 		if (!preg_match("/^[a-zA-Z ]*$/", $name)) {
@@ -113,6 +114,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 										 <td><b>Message</b></td>
 										 <td>' . $message . '</td>
 										 </tr>
+										 <tr>
+										 <td><b>Page URL</b></td>
+										 <td>' . $page_url . '</td>
+										 </tr>
 										 </table>
 									</div>
 								</body>
@@ -122,6 +127,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 				$email_db   = mysqli_real_escape_string($conn, $email);
 				$phone_db   = mysqli_real_escape_string($conn, $phone);
 				$message_db = mysqli_real_escape_string($conn, $message);
+				$page_url_db = mysqli_real_escape_string($conn, $page_url);
 				$current_timestamp = date('Y-m-d H:i:s');
 
 				$query = "INSERT INTO contacts (name,email,country_code,phone,country,state,city,message,created_at)
@@ -144,15 +150,31 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		}
 	}
 
-	// Redirect back to the landing page with the result
+	// Determine which page to redirect back to (dynamic, works across all landing pages)
+	$redirect_base = 'forge-auto-landing.php';
+	if (!empty($page_url)) {
+		// Use the page the form was submitted from, stripped of any existing query string/hash
+		$parsed = parse_url($page_url);
+		if (!empty($parsed['path'])) {
+			$redirect_base = basename($parsed['path']);
+		}
+	} elseif (!empty($_SERVER['HTTP_REFERER'])) {
+		$parsed = parse_url($_SERVER['HTTP_REFERER']);
+		if (!empty($parsed['path'])) {
+			$redirect_base = basename($parsed['path']);
+		}
+	}
+
+	// Redirect back to the originating page with the result
 	if ($msgSuccess != "") {
-		header("Location: forge-auto-landing.php?contact=success#landing-new-forge-contact");
+		header("Location: " . $redirect_base . "?contact=success#landing-new-forge-contact");
 	} else {
-		header("Location: forge-auto-landing.php?contact=fail&msg=" . urlencode($msgFail) . "#landing-new-forge-contact");
+		header("Location: " . $redirect_base . "?contact=fail&msg=" . urlencode($msgFail) . "#landing-new-forge-contact");
 	}
 	exit;
 }
 
-// Not a POST request, just send back to the form
-header("Location: forge-auto-landing.php");
+// Not a POST request, just send back to the referring page if known, else the default landing page
+$fallback = !empty($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : 'forge-auto-landing.php';
+header("Location: " . $fallback);
 exit;
