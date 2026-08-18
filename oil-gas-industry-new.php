@@ -1,4 +1,7 @@
+
 <?php include('include/header.php') ?>
+<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="noindex, nofollow">
 <style>
     /* Hero Banner Styles */
     .landing-new-forge-hero {
@@ -257,11 +260,10 @@
                         </div>
                         <div class="col-12 col-md-12">
                             <label for="landing-new-forge-f-msg">Requirement (part, quantity, material)</label>
-                            <textarea id="landing-new-forge-f-msg" name="message" rows="3" placeholder="e.g. Ball stud, EN8, 5,000 pcs/month"></textarea>
+                            <textarea id="landing-new-forge-f-msg" name="message" rows="3" placeholder=" "></textarea>
                         </div>
                         <button class="landing-new-forge-btn" type="submit">Send Enquiry</button>
-                        <p class="landing-new-forge-resp">b1 Response within 24 working hours</p>
-                        <p class="landing-new-forge-privacy">Your details are kept confidential and used only to respond to this enquiry.</p>
+                    
                     </form>
                 </div>
             </div>
