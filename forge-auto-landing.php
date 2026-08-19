@@ -1107,6 +1107,91 @@ if (isset($_GET['contact'])) {
       </section>
       <!--End About Style3 Area-->
       <!-- End About Style4 Area-->
+       <!--Start Team Style3 Area-->
+<section class="team-style3-area pt-0">
+    <div class="container">
+        <div class="sec-title style2 with_text text-center">
+            <div class="sub-title">
+                <span class="border-box"></span>
+                <h5>Empowering Clients, Building Success</h5>
+            </div>
+            <h2>Our Precious Clients</h2>
+            <h6>*In Tier 1 & Tier 2 </h6>
+        </div>
+        <div class="row text-right-rtl">
+            <div class="col-xl-12">
+                <div class="team-style1-content">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12">
+                            <div class="team-carousel owl-carousel owl-theme owl-nav-style-one">
+                                <!--Start Single Team Item-->
+                                <div class="single-team-item v2">
+                                    <div class="img-holder">
+                                        <div class="inner">
+                                            <img src="assets/images/brand/brand-logo-1.jpg" alt="img" title="img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Team Item-->
+                                <!--Start Single Team Item-->
+                                <div class="single-team-item v2">
+                                    <div class="img-holder">
+                                        <div class="inner">
+                                            <img src="assets/images/brand/brand-logo-2.jpg" alt="img" title="img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Team Item-->
+                                <!--Start Single Team Item-->
+                                <div class="single-team-item v2">
+                                    <div class="img-holder">
+                                        <div class="inner">
+                                            <img src="assets/images/brand/brand-logo-3.jpg" alt="img" title="img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Team Item-->
+                                <!--Start Single Team Item-->
+                                <div class="single-team-item v2">
+                                    <div class="img-holder">
+                                        <div class="inner">
+                                            <img src="assets/images/brand/brand-logo-4.jpg" alt="img" title="img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Team Item-->
+
+                                <!--Start Single Team Item-->
+                                <div class="single-team-item v2">
+                                    <div class="img-holder">
+                                        <div class="inner">
+                                            <img src="assets/images/brand/brand-logo-5.jpg" alt="img" title="img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Team Item-->
+
+                                <!--Start Single Team Item-->
+                                <div class="single-team-item v2">
+                                    <div class="img-holder">
+                                        <div class="inner">
+                                            <img src="assets/images/brand/brand-logo-6.jpg" alt="img" title="img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Team Item-->
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Team Style3 Area-->
 
       <!-- Categories -->
       <section class="landing-new-forge-pad" id="landing-new-forge-categories-section">
