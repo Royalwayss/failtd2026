@@ -8,23 +8,24 @@
    
    
    
-		 <!-- Google tag (gtag.js) -->
+		<!-- Google tag (gtag.js) -->
 
-	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17844390114"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17844390114"></script>
 
-	<script>
+<script>
 
-	  window.dataLayer = window.dataLayer || [];
+  window.dataLayer = window.dataLayer || [];
 
-	  function gtag(){dataLayer.push(arguments);}
+  function gtag(){dataLayer.push(arguments);}
 
-	  gtag('js', new Date());
+  gtag('js', new Date());
 
-	 
+ 
 
-	  gtag('config', 'AW-17844390114');
+  gtag('config', 'AW-17844390114');
 
-	</script>
+</script>
+
    
   
 		<script>
