@@ -57,6 +57,8 @@ $ad_category_default = isset($ad_category_default) ? $ad_category_default : '';
         <option>Striking Tools</option>
         <option>Chain Links</option>
         <option>Tie Rods</option>
+        <option>5th Wheel Assembly</option>
+        <option>Oil & Gas</option>
         <!-- <option>Custom Forging / Other</option> -->
       </select>
     </div>
