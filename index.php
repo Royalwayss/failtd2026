@@ -258,7 +258,7 @@
                             <span class="border-box"></span>
                             <h5>Our Company</h5>
                         </div>
-                        <h2>Since its inception in<br>2001, over a span of 24 years,</h2>
+                        <h2>Since its inception in<br>2001, over a span of 25 years,</h2>
                     </div>
                     <div class="inner-content">
                         <div class="text">

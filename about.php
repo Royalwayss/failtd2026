@@ -35,7 +35,7 @@
                             <span class="border-box"></span>
                             <h5>Forging Excellence Since 2001</h5>
                         </div>
-                        <h2>24 Years of Trusted Growth</h2>
+                        <h2>25 Years of Trusted Growth</h2>
                     </div>
                     <div class="inner-content">
                         <div class="top_text">
@@ -45,7 +45,7 @@
                             <p>Founded in 2001, Forge Auto International Ltd. (FAI) started as a small manufacturing
                                 unit. Over the years, we have grown into a modern, professionally managed company known
                                 for delivering quality and reliability.
-                                Our journey over the past 24 years has been shaped by steady growth, advanced
+                                Our journey over the past 25 years has been shaped by steady growth, advanced
                                 technology, and a strong focus on customer needs.</p>
 
                             <p>Today, FAI Ltd. is a trusted name in customized closed-die hot forgings, producing parts

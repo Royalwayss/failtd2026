@@ -1006,7 +1006,7 @@ if (isset($_GET['contact'])) {
                     </div>
                     <div class="count-box">
                       <h2>
-                        <span class="timer" data-from="1" data-to="24" data-speed="5000" data-refresh-interval="50">24</span>
+                        <span class="timer" data-from="1" data-to="25" data-speed="5000" data-refresh-interval="50">25</span>
                         <span class="fa fa-plus plus_icon"></span>
                       </h2>
                       <h5>Years Experience</h5>
@@ -1085,7 +1085,7 @@ if (isset($_GET['contact'])) {
                     <h5>Our Company</h5>
                   </div>
                   <h2>Since its inception in
-                    2001, over a span of 24 years,</span></h2>
+                    2001, over a span of 25 years,</span></h2>
                   <!-- <p>Sharing State-of-the-Art Facilities & Equipments For Building Refine Energy Units.</p> -->
                 </div>
                 <div class="inner-content">
