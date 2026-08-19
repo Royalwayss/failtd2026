@@ -7,7 +7,7 @@
    <head>
    
    
-   
+   <?php if($_SERVER['HTTP_HOST'] != 'localhost'){  ?>
 		<!-- Google tag (gtag.js) -->
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17844390114"></script>
@@ -74,6 +74,32 @@
          gtag('config', 'G-N91CLPT0FD');
          
       </script>
+	  
+	  
+	 <?php if($url == '/thanks.php'){ ?>
+	  
+	  <!-- Event snippet for Submit lead form conversion page -->
+
+<script>
+
+  gtag('event', 'conversion', {
+
+      'send_to': 'AW-17844390114/RvxaCJr4ktobEOKR77xC',
+
+      'value': 1.0,
+
+      'currency': 'INR'
+
+  });
+
+</script>
+	  
+	  
+	  
+	  
+	  
+	  
+   <?php  } }?>
       <meta charset="UTF-8">
       <meta property="og:site_name" content="Forge Auto International Limited"/>
       <?php if($url=="/index.php" || $url=="/" || $url=="/aint/"){ ?>

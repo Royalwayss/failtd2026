@@ -167,7 +167,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 	// Redirect back to the originating page with the result
 	if ($msgSuccess != "") {
-		header("Location: " . $redirect_base . "?contact=success#landing-new-forge-contact");
+		header("Location: thanks.php");
 	} else {
 		header("Location: " . $redirect_base . "?contact=fail&msg=" . urlencode($msgFail) . "#landing-new-forge-contact");
 	}

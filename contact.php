@@ -216,9 +216,11 @@
    				if(@mail($to, $subject, $mail_message, $headers)){ 
    				
    					$msgSuccess = 'Your Message has been sent';
+					echo '<script>window.location.href="thanks.php";</script>';
    				}
    				else{
    					$msgFail =  "Please check your internet connection";
+										
    				}
    			}
    			else{

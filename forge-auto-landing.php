@@ -23,6 +23,7 @@ if (isset($_GET['contact'])) {
 <html lang="en">
 
   <head>
+  <?php if($_SERVER['HTTP_HOST'] != 'localhost'){  ?>
    <!-- Google tag (gtag.js) -->
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17844390114"></script>
@@ -40,6 +41,8 @@ if (isset($_GET['contact'])) {
   gtag('config', 'AW-17844390114');
 
 </script>
+
+  <?php  } ?>
     <meta charset="UTF-8">
     <title>Forged Components Manufacturer in India - Forge Auto International </title>
 <meta name="robots" content="noindex, nofollow">
