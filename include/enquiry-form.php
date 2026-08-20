@@ -68,9 +68,7 @@ $ad_category_default = isset($ad_category_default) ? $ad_category_default : '';
     </div>
 
     <div class="col-12 col-md-12">
-      <div class="landing-new-forge-recaptcha-wrap">
-        <div class="g-recaptcha" data-sitekey="6LeME4orAAAAAAjubWCck5LqqjJ-YQ7IsX6Q6d-I" data-callback="recaptchaCallback" data-expired-callback="recaptchaExpired"></div>
-      </div>
+      <div class="g-recaptcha" data-sitekey="6LeME4orAAAAAAjubWCck5LqqjJ-YQ7IsX6Q6d-I" data-callback="recaptchaCallback" data-expired-callback="recaptchaExpired"></div>
       <input id="hidden-grecaptcha" name="hidden-grecaptcha" type="hidden" />
     </div>
 
@@ -78,24 +76,3 @@ $ad_category_default = isset($ad_category_default) ? $ad_category_default : '';
 
   </form>
 </div>
-<style>
-  .landing-new-forge-recaptcha-wrap {
-    overflow: hidden;
-  }
-  @media (max-width: 768px) {
-    .landing-new-forge-recaptcha-wrap {
-      transform: scale(0.87);
-      transform-origin: 0 0;
-      width: 264px;
-      height: 68px;
-    }
-  }
-  @media (max-width: 340px) {
-    .landing-new-forge-recaptcha-wrap {
-      transform: scale(0.77);
-      transform-origin: 0 0;
-      width: 234px;
-      height: 60px;
-    }
-  }
-</style>

@@ -543,19 +543,47 @@ if (isset($_GET['contact'])) {
           margin-top: 30px
         }
 
-        #landing-new-forge-hero-section .container-fluid,
-        #landing-new-forge-hero-section .row.px-5 {
-          padding-left: 0;
-          padding-right: 0;
+        .boxed_wrapper {
+          max-width: 100% !important;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+          box-shadow: none !important;
+          overflow-x: hidden;
         }
 
-        #landing-new-forge-hero-section .landing-new-forge-hero-content {
-          padding-left: 20px;
-          padding-right: 20px;
+        #landing-new-forge-hero-section .container-fluid {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+
+        #landing-new-forge-hero-section .row.px-5 {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
+
+        #landing-new-forge-hero-section .row.px-5 > [class*="col-"] {
+          padding-left: 16px !important;
+          padding-right: 16px !important;
         }
 
         .landing-new-forge-form-card {
-          border-radius: 0;
+          border-radius: 8px;
+        }
+
+        .about-style3_image_box.landingpage-about .inner {
+          height: auto !important;
+        }
+
+        .about-style3_image_box.landingpage-about .inner img {
+          width: 100% !important;
+          height: auto !important;
+          max-height: none !important;
+          object-fit: contain !important;
+          position: static !important;
         }
       }
     </style>

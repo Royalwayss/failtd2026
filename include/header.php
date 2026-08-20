@@ -465,6 +465,47 @@
          .ml-50{ margin-left:50px; }
          .blog-row p{ text-align:left;justify; }
          .blog-row a{ color:#5a0909 ; }
+		 @media(max-width:768px) {
+    .landing-new-forge-hero {
+        padding-top: 40px;
+        padding-bottom: 40px
+    }
+
+    .landing-new-forge-form-card {
+        margin-top: 30px
+    }
+
+    .boxed_wrapper {
+        max-width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        box-shadow: none !important;
+        overflow-x: hidden;
+    }
+
+    #landing-new-forge-hero-section .container-fluid {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    #landing-new-forge-hero-section .row.px-5 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    #landing-new-forge-hero-section .row.px-5 > [class*="col-"] {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+
+    .landing-new-forge-form-card {
+        border-radius: 8px;
+    }
+}
       </style>
    </head>
    <script type="text/javascript">
