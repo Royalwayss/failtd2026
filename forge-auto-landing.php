@@ -542,6 +542,21 @@ if (isset($_GET['contact'])) {
         .landing-new-forge-form-card {
           margin-top: 30px
         }
+
+        #landing-new-forge-hero-section .container-fluid,
+        #landing-new-forge-hero-section .row.px-5 {
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        #landing-new-forge-hero-section .landing-new-forge-hero-content {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+
+        .landing-new-forge-form-card {
+          border-radius: 0;
+        }
       }
     </style>
   </head>
