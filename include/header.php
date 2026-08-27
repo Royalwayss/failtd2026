@@ -789,9 +789,9 @@
                                           <ul>
                                              <li><a href="financialResults.php">Financial Results</a>
                                              </li>
-                                             <li><a href="">Annual Reports</a></li>
-                                             <li><a href="">Annual Returns</a></li>
-                                             <li><a href="">Investors Presentation</a>
+                                             <li><a href="annual-reports.php">Annual Reports</a></li>
+                                             <li><a href="javascript:;">Annual Returns</a></li>
+                                             <li><a href="javascript:;">Investors Presentation</a>
                                              </li>
                                              <li><a href="group-company.php">Group Company</a></li>
                                           </ul>

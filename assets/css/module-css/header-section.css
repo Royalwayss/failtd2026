@@ -627,7 +627,7 @@
 .main-menu .navigation>li>ul>li>ul> li {
 	position: relative;
     display: block;
-    padding: 0 20px;
+    padding: 0 10px;
 	width: 100%;
 }
 .main-menu .navigation> li> ul> li> ul> li> a {
@@ -651,7 +651,7 @@
     line-height: 1.5;
 }
 .main-menu .navigation> li> ul> li> ul> li> a:hover {
-       padding-left: 10px;
+       padding-left: 6px;
     line-height: 1.5;
 }
 .main-menu .navigation> li> ul> li> ul> li a:before{
