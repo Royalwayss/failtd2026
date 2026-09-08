@@ -75,124 +75,12 @@
 </section>
 <!--End single-source supplier section-->
 
-<!--Start Featured Products slider-->
-<section class="products-range-section pd-featured">
-    <div class="auto-container">
-        <div class="row" id="category-content">
-            <div class="sec-title">
-                <h2>Featured Products</h2>
-            </div>
-        </div>
-
-        <div class="custom-slider owl-carousel pd-carousel-nav-fix">
-
-            <div class="item">
-                <div class="product-card is-active">
-                    <div class="product-card_img">
-                        <img src="https://www.failtd.com/assets/images/products/auto-parts/1.jpg" alt="Yoke Shaft Assembly">
-                    </div>
-                    <div class="product-card_body">
-                        <h3>Yoke Shaft Assembly</h3>
-                        <p class="product-card_spec">EN19 / 42CrMo4 &middot; 0.8-12 kg &middot; Forged + CNC machined</p>
-                        <div class="product-card_actions">
-                            <a class="btn-view-details" href="detail.php">View Details</a>
-                            <a class="btn-get-quote" href="#send-enquiry?product=Yoke%20Shaft%20Assembly">Get Quote</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="product-card">
-                    <div class="product-card_img">
-                        <img src="assets/images/products/auto-parts/2.jpg" alt="Tie Rod End">
-                    </div>
-                    <div class="product-card_body">
-                        <h3>Tie Rod End</h3>
-                        <p class="product-card_spec">C45 / EN8 &middot; 0.5-4 kg &middot; Forged + machined + assembled</p>
-                        <div class="product-card_actions">
-                            <a class="btn-view-details" href="detail.php">View Details</a>
-                            <a class="btn-get-quote" href="#send-enquiry">Get Quote</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="product-card">
-                    <div class="product-card_img">
-                        <img src="assets/images/products/auto-parts/3.jpg" alt="Gear Blank">
-                    </div>
-                    <div class="product-card_body">
-                        <h3>Gear Blank</h3>
-                        <p class="product-card_spec">20MnCr5 / SAE 8620 &middot; 1-15 kg &middot; Iso-annealed, proof machined</p>
-                        <div class="product-card_actions">
-                            <a class="btn-view-details" href="detail.php">View Details</a>
-                            <a class="btn-get-quote" href="#send-enquiry">Get Quote</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="product-card">
-                    <div class="product-card_img">
-                        <img src="assets/images/products/auto-parts/4.jpg" alt="Wheel Hub">
-                    </div>
-                    <div class="product-card_body">
-                        <h3>Wheel Hub</h3>
-                        <p class="product-card_spec">EN9 / EN19 &middot; 2-18 kg &middot; Forged + fully machined</p>
-                        <div class="product-card_actions">
-                            <a class="btn-view-details" href="detail.php">View Details</a>
-                            <a class="btn-get-quote" href="#send-enquiry">Get Quote</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="product-card">
-                    <div class="product-card_img">
-                        <img src="assets/images/products/auto-parts/5.jpg" alt="Flange Yoke">
-                    </div>
-                    <div class="product-card_body">
-                        <h3>Flange Yoke</h3>
-                        <p class="product-card_spec">EN19 / SAE 4140 &middot; 1-10 kg &middot; Forged &amp; tempered</p>
-                        <div class="product-card_actions">
-                            <a class="btn-view-details" href="detail.php">View Details</a>
-                            <a class="btn-get-quote" href="#send-enquiry">Get Quote</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="product-card">
-                    <div class="product-card_img">
-                        <img src="assets/images/products/auto-parts/6.jpg" alt="Steering Knuckle Arm">
-                    </div>
-                    <div class="product-card_body">
-                        <h3>Steering Knuckle Arm</h3>
-                        <p class="product-card_spec">EN24 / 42CrMo4 &middot; 1-8 kg &middot; Coach tested (MPI) 100%</p>
-                        <div class="product-card_actions">
-                            <a class="btn-view-details" href="detail.php">View Details</a>
-                            <a class="btn-get-quote" href="#send-enquiry">Get Quote</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-<!--End Featured Products slider-->
-
 <!--Start Auto Parts Range grid-->
 <section class="products-range-section">
     <div class="auto-container">
         <div class="row" id="category-content">
             <div class="sec-title">
-                <h2>Auto Parts Range</h2>
+                <h2>Related Products</h2>
                 <div class="text">
                     <p>Every product links to a dedicated detail page with full specifications, materials and MOQ.</p>
                 </div>
@@ -333,6 +221,123 @@
     </div>
 </section>
 <!--End Auto Parts Range grid-->
+
+
+
+
+
+<!--Start Featured Products slider-->
+<section class="products-range-section pd-featured">
+    <div class="auto-container">
+        <div class="row" id="category-content">
+            <div class="sec-title">
+                <h2>Featured Products</h2>
+            </div>
+        </div>
+
+        <div class="custom-slider owl-carousel pd-carousel-nav-fix">
+
+            <div class="item">
+                <div class="product-card is-active">
+                    <div class="product-card_img">
+                        <img src="https://www.failtd.com/assets/images/products/auto-parts/1.jpg" alt="Yoke Shaft Assembly">
+                    </div>
+                    <div class="product-card_body">
+                        <h3>Yoke Shaft Assembly</h3>
+                        <p class="product-card_spec">EN19 / 42CrMo4 &middot; 0.8-12 kg &middot; Forged + CNC machined</p>
+                        <div class="product-card_actions">
+                            <a class="btn-view-details" href="detail.php">View Details</a>
+                            <a class="btn-get-quote" href="#send-enquiry?product=Yoke%20Shaft%20Assembly">Get Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="product-card">
+                    <div class="product-card_img">
+                        <img src="assets/images/products/auto-parts/2.jpg" alt="Tie Rod End">
+                    </div>
+                    <div class="product-card_body">
+                        <h3>Tie Rod End</h3>
+                        <p class="product-card_spec">C45 / EN8 &middot; 0.5-4 kg &middot; Forged + machined + assembled</p>
+                        <div class="product-card_actions">
+                            <a class="btn-view-details" href="detail.php">View Details</a>
+                            <a class="btn-get-quote" href="#send-enquiry">Get Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="product-card">
+                    <div class="product-card_img">
+                        <img src="assets/images/products/auto-parts/3.jpg" alt="Gear Blank">
+                    </div>
+                    <div class="product-card_body">
+                        <h3>Gear Blank</h3>
+                        <p class="product-card_spec">20MnCr5 / SAE 8620 &middot; 1-15 kg &middot; Iso-annealed, proof machined</p>
+                        <div class="product-card_actions">
+                            <a class="btn-view-details" href="detail.php">View Details</a>
+                            <a class="btn-get-quote" href="#send-enquiry">Get Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="product-card">
+                    <div class="product-card_img">
+                        <img src="assets/images/products/auto-parts/4.jpg" alt="Wheel Hub">
+                    </div>
+                    <div class="product-card_body">
+                        <h3>Wheel Hub</h3>
+                        <p class="product-card_spec">EN9 / EN19 &middot; 2-18 kg &middot; Forged + fully machined</p>
+                        <div class="product-card_actions">
+                            <a class="btn-view-details" href="detail.php">View Details</a>
+                            <a class="btn-get-quote" href="#send-enquiry">Get Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="product-card">
+                    <div class="product-card_img">
+                        <img src="assets/images/products/auto-parts/5.jpg" alt="Flange Yoke">
+                    </div>
+                    <div class="product-card_body">
+                        <h3>Flange Yoke</h3>
+                        <p class="product-card_spec">EN19 / SAE 4140 &middot; 1-10 kg &middot; Forged &amp; tempered</p>
+                        <div class="product-card_actions">
+                            <a class="btn-view-details" href="detail.php">View Details</a>
+                            <a class="btn-get-quote" href="#send-enquiry">Get Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="product-card">
+                    <div class="product-card_img">
+                        <img src="assets/images/products/auto-parts/6.jpg" alt="Steering Knuckle Arm">
+                    </div>
+                    <div class="product-card_body">
+                        <h3>Steering Knuckle Arm</h3>
+                        <p class="product-card_spec">EN24 / 42CrMo4 &middot; 1-8 kg &middot; Coach tested (MPI) 100%</p>
+                        <div class="product-card_actions">
+                            <a class="btn-view-details" href="detail.php">View Details</a>
+                            <a class="btn-get-quote" href="#send-enquiry">Get Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--End Featured Products slider-->
+
 
 <?php /*
 <!--Start FAQ-->
