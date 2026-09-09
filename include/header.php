@@ -392,7 +392,14 @@
 
 
 
-
+     <?php  } else if($url=="/product_details.php"){?>
+		 <title><?php echo @$product['seo_title']; ?></title>
+		 <meta name="description" content="<?php echo @$product['meta_description']; ?>">
+     <?php  } else if($url=="/category_new.php"){  ?>
+	     <title><?php echo @$category['meta_title']; ?></title>
+		 <meta name="description" content="<?php echo @$category['meta_description']; ?>">
+     <?php  } else if($url=="/testtt.php"){ ?>
+     <?php  } else if($url=="/testtt.php"){ ?>
 
       <?php }else{?>
       <title>Forge Auto International</title>
@@ -460,6 +467,49 @@
             
       </script>
       <?php } ?>
+	  
+	  
+	  
+	  <?php if ($url == '/product_details.php' && isset($product) && $product) {
+         $schema = [
+            "@context" => "https://schema.org",
+            "@type" => "Product",
+            "name" => $product['name'],
+            "description" => $product['meta_description'],
+            "category" => $product['product_category'],
+            "material" => $product['material_grade'],
+            "url" => BASEURL . $product['url'],
+            "brand" => ["@type" => "Brand", "name" => "Forge Auto International"],
+            "manufacturer" => [
+               "@type" => "Organization",
+               "name" => "Forge Auto International Limited",
+               "url" => "https://www.failtd.com/",
+               "address" => [
+                  "@type" => "PostalAddress",
+                  "streetAddress" => "Village Mangarh, Kohara-Machhiwara Road",
+                  "addressLocality" => "Ludhiana",
+                  "addressRegion" => "Punjab",
+                  "postalCode" => "141001",
+                  "addressCountry" => "IN"
+               ],
+               "telephone" => "+91-8999999195"
+            ],
+            "additionalProperty" => [
+               ["@type" => "PropertyValue", "name" => "Material / Grade", "value" => $product['material_grade']],
+               ["@type" => "PropertyValue", "name" => "Manufacturing Process", "value" => $product['manufacturing_process']],
+               ["@type" => "PropertyValue", "name" => "Primary Application", "value" => $product['primary_application']],
+            ]
+         ];
+      ?>
+      <script type="application/ld+json">
+<?php echo json_encode($schema, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE); ?>
+      </script>
+      <?php } ?>
+	  
+	  
+	  
+	  
+	  
       <style>
          .error{color:red; }
          #google_translate_element {

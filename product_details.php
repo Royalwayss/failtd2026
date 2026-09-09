@@ -23,6 +23,13 @@ $cat_stmt->execute();
 $category = $cat_stmt->get_result()->fetch_assoc();
 $cat_stmt->close();
 
+// --- Fetch related products (same category, excluding current product) ---
+$related_stmt = $conn->prepare("SELECT * FROM products WHERE category_id = ? AND id != ? AND status = 1 ORDER BY pro_no ASC LIMIT 6");
+$related_stmt->bind_param('ii', $product['category_id'], $product['id']);
+$related_stmt->execute();
+$related_products = $related_stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+$related_stmt->close();
+
 // --- Helper: render a stored block of paragraphs (separated by blank lines) as <p> tags ---
 function render_paragraphs($text) {
     if (!$text) return '';
@@ -234,63 +241,6 @@ function render_paragraphs($text) {
  </div>
 </div></div>
 
-<!-- ================== FEATURED PRODUCTS ==================
-     Still static placeholder content - no cms marker was present for this section.
-     Let me know if you want this pulled dynamically (e.g. random picks, or same category). -->
-<div class="sec"><div class="wrap">
-  <h2>Featured Products</h2>
-  <div class="pcarousel">
-    <button class="parrow prev" type="button" aria-label="Previous" data-track="feat">&lsaquo;</button>
-    <div class="ptrack" id="feat">
-    <div class="pcard">
-      <div class="pcard-img"><div class="pimg" role="img" aria-label="Ball Joint"></div></div>
-      <div class="pcard-body">
-        <h3>Ball Joint</h3>
-        <p class="pcard-spec">SAE 1541B &middot; Forged + CNC turned + VMC machined</p>
-        <div class="pcard-btns">
-          <a class="btn btn-line" href="<?php echo BASEURL; ?>automotive-components/ball-joint">View Details</a>
-          <a class="btn btn-primary" href="#enquiry">Get Quote</a>
-        </div>
-      </div>
-    </div>
-    <div class="pcard is-current">
-      <div class="pcard-img"><div class="pimg" role="img" aria-label="Rear Hub Flange"></div></div>
-      <div class="pcard-body">
-        <h3>Rear Hub Flange</h3>
-        <p class="pcard-spec">Carbon &amp; alloy steel &middot; Forged, heat treated, shot blasted</p>
-        <div class="pcard-btns">
-          <a class="btn btn-line" href="<?php echo BASEURL; ?>automotive-components/rear-hub-flange">View Details</a>
-          <a class="btn btn-primary" href="#enquiry">Get Quote</a>
-        </div>
-      </div>
-    </div>
-    <div class="pcard">
-      <div class="pcard-img"><div class="pimg" role="img" aria-label="Tie Rod"></div></div>
-      <div class="pcard-body">
-        <h3>Tie Rod</h3>
-        <p class="pcard-spec">C40 &middot; Forged &amp; heat treated</p>
-        <div class="pcard-btns">
-          <a class="btn btn-line" href="<?php echo BASEURL; ?>automotive-components/tie-rod">View Details</a>
-          <a class="btn btn-primary" href="#enquiry">Get Quote</a>
-        </div>
-      </div>
-    </div>
-    <div class="pcard">
-      <div class="pcard-img"><div class="pimg" role="img" aria-label="Flange Yoke"></div></div>
-      <div class="pcard-body">
-        <h3>Flange Yoke</h3>
-        <p class="pcard-spec">37C15 &middot; Forged for HCV driveline</p>
-        <div class="pcard-btns">
-          <a class="btn btn-line" href="<?php echo BASEURL; ?>automotive-components/flange-yoke">View Details</a>
-          <a class="btn btn-primary" href="#enquiry">Get Quote</a>
-        </div>
-      </div>
-    </div>
-    </div>
-    <button class="parrow next" type="button" aria-label="Next" data-track="feat">&rsaquo;</button>
-  </div>
-</div></div>
-
 <!-- ================== RELATED PRODUCTS ================== -->
 <div class="sec sec-alt"><div class="wrap">
   <h2>Related Products</h2>
@@ -298,72 +248,25 @@ function render_paragraphs($text) {
   <div class="pcarousel">
     <button class="parrow prev" type="button" aria-label="Previous" data-track="rel">&lsaquo;</button>
     <div class="ptrack" id="rel">
-    <div class="pcard">
-      <div class="pcard-img"><div class="pimg" role="img" aria-label="Ball Stud"></div></div>
-      <div class="pcard-body">
-        <h3>Ball Stud</h3>
-        <p class="pcard-spec">Carbon or alloy steel &middot; Automotive &amp; railway linkage</p>
-        <div class="pcard-btns">
-          <a class="btn btn-line" href="<?php echo BASEURL; ?>automotive-components/ball-stud">View Details</a>
-          <a class="btn btn-primary" href="#enquiry">Get Quote</a>
+    <?php if (!empty($related_products)): ?>
+      <?php foreach ($related_products as $rp): ?>
+      <div class="pcard">
+        <div class="pcard-img">
+          <img src="<?php echo BASEURL; ?>assets/images/product/<?php echo (int)$rp['pro_no']; ?>.png" alt="<?php echo htmlspecialchars($rp['name']); ?>">
+        </div>
+        <div class="pcard-body">
+          <h3><?php echo htmlspecialchars($rp['name']); ?></h3>
+          <p class="pcard-spec"><?php echo htmlspecialchars($rp['material_grade']); ?></p>
+          <div class="pcard-btns">
+            <a class="btn btn-line" href="<?php echo BASEURL . htmlspecialchars($rp['url']); ?>">View Details</a>
+            <a class="btn btn-primary" href="<?php echo BASEURL . htmlspecialchars($rp['url']); ?>#enquiry">Get Quote</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="pcard">
-      <div class="pcard-img"><div class="pimg" role="img" aria-label="Short Fork"></div></div>
-      <div class="pcard-body">
-        <h3>Short Fork</h3>
-        <p class="pcard-spec">37C15 &middot; Tractor linkage &amp; control</p>
-        <div class="pcard-btns">
-          <a class="btn btn-line" href="<?php echo BASEURL; ?>automotive-components/short-fork">View Details</a>
-          <a class="btn btn-primary" href="#enquiry">Get Quote</a>
-        </div>
-      </div>
-    </div>
-    <div class="pcard">
-      <div class="pcard-img"><div class="pimg" role="img" aria-label="Long Fork"></div></div>
-      <div class="pcard-body">
-        <h3>Long Fork</h3>
-        <p class="pcard-spec">C45 &middot; HCV linkage assemblies</p>
-        <div class="pcard-btns">
-          <a class="btn btn-line" href="<?php echo BASEURL; ?>automotive-components/long-fork">View Details</a>
-          <a class="btn btn-primary" href="#enquiry">Get Quote</a>
-        </div>
-      </div>
-    </div>
-    <div class="pcard">
-      <div class="pcard-img"><div class="pimg" role="img" aria-label="End Balance Rod"></div></div>
-      <div class="pcard-body">
-        <h3>End Balance Rod</h3>
-        <p class="pcard-spec">45C8 &middot; Tractor suspension &amp; linkage</p>
-        <div class="pcard-btns">
-          <a class="btn btn-line" href="<?php echo BASEURL; ?>automotive-components/end-balance-rod">View Details</a>
-          <a class="btn btn-primary" href="#enquiry">Get Quote</a>
-        </div>
-      </div>
-    </div>
-    <div class="pcard">
-      <div class="pcard-img"><div class="pimg" role="img" aria-label="Flange (Automotive)"></div></div>
-      <div class="pcard-body">
-        <h3>Flange (Automotive)</h3>
-        <p class="pcard-spec">SAE 1038 &middot; Automotive assemblies</p>
-        <div class="pcard-btns">
-          <a class="btn btn-line" href="<?php echo BASEURL; ?>automotive-components/flange">View Details</a>
-          <a class="btn btn-primary" href="#enquiry">Get Quote</a>
-        </div>
-      </div>
-    </div>
-    <div class="pcard">
-      <div class="pcard-img"><div class="pimg" role="img" aria-label="Speaker Component"></div></div>
-      <div class="pcard-body">
-        <h3>Speaker Component</h3>
-        <p class="pcard-spec">SAE 1010 &middot; Custom automotive assemblies</p>
-        <div class="pcard-btns">
-          <a class="btn btn-line" href="<?php echo BASEURL; ?>automotive-components/speaker-forged-component">View Details</a>
-          <a class="btn btn-primary" href="#enquiry">Get Quote</a>
-        </div>
-      </div>
-    </div>
+      <?php endforeach; ?>
+    <?php else: ?>
+      <p>No related products found.</p>
+    <?php endif; ?>
     </div>
     <button class="parrow next" type="button" aria-label="Next" data-track="rel">&rsaquo;</button>
   </div>
