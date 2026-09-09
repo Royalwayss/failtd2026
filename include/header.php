@@ -402,36 +402,43 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- For IE -->
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <link rel="stylesheet" href="assets/css/aos.css">
-      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-      <link rel="stylesheet" href="assets/css/imp.css">
-      <link rel="stylesheet" href="assets/css/custom-animate.css">
-      <link rel="stylesheet" href="assets/css/flaticon.css">
-      <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-      <link rel="stylesheet" href="assets/css/owl.css">
-      <link rel="stylesheet" href="assets/css/magnific-popup.css">
-      <link rel="stylesheet" href="assets/css/scrollbar.css">
-      <link rel="stylesheet" href="assets/css/hiddenbar.css">
-      <link rel="stylesheet" href="assets/css/icomoon.css">
-      <link rel="stylesheet" href="assets/css/color.css">
-      <link href="assets/css/color/theme-color.css" id="jssDefault" rel="stylesheet">
-      <link rel="stylesheet" href="assets/css/rtl.css">
-      <link rel="stylesheet" href="assets/css/style.css?v=2.3">
-      <link rel="stylesheet" href="assets/css/responsive.css">
+      <link rel="stylesheet" href="<?php echo BASEURL; ?>assets/css/aos.css">
+      <link rel="stylesheet" href="<?php echo BASEURL; ?>assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="<?php echo BASEURL; ?>assets/css/imp.css">
+      <link rel="stylesheet" href="<?php echo BASEURL; ?>assets/css/custom-animate.css">
+      <link rel="stylesheet" href="<?php echo BASEURL; ?>assets/css/flaticon.css">
+      <link rel="stylesheet" href="<?php echo BASEURL; ?>assets/css/font-awesome.min.css">
+      <link rel="stylesheet" href="<?php echo BASEURL; ?>assets/css/owl.css">
+      <link rel="stylesheet" href="<?php echo BASEURL; ?>assets/css/magnific-popup.css">
+      <link rel="stylesheet" href="<?php echo BASEURL; ?>assets/css/scrollbar.css">
+      <link rel="stylesheet" href="<?php echo BASEURL; ?>assets/css/hiddenbar.css">
+      <link rel="stylesheet" href="<?php echo BASEURL; ?>assets/css/icomoon.css">
+      <link rel="stylesheet" href="<?php echo BASEURL; ?>assets/css/color.css">
+      <link href="<?php echo BASEURL; ?>assets/css/color/theme-color.css" id="jssDefault" rel="stylesheet">
+      <link rel="stylesheet" href="<?php echo BASEURL; ?>assets/css/rtl.css">
+      <link rel="stylesheet" href="<?php echo BASEURL; ?>assets/css/style.css?v=2.3">
+      <?php if($url=="/product_details.php"){ ?>
+	  <link rel="stylesheet" href="<?php echo BASEURL; ?>assets/css/product.css">
+	  <?php } ?>
+      <link rel="stylesheet" href="<?php echo BASEURL; ?>assets/css/responsive.css">
+	  
+	  
+	  
+	  
       <!-- Favicon -->
-      <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon/favicon-40x40.png"/>
-      <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
-      <link rel="icon" type="image/png" href="assets/images/favicon/favicon-32x32.png" sizes="32x32">
-      <link rel="icon" type="image/png" href="assets/images/favicon/favicon-16x16.png" sizes="16x16">
+      <link rel="shortcut icon" type="image/x-icon" href="<?php echo BASEURL; ?>assets/images/favicon/favicon-40x40.png"/>
+      <link rel="apple-touch-icon" sizes="180x180" href="<?php echo BASEURL; ?>assets/images/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" href="<?php echo BASEURL; ?>assets/images/favicon/favicon-32x32.png" sizes="32x32">
+      <link rel="icon" type="image/png" href="<?php echo BASEURL; ?>assets/images/favicon/favicon-16x16.png" sizes="16x16">
       <link
          rel="stylesheet"
          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
          />
-		 <link href="assets/css/select2.min.css" rel="stylesheet" />
+		 <link href="<?php echo BASEURL; ?>assets/css/select2.min.css" rel="stylesheet" />
       <!-- Fixing Internet Explorer-->
       <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-      <script src="assets/js/html5shiv.js"></script>
+      <script src="<?php echo BASEURL; ?>assets/js/html5shiv.js"></script>
       <![endif]-->
       <!--<script type="text/javascript"
          src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=y5u0u59AQvEZnOmpia-KmZnVJjvl8c_vOtsX562SDonPC_RnbC9eL7lJ7NMGzFDa6xDfRSeqhz4yNsRX4rU2h0GbcdzEwEVRptylFSHBsY_My84YmMKg2R9ZytT4NQi-fgoVNE4KgvP7mKaP8da13l0MAIgAW3w1BPpslP0QNbTpniPA316QwX7DPChnBbOdyxvpu96brQ_q36JKQz4Qyg"
@@ -535,7 +542,7 @@
       <!-- switcher menu -->
       <!--   <div class="switcher">
          <div class="switch_btn">
-             <button><img src="assets/images/icon/color-palette.png" alt="Color Palette"> </button>
+             <button><img src="<?php echo BASEURL; ?>assets/images/icon/color-palette.png" alt="Color Palette"> </button>
          </div>
          <div class="switch_menu">
          
@@ -602,7 +609,7 @@
                   <!--<div id="google_translate_element" class="text-right mg-top20"></div>-->
                   <div class="header-style4_left pull-left">
                      <div class="logo">
-                        <a href="https://www.failtd.com/"><img src="assets/images/resources/logo-1.png" alt="Tractor, Auto, Agriculture, Combine & Railway Parts Manufacturer - Forge Auto International Limited - Forging Parts Manufacturer in India"
+                        <a href="https://www.failtd.com/"><img src="<?php echo BASEURL; ?>assets/images/resources/logo-1.png" alt="Tractor, Auto, Agriculture, Combine & Railway Parts Manufacturer - Forge Auto International Limited - Forging Parts Manufacturer in India"
                            title="Tractor, Auto, Agriculture, Combine & Railway Parts Manufacturer - Forge Auto International Limited - Forging Parts Manufacturer in India"></a>
                      </div>
                   </div>
@@ -626,105 +633,105 @@
                                         <span class="flaticon-home home_icon"></span>
                                     </a>
                                     <ul>
-                                        <li><a href="index-4.html">Home Factory</a></li>
-                                        <li><a href="index-2.html">Home Industry</a></li>
-                                        <li><a href="index-3.html">Home Construction</a></li>
-                                        <li><a href="index-4.html">Home Renewable Energy</a></li>
-                                        <li><a href="index-5.html">Home OilGas</a></li>
-                                        <li><a href="index-onepage.html">Home OnePage</a></li>
+                                        <li><a href="<?php echo BASEURL; ?>index-4.html">Home Factory</a></li>
+                                        <li><a href="<?php echo BASEURL; ?>index-2.html">Home Industry</a></li>
+                                        <li><a href="<?php echo BASEURL; ?>index-3.html">Home Construction</a></li>
+                                        <li><a href="<?php echo BASEURL; ?>index-4.html">Home Renewable Energy</a></li>
+                                        <li><a href="<?php echo BASEURL; ?>index-5.html">Home OilGas</a></li>
+                                        <li><a href="<?php echo BASEURL; ?>index-onepage.html">Home OnePage</a></li>
                                         <li class="dropdown"><a href="#">Header Styles</a>
                                             <ul>
-                                                <li><a href="index-4.html">Header Style One</a></li>
-                                                <li><a href="index-2.html">Header Style Two</a></li>
-                                                <li><a href="index-3.html">Header Style Three</a></li>
-                                                <li><a href="index-4.html">Header Style Four</a></li>
-                                                <li><a href="index-5.html">Header Style Five</a></li>
+                                                <li><a href="<?php echo BASEURL; ?>index-4.html">Header Style One</a></li>
+                                                <li><a href="<?php echo BASEURL; ?>index-2.html">Header Style Two</a></li>
+                                                <li><a href="<?php echo BASEURL; ?>index-3.html">Header Style Three</a></li>
+                                                <li><a href="<?php echo BASEURL; ?>index-4.html">Header Style Four</a></li>
+                                                <li><a href="<?php echo BASEURL; ?>index-5.html">Header Style Five</a></li>
                                             </ul>
                                         </li>
                                     </ul>
                                     </li> -->
-                                    <li><a href="mach-auto.php">Forge Mach</a></li>
+                                    <li><a href="<?php echo BASEURL; ?>mach-auto.php">Forge Mach</a></li>
                                  <li class="dropdown">
                                     <a href="javascript:;">About us</a>
                                     <ul>
                                        <li>
-                                          <a href="about.php">Overview</a>
+                                          <a href="<?php echo BASEURL; ?>about.php">Overview</a>
                                        </li>
                                        <!-- <li>
-                                          <a href="directors-message.php">Directors Message</a>
+                                          <a href="<?php echo BASEURL; ?>directors-message.php">Directors Message</a>
                                           </li> -->
                                        <li>
-                                          <a href="milestone.php">Milestone</a>
+                                          <a href="<?php echo BASEURL; ?>milestone.php">Milestone</a>
                                        </li>
                                        <li>
-                                          <a href="mission-vision-and-future-plans.php">Mission, Vision &
+                                          <a href="<?php echo BASEURL; ?>mission-vision-and-future-plans.php">Mission, Vision &
                                           Future
                                           Plans</a>
                                        </li>
                                        <li>
-                                          <a href="management.php">Management</a>
+                                          <a href="<?php echo BASEURL; ?>management.php">Management</a>
                                        </li>
                                        <li>
-                                          <a href="quality-policy.php">Quality Policy</a>
+                                          <a href="<?php echo BASEURL; ?>quality-policy.php">Quality Policy</a>
                                        </li>
                                     </ul>
                                  </li>
                                  <!-- <li class="dropdown"><a href="#">Services</a>
                                     <ul>
-                                        <li><a href="services-v1.html">Services Style One</a></li>
-                                        <li><a href="services-v2.html">Services Style Two</a></li>
-                                        <li><a href="services-v3.html">Services Style Three</a></li>
-                                        <li><a href="services-detail-v1.html">Oil & Gas Engineering</a></li>
-                                        <li><a href="services-detail-v2.html">Power & Energy</a></li>
-                                        <li><a href="services-detail-v3.html">Industrial Exploration</a>
+                                        <li><a href="<?php echo BASEURL; ?>services-v1.html">Services Style One</a></li>
+                                        <li><a href="<?php echo BASEURL; ?>services-v2.html">Services Style Two</a></li>
+                                        <li><a href="<?php echo BASEURL; ?>services-v3.html">Services Style Three</a></li>
+                                        <li><a href="<?php echo BASEURL; ?>services-detail-v1.html">Oil & Gas Engineering</a></li>
+                                        <li><a href="<?php echo BASEURL; ?>services-detail-v2.html">Power & Energy</a></li>
+                                        <li><a href="<?php echo BASEURL; ?>services-detail-v3.html">Industrial Exploration</a>
                                         </li>
-                                        <li><a href="services-detail-v4.html">Automation Industry</a></li>
-                                        <li><a href="services-detail-v5.html">Manufacturing Plants</a></li>
-                                        <li><a href="services-detail-v6.html">Chemical Research</a></li>
+                                        <li><a href="<?php echo BASEURL; ?>services-detail-v4.html">Automation Industry</a></li>
+                                        <li><a href="<?php echo BASEURL; ?>services-detail-v5.html">Manufacturing Plants</a></li>
+                                        <li><a href="<?php echo BASEURL; ?>services-detail-v6.html">Chemical Research</a></li>
                                     </ul>
                                     </li> -->
                                  <!-- <li class="dropdown"><a href="#">Pages</a>
                                     <ul>
-                                        <li><a href="team.html">Our Team</a></li>
-                                        <li><a href="testimonials.html">Testimonials</a></li>
-                                        <li><a href="faq.html">Faq</a></li>
-                                        <li><a href="error.html">404 Error page</a></li>
+                                        <li><a href="<?php echo BASEURL; ?>team.html">Our Team</a></li>
+                                        <li><a href="<?php echo BASEURL; ?>testimonials.html">Testimonials</a></li>
+                                        <li><a href="<?php echo BASEURL; ?>faq.html">Faq</a></li>
+                                        <li><a href="<?php echo BASEURL; ?>error.html">404 Error page</a></li>
                                     </ul>
                                     </li> -->
                                  <!-- <li class="dropdown"><a href="#">News</a>
                                     <ul>
-                                        <li><a href="blog.html">News Grid View</a></li>
-                                        <li><a href="blog-v2.html">News List View</a></li>
-                                        <li><a href="blog-single.html">News Details</a></li>
+                                        <li><a href="<?php echo BASEURL; ?>blog.html">News Grid View</a></li>
+                                        <li><a href="<?php echo BASEURL; ?>blog-v2.html">News List View</a></li>
+                                        <li><a href="<?php echo BASEURL; ?>blog-single.html">News Details</a></li>
                                     </ul>
                                     </li> -->
-                                 <!-- <li><a href="infrastructure.php">Infrastructure</a></li> -->
+                                 <!-- <li><a href="<?php echo BASEURL; ?>infrastructure.php">Infrastructure</a></li> -->
                                  <li class="dropdown">
-                                    <a href="infrastructure.php">Infrastructure</a>
+                                    <a href="<?php echo BASEURL; ?>infrastructure.php">Infrastructure</a>
                                     <ul>
                                        <li>
-                                          <a href="design-engineering.php">Design & Engineering Department</a>
+                                          <a href="<?php echo BASEURL; ?>design-engineering.php">Design & Engineering Department</a>
                                        </li>
                                        <li>
-                                          <a href="forge-shop.php">Forge Shop</a>
+                                          <a href="<?php echo BASEURL; ?>forge-shop.php">Forge Shop</a>
                                        </li>
                                        <li>
-                                          <a href="press-shop.php">Press Shop</a>
+                                          <a href="<?php echo BASEURL; ?>press-shop.php">Press Shop</a>
                                        </li>
                                        <li>
-                                          <a href="ring-rollings.php">Ring Rolling</a>
+                                          <a href="<?php echo BASEURL; ?>ring-rollings.php">Ring Rolling</a>
                                        </li>
                                        <li>
-                                          <a href="heat-treatment.php">Heat Treatment</a>
+                                          <a href="<?php echo BASEURL; ?>heat-treatment.php">Heat Treatment</a>
                                        </li>
                                        <li>
-                                          <a href="machine-shop.php">Machine Shop</a>
+                                          <a href="<?php echo BASEURL; ?>machine-shop.php">Machine Shop</a>
                                        </li>
                                        <li>
-                                          <a href="quality-checking.php">Quality Checking Instruments</a>
+                                          <a href="<?php echo BASEURL; ?>quality-checking.php">Quality Checking Instruments</a>
                                        </li>
                                        <li>
-                                          <a href="capabilities.php">Capabilities</a>
+                                          <a href="<?php echo BASEURL; ?>capabilities.php">Capabilities</a>
                                        </li>
                                     </ul>
                                  </li>
@@ -732,68 +739,68 @@
                                     <a href="javascript:;">Products</a>
                                     <ul>
                                        <li>
-                                          <a href="auto-parts.php">Auto Parts</a>
+                                          <a href="<?php echo BASEURL; ?>auto-parts.php">Auto Parts</a>
                                        </li>
                                        <li>
-                                          <a href="tractor-parts.php">Tractor Parts</a>
+                                          <a href="<?php echo BASEURL; ?>tractor-parts.php">Tractor Parts</a>
                                        </li>
                                        <li>
-                                          <a href="striking-tools.php">Striking Tools</a>
+                                          <a href="<?php echo BASEURL; ?>striking-tools.php">Striking Tools</a>
                                        </li>
                                        <li>
-                                          <a href="hydraulic-parts.php">Hydraulic Parts</a>
+                                          <a href="<?php echo BASEURL; ?>hydraulic-parts.php">Hydraulic Parts</a>
                                        </li>
                                        <li>
-                                          <a href="agriculture-parts.php">Agriculture Parts</a>
+                                          <a href="<?php echo BASEURL; ?>agriculture-parts.php">Agriculture Parts</a>
                                        </li>
                                        <li>
-                                          <a href="railway-parts.php">Railway Parts</a>
+                                          <a href="<?php echo BASEURL; ?>railway-parts.php">Railway Parts</a>
                                        </li>
                                        <li>
-                                          <a href="chain-links.php">Chain Links</a>
+                                          <a href="<?php echo BASEURL; ?>chain-links.php">Chain Links</a>
                                        </li>
                                        <li>
-                                          <a href="wheel-assembly.php">Wheel Assembly</a>
+                                          <a href="<?php echo BASEURL; ?>wheel-assembly.php">Wheel Assembly</a>
                                        </li>
                                        <li>
-                                          <a href="tie-rods.php">Tie Rods</a>
+                                          <a href="<?php echo BASEURL; ?>tie-rods.php">Tie Rods</a>
                                        </li>
                                        <li>
-                                          <a href=" oil-gas-industry.php">Oil & Gas Industry</a>
+                                          <a href="<?php echo BASEURL; ?>oil-gas-industry.php">Oil & Gas Industry</a>
                                        </li>
                                        <li>
-                                          <a href=" ring-rolling.php">Ring Rolling</a>
+                                          <a href="<?php echo BASEURL; ?>ring-rolling.php">Ring Rolling</a>
                                        </li>
                                     </ul>
                                  </li>
-                                 <!-- <li><a href="events.php">Events</a></li> -->
-                                 <!-- <li><a href="sustainability.php">Sustainability</a></li> -->
-                                 <!-- <li><a href="exhibitions.php"></a></li>
-                                    <li><a href="awards.php"></a></li> -->
+                                 <!-- <li><a href="<?php echo BASEURL; ?>events.php">Events</a></li> -->
+                                 <!-- <li><a href="<?php echo BASEURL; ?>sustainability.php">Sustainability</a></li> -->
+                                 <!-- <li><a href="<?php echo BASEURL; ?>exhibitions.php"></a></li>
+                                    <li><a href="<?php echo BASEURL; ?>awards.php"></a></li> -->
                                  <li class="dropdown">
                                     <a href="javascript:;">Investor Relation</a>
                                     <ul class="dropdown">
                                        <li class="dropdown">
                                           <a href="javascript:;">Corporate Governance</a>
                                           <ul>
-                                             <li><a href="bod.php">BOD and Committee</a></li>
-                                             <li><a href="directorProfile.php">Director Profile</a></li>
+                                             <li><a href="<?php echo BASEURL; ?>bod.php">BOD and Committee</a></li>
+                                             <li><a href="<?php echo BASEURL; ?>directorProfile.php">Director Profile</a></li>
                                              <li><a href="javascript:;">Corporate Profile</a></li>
-                                             <li><a href="corporatePolicies.php">Corporate Policies</a>
+                                             <li><a href="<?php echo BASEURL; ?>corporatePolicies.php">Corporate Policies</a>
                                              </li>
-                                             <li><a href="prospectus.php">Prospectus</a></li>
+                                             <li><a href="<?php echo BASEURL; ?>prospectus.php">Prospectus</a></li>
                                           </ul>
                                        </li>
                                        <li class="dropdown">
                                           <a href="">Financials and Reports</a>
                                           <ul>
-                                             <li><a href="financialResults.php">Financial Results</a>
+                                             <li><a href="<?php echo BASEURL; ?>financialResults.php">Financial Results</a>
                                              </li>
-                                             <li><a href="annual-reports.php">Annual Reports</a></li>
+                                             <li><a href="<?php echo BASEURL; ?>annual-reports.php">Annual Reports</a></li>
                                              <li><a href="javascript:;">Annual Returns</a></li>
                                              <li><a href="javascript:;">Investors Presentation</a>
                                              </li>
-                                             <li><a href="group-company.php">Group Company</a></li>
+                                             <li><a href="<?php echo BASEURL; ?>group-company.php">Group Company</a></li>
                                           </ul>
                                        </li>
                                        <li><a href="javascript:;">Shareholding Pattern</a>
@@ -815,7 +822,7 @@
                                              <li><a href="javascript:;">Extra-ordinary General
                                                 Meeting</a>
                                              </li>
-                                             <li><a href="assets/images/corporatePolicy/postal-ballot-notice.pdf" target="_blank">Postal Ballot</a></li>
+                                             <li><a href="<?php echo BASEURL; ?>assets/images/corporatePolicy/postal-ballot-notice.pdf" target="_blank">Postal Ballot</a></li>
                                           </ul>
                                        </li>
                                        <li><a href="javascript:;">Archives</a>
@@ -824,20 +831,20 @@
                                        </li>
                                     </ul>
                                  </li>
-                                 <li><a href="sustainability.php">Sustainability</a></li>
+                                 <li><a href="<?php echo BASEURL; ?>sustainability.php">Sustainability</a></li>
                                  <li class="dropdown">
                                     <a>Media</a>
                                     <ul>
                                        <li>
-                                          <a href="exhibitions.php">Exhibitions</a>
+                                          <a href="<?php echo BASEURL; ?>exhibitions.php">Exhibitions</a>
                                        </li>
                                        <li>
-                                          <a href="awards.php">Awards</a>
+                                          <a href="<?php echo BASEURL; ?>awards.php">Awards</a>
                                        </li>
                                     </ul>
                                  </li>
-                                 <!-- <li><a href="clients.php">Clients</a></li> -->
-                                 <li><a href="contact.php">Contact</a></li>
+                                 <!-- <li><a href="<?php echo BASEURL; ?>clients.php">Clients</a></li> -->
+                                 <li><a href="<?php echo BASEURL; ?>contact.php">Contact</a></li>
                                  <!-- <li><a href="#">Enquiry</a></li> -->
                               </ul>
                            </div>
@@ -873,7 +880,7 @@
                <div class="clearfix">
                   <!--Logo-->
                   <div class="logo float-left">
-                     <a href="index.php" class="img-responsive"><img src="assets/images/resources/logo-1.png"
+                     <a href="<?php echo BASEURL; ?>index.php" class="img-responsive"><img src="<?php echo BASEURL; ?>assets/images/resources/logo-1.png"
                         alt="Tractor, Auto, Agriculture, Combine & Railway Parts Manufacturer - Forge Auto International Limited - Forging Parts Manufacturer in India"
                            title="Tractor, Auto, Agriculture, Combine & Railway Parts Manufacturer - Forge Auto International Limited - Forging Parts Manufacturer in India"></a>
                   </div>
@@ -893,7 +900,7 @@
             <div class="menu-backdrop"></div>
             <div class="close-btn"><span class="icon fa fa-times-circle"></span></div>
             <nav class="menu-box">
-               <div class="nav-logo"><a href="https://www.failtd.com/"><img src="assets/images/resources/logo.png" alt="img" title="img"></a></div>
+               <div class="nav-logo"><a href="https://www.failtd.com/"><img src="<?php echo BASEURL; ?>assets/images/resources/logo.png" alt="img" title="img"></a></div>
                <div class="menu-outer">
                   <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
                </div>

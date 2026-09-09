@@ -12,7 +12,7 @@ $pageURL = basename($_SERVER['PHP_SELF']);
                     <div class="single-footer-widget single-footer-widget-2 marbtm">
                         <div class="our-company-info">
                             <!--  <div class="footer-logo">
-                                        <a href="index-4.html"><img src="assets/images/resources/logo-1.png"
+                                        <a href="<?php echo BASEURL; ?>index-4.html"><img src="<?php echo BASEURL; ?>assets/images/resources/logo-1.png"
                                                 alt="Footer Logo" title="Logo"></a>
                                     </div>
                                     <div class="text-box">
@@ -62,16 +62,16 @@ $pageURL = basename($_SERVER['PHP_SELF']);
                             <h3>Explore More</h3>
                         </div>
                         <ul class="footer-widget-links2">
-                            <li><a href="about.php">About </a></li>
-                            <li><a href="quality-policy.php">Quality Policy</a></li>
-                            <li><a href="infrastructure.php">Infrastructure</a></li>
-                            <li><a href="exhibitions.php">Exhibitions</a></li>
-                            <li><a href="sustainability.php">Sustainability</a></li>
-                            <li><a href="awards.php">Awards</a></li>
-                            <li><a href="get-enquiry.php">Enquiry</a></li>
-                            <li><a href="clients.php">Clients</a></li>
-                            <li><a href="blog">Blog</a></li>
-                            <li><a href="contact.php">Contact</a></li>
+                            <li><a href="<?php echo BASEURL; ?>about.php">About </a></li>
+                            <li><a href="<?php echo BASEURL; ?>quality-policy.php">Quality Policy</a></li>
+                            <li><a href="<?php echo BASEURL; ?>infrastructure.php">Infrastructure</a></li>
+                            <li><a href="<?php echo BASEURL; ?>exhibitions.php">Exhibitions</a></li>
+                            <li><a href="<?php echo BASEURL; ?>sustainability.php">Sustainability</a></li>
+                            <li><a href="<?php echo BASEURL; ?>awards.php">Awards</a></li>
+                            <li><a href="<?php echo BASEURL; ?>get-enquiry.php">Enquiry</a></li>
+                            <li><a href="<?php echo BASEURL; ?>clients.php">Clients</a></li>
+                            <li><a href="<?php echo BASEURL; ?>blog">Blog</a></li>
+                            <li><a href="<?php echo BASEURL; ?>contact.php">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -84,17 +84,17 @@ $pageURL = basename($_SERVER['PHP_SELF']);
                             <h3>Products</h3>
                         </div>
                         <ul class="footer-widget-links2">
-                            <li><a href="auto-parts.php">Auto Parts</a></li>
-                            <li><a href="tractor-parts.php">Tractor Parts</a></li>
-                            <li><a href="striking-tools.php">Striking Tools</a></li>
-                            <li><a href="hydraulic-parts.php">Hydraulic Parts</a></li>
-                            <li><a href="agriculture-parts.php">Agriculture Parts</a></li>
-                            <li><a href="railway-parts.php">Railway Parts</a></li>
-                            <li><a href="chain-links.php">Chain Links</a></li>
-                            <li><a href="wheel-assembly.php">Wheel Assembly</a></li>
-                            <li><a href="tie-rods.php">Tie Rods</a></li>
-                            <li><a href=" oil-gas-industry.php">Oil & Gas Industry</a></li>
-                            <li><a href=" ring-rolling.php">Ring Rolling</a></li>
+                            <li><a href="<?php echo BASEURL; ?>auto-parts.php">Auto Parts</a></li>
+                            <li><a href="<?php echo BASEURL; ?>tractor-parts.php">Tractor Parts</a></li>
+                            <li><a href="<?php echo BASEURL; ?>striking-tools.php">Striking Tools</a></li>
+                            <li><a href="<?php echo BASEURL; ?>hydraulic-parts.php">Hydraulic Parts</a></li>
+                            <li><a href="<?php echo BASEURL; ?>agriculture-parts.php">Agriculture Parts</a></li>
+                            <li><a href="<?php echo BASEURL; ?>railway-parts.php">Railway Parts</a></li>
+                            <li><a href="<?php echo BASEURL; ?>chain-links.php">Chain Links</a></li>
+                            <li><a href="<?php echo BASEURL; ?>wheel-assembly.php">Wheel Assembly</a></li>
+                            <li><a href="<?php echo BASEURL; ?>tie-rods.php">Tie Rods</a></li>
+                            <li><a href="<?php echo BASEURL; ?>oil-gas-industry.php">Oil & Gas Industry</a></li>
+                            <li><a href="<?php echo BASEURL; ?>ring-rolling.php">Ring Rolling</a></li>
                         </ul>
                     </div>
                 </div>
@@ -175,12 +175,12 @@ $pageURL = basename($_SERVER['PHP_SELF']);
 
     <div class="col-2 text-end whatsapp-bottom">
         <a class="wp-size" href="https://wa.me/918999999195" target="_blank">
-            <img src="assets/images/whatsapp.png" alt="img" title="img">
+            <img src="<?php echo BASEURL; ?>assets/images/whatsapp.png" alt="img" title="img">
         </a>
     </div>
 </div>
 <div class="popup-btn">
-    <a href="get-enquiry.php">Enquire Now</a>
+    <a href="<?php echo BASEURL; ?>get-enquiry.php">Enquire Now</a>
 </div>
 
 <button class="scroll-top scroll-to-target bgclr1" data-target="html">
@@ -194,36 +194,36 @@ $pageURL = basename($_SERVER['PHP_SELF']);
 
 
 
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/aos.js"></script>
-<script src="assets/js/appear.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/bootstrap-select.min.js"></script>
-<script src="assets/js/isotope.js"></script>
-<script src="assets/js/jquery.bxslider.min.js"></script>
-<script src="assets/js/jquery.countdown.min.js"></script>
-<script src="assets/js/jquery.countTo.js"></script>
-<script src="assets/js/jquery.easing.min.js"></script>
-<script src="assets/js/jquery.enllax.min.js"></script>
-<script src="assets/js/jquery.fancybox.js"></script>
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
-<script src="assets/js/jquery.paroller.min.js"></script>
-<script src="assets/js/jquery.polyglot.language.switcher.js"></script>
-<script src="assets/js/jQuery.style.switcher.min.js"></script>
-<script src="assets/js/jquery-ui.js"></script>
-<script src="assets/js/knob.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/jquery.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/aos.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/appear.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/bootstrap.bundle.min.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/bootstrap-select.min.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/isotope.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/jquery.bxslider.min.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/jquery.countdown.min.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/jquery.countTo.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/jquery.easing.min.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/jquery.enllax.min.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/jquery.fancybox.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/jquery.magnific-popup.min.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/jquery.paroller.min.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/jquery.polyglot.language.switcher.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/jQuery.style.switcher.min.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/jquery-ui.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/knob.js"></script>
 
-<script src="assets/js/owl.js"></script>
-<script src="assets/js/pagenav.js"></script>
-<script src="assets/js/parallax.min.js"></script>
-<script src="assets/js/scrollbar.js"></script>
-<script src="assets/js/slick.js"></script>
-<script src="assets/js/timePicker.js?v=2.0"></script>
-<script src="assets/js/validation.js"></script>
-<script src="assets/js/wow.js"></script>
-<script src="assets/js/TweenMax.min.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/owl.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/pagenav.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/parallax.min.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/scrollbar.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/slick.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/timePicker.js?v=2.0"></script>
+<script src="<?php echo BASEURL; ?>assets/js/validation.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/wow.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/TweenMax.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="assets/js/map-script.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/map-script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <?php if($pageURL == 'contact.php') { ?>
@@ -283,8 +283,8 @@ if ($(".counter-value").length > 0) {
 </script> -->
 
 <!-- thm custom script -->
-<script src="assets/js/custom.js"></script>
-<script src="assets/js/select2.min.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/custom.js"></script>
+<script src="<?php echo BASEURL; ?>assets/js/select2.min.js"></script>
 <script>
 if ($(".loading-audio").length > 0) {
     const audio = document.getElementById("loading-audio");

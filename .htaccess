@@ -17,3 +17,4 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
 RewriteRule ^([a-zA-Z0-9-]+)$ blog_details.php?slug=$1 [L,QSA]
+RewriteRule ^([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)/?$ product_details.php?slug=$1/$2 [L,QSA]
