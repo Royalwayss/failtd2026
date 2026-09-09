@@ -255,7 +255,7 @@
                   <!-- <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> <a href="tel:+91 89999-99195">+91 89999-99195</a>,&nbsp; <a href="tel:+91-76269-98999"> +91-76269-98999</a></li> -->
                   <!-- <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> <a href="tel:+91 89999-99195">+91 89999-99195</a>,<a href="tel:+91-76269-98999">+91-76269-98999</a></li> -->
                   <li><span><i class="fa fa-phone" aria-hidden="true"></i></span><a href="tel:+91-8999999195">+91 89999-99195</a>, <a href="tel:+91-7626998999">+91-76269-98999</a></li>
-                  <!-- <li><span><i class="fa fa-envelope" aria-hidden="true"></i></span> <a href="mailto:info@aint.in">info@aint.in</a>,&nbsp; <a href="mailto:siddharthmittal@faipl.com"> siddharthmittal@faipl.com</a></li> -->
+                  <li><span><i class="fa fa-envelope" aria-hidden="true"></i></span> <a href="mailto:info@aint.in">info@aint.in</a>,&nbsp; <a href="mailto:sales@aint.in"> sales@aint.in</a></li>
                   <!-- <li><span><i class="fa fa-envelope" aria-hidden="true"></i></span> <a href="mailto:siddharthmittal@faipl.com">siddharthmittal@faipl.com</a>,&nbsp; <a href="mailto:siddharthmittal@faipl.com"> siddharthmittal@faipl.com</a></li> -->
                   <li><span><i class="fa fa-envelope" aria-hidden="true"></i></span> <a href="mailto:siddharthmittal@faipl.com">siddharthmittal@faipl.com</a></li>
                   <li><span><i class="fa fa-envelope" aria-hidden="true"></i></span> <a href="mailto:rajanmittal@faipl.com">rajanmittal@faipl.com</a></li>

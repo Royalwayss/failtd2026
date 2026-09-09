@@ -285,39 +285,39 @@ if ($(".counter-value").length > 0) {
 <!-- thm custom script -->
 <script src="<?php echo BASEURL; ?>assets/js/custom.js"></script>
 <script src="<?php echo BASEURL; ?>assets/js/select2.min.js"></script>
+<audio id="loading-audio" src="assets/images/hammer.mp3" preload="auto"></audio>
+
 <script>
-if ($(".loading-audio").length > 0) {
+document.addEventListener("DOMContentLoaded", function () {
     const audio = document.getElementById("loading-audio");
 
-    // Try to play the audio immediately (may be blocked if no interaction)
-    document.addEventListener("DOMContentLoaded", function() {
-        audio.loop = false; // Optional: repeat during loading
-        audio.volume = 1; // Optional: adjust volume
-        audio.play().catch(() => {
-            console.log("Autoplay may be blocked; will try again on user interaction.");
-        });
+    if (!audio) return;
+
+    audio.loop = false;
+    audio.volume = 1;
+
+    // Try autoplay
+    audio.play().catch(() => {
+        console.log("Autoplay blocked. Waiting for user interaction.");
     });
 
-    // Pause audio after page is fully loaded
-    window.addEventListener("load", function() {
-        setTimeout(() => {
-            if (!audio.paused) {
-                audio.pause();
-                audio.currentTime = 0; // Optional: reset to start
-            }
-        }, 5000); // Small delay after load if needed
-    });
-
-    // Optional fallback: play on user interaction
-    document.addEventListener("click", function() {
+    // Fallback: play after user interaction
+    document.addEventListener("click", function () {
         if (audio.paused) {
-            audio.play();
+            audio.play().catch(() => {});
         }
     }, {
         once: true
     });
 
-}
+    // Stop after page has completely loaded
+    window.addEventListener("load", function () {
+        setTimeout(function () {
+            audio.pause();
+            audio.currentTime = 0;
+        }, 5000);
+    });
+});
 </script>
 <!-- Swiper Initialization -->
 <script>
