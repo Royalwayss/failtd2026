@@ -1,24 +1,61 @@
-<?php include ('include/header.php') ?>
+<?php
+
+require_once('include/config.php');
+
+// --- Fetch product by slug (routed here via .htaccess as product_details.php?slug=category-slug/product-slug) ---
+$slug = isset($_GET['slug']) ? trim($_GET['slug'], '/') : '';
+
+$stmt = $conn->prepare("SELECT * FROM products WHERE url = ? AND status = 1 LIMIT 1");
+$stmt->bind_param('s', $slug);
+$stmt->execute();
+$product = $stmt->get_result()->fetch_assoc();
+$stmt->close();
+
+if (!$product) {
+    //header('Location: ' . BASEURL . '404.php');
+    //exit;
+}
+include ('include/header.php');
+// --- Fetch parent category (for breadcrumb) ---
+$cat_stmt = $conn->prepare("SELECT * FROM categories WHERE id = ? LIMIT 1");
+$cat_stmt->bind_param('i', $product['category_id']);
+$cat_stmt->execute();
+$category = $cat_stmt->get_result()->fetch_assoc();
+$cat_stmt->close();
+
+// --- Helper: render a stored block of paragraphs (separated by blank lines) as <p> tags ---
+function render_paragraphs($text) {
+    if (!$text) return '';
+    $parts = preg_split("/\n\s*\n/", trim($text));
+    $html = '';
+    foreach ($parts as $p) {
+        $html .= '<p>' . nl2br(htmlspecialchars(trim($p))) . '</p>' . "\n";
+    }
+    return $html;
+}
+?>
 <div class="crumbs"><div class="wrap">
-  <a href="<?php echo BASEURL; ?>">Home</a> &rsaquo; <a href="#">Products</a> &rsaquo; <a href="<?php echo BASEURL; ?>auto-parts.php">Auto Parts</a> &rsaquo; <span>Rear Hub Flange</span>
+  <a href="<?php echo BASEURL; ?>">Home</a> &rsaquo; <a href="#">Products</a> &rsaquo; <a href="<?php echo BASEURL . htmlspecialchars($category['slug']); ?>"><?php echo htmlspecialchars($category['name']); ?></a> &rsaquo; <span><?php echo htmlspecialchars($product['name']); ?></span>
 </div></div>
 
 <!-- ================== PRODUCT TOP ================== -->
 <div class="ptop"><div class="wrap">
  <div class="ptop-grid">
   <div class="gallery">
-    <img src="assets/images/products/1.jpg" alt="Precision-forged rear hub flange manufactured by Forge Auto International" width="600" height="600">
+   <img src="<?php echo BASEURL; ?>assets/images/product/<?php echo (int)$product['pro_no']; ?>.png" alt="<?php echo htmlspecialchars($product['name']); ?> manufactured by Forge Auto International" width="600" height="600">
   </div>
   <div>
-    <h1>Rear Hub Flange</h1>
-    <p class="lede">Precision-forged rear hub flange components for automotive and commercial vehicle segments, produced in carbon and alloy steel to customer drawing.</p>
-
+    <h1><?php echo htmlspecialchars($product['name']); ?></h1>
+    <!-- No 'lede' column in products table yet - using meta_description as the short intro. Add a dedicated 'lede' column if you want different copy here. -->
+    <p class="lede"><?php echo htmlspecialchars($product['meta_description']); ?></p>
+    <h3>Product Specifications</h3>
     <table class="quickspec">
-      <tr><th>Material / Grade</th><td>Carbon and alloy steel</td></tr>
-      <tr><th>Manufacturing Process</th><td>Cutting, closed-die forging, heat treatment and shot blasting</td></tr>
-      <tr><th>Primary Application</th><td>Automotive and commercial vehicle segments</td></tr>
-      <tr><th>Product Category</th><td>Automotive component</td></tr>
-      <tr><th>Customisation</th><td>Customer drawings, dimensional tolerances, material specifications and application-specific requirements</td></tr>
+      <tr><th>Material / Grade</th><td><?php echo htmlspecialchars($product['material_grade']); ?></td></tr>
+      <tr><th>Manufacturing Process</th><td><?php echo htmlspecialchars($product['manufacturing_process']); ?></td></tr>
+      <tr><th>Primary Application</th><td><?php echo htmlspecialchars($product['primary_application']); ?></td></tr>
+      <tr><th>Product Category</th><td><?php echo htmlspecialchars($product['product_category']); ?></td></tr>
+      <!-- No 'customisation' column in products table yet - left as static copy. Add a 'customisation' column to make this per-product. -->
+     <!-- <tr><th>Customisation</th><td>Customer drawings, dimensional tolerances, material specifications and application-specific requirements</td></tr> --->
     </table>
 
     <div class="ctas">
@@ -26,6 +63,7 @@
       <a class="btn btn-line" href="https://wa.me/918999999195">WhatsApp us</a>
     </div>
 
+    <!-- No dedicated 'assure' column - left as static copy. -->
     <p class="assure">Supplied to automotive OEMs, Tier 1 and Tier 2 suppliers and component distributors in India and international markets.</p>
   </div>
  </div>
@@ -33,9 +71,9 @@
 
 <!-- ================== DESCRIPTION ================== -->
 <div class="sec"><div class="wrap prose">
-  <h2>Rear Hub Flange</h2>
-  <p>Forge Auto International Limited manufactures precision-forged rear hub flange components for automotive and commercial vehicle segments. Developed for reliable integration within vehicle assemblies, the rear hub flange supports the strength, dimensional accuracy and service durability expected from a production-ready automotive component.</p>
-  <p>The component is produced using carbon and alloy steel. Material selection can be aligned with customer drawings, mechanical-property requirements and the intended operating environment. Its forged construction supports dependable performance under repeated loads, vibration and tough road conditions.</p>
+  <h2><?php echo htmlspecialchars($product['name']); ?></h2>
+  <?php echo render_paragraphs($product['bottom_description1']); ?>
+  <?php echo render_paragraphs($product['bottom_description2']); ?>
 </div></div>
 
 <!-- End About Style4 Area-->
@@ -173,8 +211,8 @@
     </div>
   </div>
   <div class="form">
-    <form action="/enquiry.php" method="post" enctype="multipart/form-data">
-      <input type="hidden" name="product" value="Rear Hub Flange">
+    <form action="<?php echo BASEURL; ?>enquiry.php" method="post" enctype="multipart/form-data">
+      <input type="hidden" name="product" value="<?php echo htmlspecialchars($product['name']); ?>">
       <div class="f2">
         <div class="field"><label for="n">Name</label><input id="n" name="name" required></div>
         <div class="field"><label for="c">Company</label><input id="c" name="company" required></div>
@@ -197,8 +235,8 @@
 </div></div>
 
 <!-- ================== FEATURED PRODUCTS ==================
-     Same card layout as the homepage carousel. Replace the .pimg background with
-     <img src="/images/products/<slug>.jpg"> per card. -->
+     Still static placeholder content - no cms marker was present for this section.
+     Let me know if you want this pulled dynamically (e.g. random picks, or same category). -->
 <div class="sec"><div class="wrap">
   <h2>Featured Products</h2>
   <div class="pcarousel">
@@ -210,7 +248,7 @@
         <h3>Ball Joint</h3>
         <p class="pcard-spec">SAE 1541B &middot; Forged + CNC turned + VMC machined</p>
         <div class="pcard-btns">
-          <a class="btn btn-line" href="/automotive-components/ball-joint">View Details</a>
+          <a class="btn btn-line" href="<?php echo BASEURL; ?>automotive-components/ball-joint">View Details</a>
           <a class="btn btn-primary" href="#enquiry">Get Quote</a>
         </div>
       </div>
@@ -221,7 +259,7 @@
         <h3>Rear Hub Flange</h3>
         <p class="pcard-spec">Carbon &amp; alloy steel &middot; Forged, heat treated, shot blasted</p>
         <div class="pcard-btns">
-          <a class="btn btn-line" href="/automotive-components/rear-hub-flange">View Details</a>
+          <a class="btn btn-line" href="<?php echo BASEURL; ?>automotive-components/rear-hub-flange">View Details</a>
           <a class="btn btn-primary" href="#enquiry">Get Quote</a>
         </div>
       </div>
@@ -232,7 +270,7 @@
         <h3>Tie Rod</h3>
         <p class="pcard-spec">C40 &middot; Forged &amp; heat treated</p>
         <div class="pcard-btns">
-          <a class="btn btn-line" href="/automotive-components/tie-rod">View Details</a>
+          <a class="btn btn-line" href="<?php echo BASEURL; ?>automotive-components/tie-rod">View Details</a>
           <a class="btn btn-primary" href="#enquiry">Get Quote</a>
         </div>
       </div>
@@ -243,7 +281,7 @@
         <h3>Flange Yoke</h3>
         <p class="pcard-spec">37C15 &middot; Forged for HCV driveline</p>
         <div class="pcard-btns">
-          <a class="btn btn-line" href="/automotive-components/flange-yoke">View Details</a>
+          <a class="btn btn-line" href="<?php echo BASEURL; ?>automotive-components/flange-yoke">View Details</a>
           <a class="btn btn-primary" href="#enquiry">Get Quote</a>
         </div>
       </div>
@@ -266,7 +304,7 @@
         <h3>Ball Stud</h3>
         <p class="pcard-spec">Carbon or alloy steel &middot; Automotive &amp; railway linkage</p>
         <div class="pcard-btns">
-          <a class="btn btn-line" href="/automotive-components/ball-stud">View Details</a>
+          <a class="btn btn-line" href="<?php echo BASEURL; ?>automotive-components/ball-stud">View Details</a>
           <a class="btn btn-primary" href="#enquiry">Get Quote</a>
         </div>
       </div>
@@ -277,7 +315,7 @@
         <h3>Short Fork</h3>
         <p class="pcard-spec">37C15 &middot; Tractor linkage &amp; control</p>
         <div class="pcard-btns">
-          <a class="btn btn-line" href="/automotive-components/short-fork">View Details</a>
+          <a class="btn btn-line" href="<?php echo BASEURL; ?>automotive-components/short-fork">View Details</a>
           <a class="btn btn-primary" href="#enquiry">Get Quote</a>
         </div>
       </div>
@@ -288,7 +326,7 @@
         <h3>Long Fork</h3>
         <p class="pcard-spec">C45 &middot; HCV linkage assemblies</p>
         <div class="pcard-btns">
-          <a class="btn btn-line" href="/automotive-components/long-fork">View Details</a>
+          <a class="btn btn-line" href="<?php echo BASEURL; ?>automotive-components/long-fork">View Details</a>
           <a class="btn btn-primary" href="#enquiry">Get Quote</a>
         </div>
       </div>
@@ -299,7 +337,7 @@
         <h3>End Balance Rod</h3>
         <p class="pcard-spec">45C8 &middot; Tractor suspension &amp; linkage</p>
         <div class="pcard-btns">
-          <a class="btn btn-line" href="/automotive-components/end-balance-rod">View Details</a>
+          <a class="btn btn-line" href="<?php echo BASEURL; ?>automotive-components/end-balance-rod">View Details</a>
           <a class="btn btn-primary" href="#enquiry">Get Quote</a>
         </div>
       </div>
@@ -310,7 +348,7 @@
         <h3>Flange (Automotive)</h3>
         <p class="pcard-spec">SAE 1038 &middot; Automotive assemblies</p>
         <div class="pcard-btns">
-          <a class="btn btn-line" href="/automotive-components/flange">View Details</a>
+          <a class="btn btn-line" href="<?php echo BASEURL; ?>automotive-components/flange">View Details</a>
           <a class="btn btn-primary" href="#enquiry">Get Quote</a>
         </div>
       </div>
@@ -321,7 +359,7 @@
         <h3>Speaker Component</h3>
         <p class="pcard-spec">SAE 1010 &middot; Custom automotive assemblies</p>
         <div class="pcard-btns">
-          <a class="btn btn-line" href="/automotive-components/speaker-forged-component">View Details</a>
+          <a class="btn btn-line" href="<?php echo BASEURL; ?>automotive-components/speaker-forged-component">View Details</a>
           <a class="btn btn-primary" href="#enquiry">Get Quote</a>
         </div>
       </div>

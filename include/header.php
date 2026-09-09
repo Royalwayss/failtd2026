@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
    <?php 
-      include('include/config.php');
+      require_once('include/config.php');
       $url = '/'.basename($_SERVER['PHP_SELF']);  
       ?>
    <head>
